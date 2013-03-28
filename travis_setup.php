@@ -92,10 +92,11 @@ if(version_compare($coreBranch, '3.0') == -1) {
 // Override module dependencies in order to test with specific core branch.
 // This might be older than the latest permitted version based on the module definition.
 // Its up to the module author to declare compatible CORE_RELEASE values in the .travis.yml.
-if(isset($packageNew['require']['silverstripe/framework'])) {
+// Leave dependencies alone if we're testing either of those modules directly.
+if(isset($packageNew['require']['silverstripe/framework']) && $package['name'] != 'silverstripe/framework') {
 	$packageNew['require']['silverstripe/framework'] = $coreBranchComposer;
 }
-if(isset($packageNew['require']['silverstripe/cms'])) {
+if(isset($packageNew['require']['silverstripe/cms']) && $package['name'] != 'silverstripe/cms') {
 	$packageNew['require']['silverstripe/cms'] = $coreBranchComposer;
 }
 $composer = json_encode($packageNew);
