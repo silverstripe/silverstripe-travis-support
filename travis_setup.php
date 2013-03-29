@@ -81,7 +81,7 @@ $packageNew = array(
 );
 
 // 2.x based installs need a custom path
-if(version_compare($coreBranch, '3.0') == -1) {
+if(preg_match('/^\d\.\d/', $coreBranch) && version_compare($coreBranch, '3.0') == -1) {
 	$packageNew["extra"] = array(
 		"installer-paths" => array(
 			"sapphire" => array("silverstripe/framework")
