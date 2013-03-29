@@ -107,6 +107,11 @@ echo "$composer\n\n";
 echo "Cloning installer@$coreBranch...\n";
 `git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath`;
 
+// Installer doesn't work out of the box without cms - delete the Page class if its not required
+if(!isset($packageNew['require']['silverstripe/cms']) && file_exists("$targetPath/mysite/code/Page.php")) {
+	unlink("$targetPath/mysite/code/Page.php");
+}
+
 echo "Setting up project...\n";
 `cp $dir/_ss_environment.php $targetPath/_ss_environment.php`;
 if($configPath) `cp $configPath $targetPath/mysite/_config.php`;
