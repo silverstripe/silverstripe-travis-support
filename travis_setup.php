@@ -46,7 +46,7 @@ $moduleRevision = getenv('TRAVIS_COMMIT');
 $moduleBranch = getenv('TRAVIS_BRANCH');
 $moduleBranchComposer = (preg_match('/^\d\.\d/', $moduleBranch)) ? $moduleBranch . '.x-dev' : 'dev-' . $moduleBranch;
 $coreBranch = getenv('CORE_RELEASE');
-$coreBranchComposer = (preg_match('/^\d\.\d/', $coreBranch)) ? $coreBranch . '.x-dev' : 'dev-' . $moduleBranch;
+$coreBranchComposer = (preg_match('/^\d\.\d/', $coreBranch)) ? $coreBranch . '.x-dev' : 'dev-' . $coreBranch;
 
 // Print out some environment information.
 printf("Environment:\n");
@@ -63,11 +63,21 @@ if(!file_exists("$modulePath/composer.json")) {
 }
 $package = json_decode(file_get_contents("$modulePath/composer.json"), true);
 
+// Override the default framework requirement with the one being built.
+$package += array(
+	'version' => $moduleBranchComposer,
+	'dist' => array(
+		'type' => 'tar',
+		'url' => "file://$parent/$moduleName.tar"
+	)
+);
+
 // Generate a custom composer file.
-$packageNew = array(
+$composer = array(
+	'repositories' => array(array('type' => 'package', 'package' => $package)),
 	'require' => array_merge(
 		isset($package['require']) ? $package['require'] : array(),
-		array($package['name'] => $moduleBranchComposer . '#' . $moduleRevision,)
+		array($package['name'] => $moduleBranchComposer)
 	),
 	// Always include DBs, allow module specific version dependencies though
 	'require-dev' => array_merge(
@@ -80,9 +90,15 @@ $packageNew = array(
 	)
 );
 
+// Framework and CMS need special treatment for version dependencies
+if(in_array($package['name'], array('silverstripe/cms', 'silverstripe/framework'))) {
+	// $composer['repositories'][0]['package']['version'] = $coreBranchComposer;
+	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
+}
+
 // 2.x based installs need a custom path
 if(preg_match('/^\d\.\d/', $coreBranch) && version_compare($coreBranch, '3.0') == -1) {
-	$packageNew["extra"] = array(
+	$composer["extra"] = array(
 		"installer-paths" => array(
 			"sapphire" => array("silverstripe/framework")
 		)
@@ -93,22 +109,26 @@ if(preg_match('/^\d\.\d/', $coreBranch) && version_compare($coreBranch, '3.0') =
 // This might be older than the latest permitted version based on the module definition.
 // Its up to the module author to declare compatible CORE_RELEASE values in the .travis.yml.
 // Leave dependencies alone if we're testing either of those modules directly.
-if(isset($packageNew['require']['silverstripe/framework']) && $package['name'] != 'silverstripe/framework') {
-	$packageNew['require']['silverstripe/framework'] = $coreBranchComposer;
+if(isset($composer['require']['silverstripe/framework']) && $package['name'] != 'silverstripe/framework') {
+	$composer['require']['silverstripe/framework'] = $coreBranchComposer;
 }
-if(isset($packageNew['require']['silverstripe/cms']) && $package['name'] != 'silverstripe/cms') {
-	$packageNew['require']['silverstripe/cms'] = $coreBranchComposer;
+if(isset($composer['require']['silverstripe/cms']) && $package['name'] != 'silverstripe/cms') {
+	$composer['require']['silverstripe/cms'] = $coreBranchComposer;
 }
-$composer = json_encode($packageNew);
+$composer = json_encode($composer);
 
 echo "Generated composer file:\n";
 echo "$composer\n\n";
+
+echo "Archiving $moduleName...\n";
+`cd $modulePath`;
+`tar -cf $parent/$moduleName.tar .`;
 
 echo "Cloning installer@$coreBranch...\n";
 `git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath`;
 
 // Installer doesn't work out of the box without cms - delete the Page class if its not required
-if(!isset($packageNew['require']['silverstripe/cms']) && file_exists("$targetPath/mysite/code/Page.php")) {
+if(!isset($composer['require']['silverstripe/cms']) && file_exists("$targetPath/mysite/code/Page.php")) {
 	unlink("$targetPath/mysite/code/Page.php");
 }
 
