@@ -115,10 +115,10 @@ if(isset($composer['require']['silverstripe/framework']) && $package['name'] != 
 if(isset($composer['require']['silverstripe/cms']) && $package['name'] != 'silverstripe/cms') {
 	$composer['require']['silverstripe/cms'] = $coreBranchComposer;
 }
-$composer = json_encode($composer);
+$composerStr = json_encode($composer);
 
 echo "Generated composer file:\n";
-echo "$composer\n\n";
+echo "$composerStr\n\n";
 
 echo "Archiving $moduleName...\n";
 `cd $modulePath`;
@@ -138,7 +138,7 @@ if($configPath) `cp $configPath $targetPath/mysite/_config.php`;
 
 echo "Replacing composer file...\n";
 unlink("$targetPath/composer.json");
-file_put_contents("$targetPath/composer.json", $composer);
+file_put_contents("$targetPath/composer.json", $composerStr);
 
 echo "Running composer...\n";
 passthru("composer install --prefer-dist --dev -d $targetPath");
