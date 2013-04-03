@@ -129,6 +129,7 @@ echo "Cloning installer@$coreBranch...\n";
 
 // Installer doesn't work out of the box without cms - delete the Page class if its not required
 if(!isset($composer['require']['silverstripe/cms']) && file_exists("$targetPath/mysite/code/Page.php")) {
+	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
 	unlink("$targetPath/mysite/code/Page.php");
 }
 
