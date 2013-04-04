@@ -142,4 +142,5 @@ unlink("$targetPath/composer.json");
 file_put_contents("$targetPath/composer.json", $composerStr);
 
 echo "Running composer...\n";
-passthru("composer install --prefer-dist --dev -d $targetPath");
+passthru("composer install --prefer-dist --dev -d $targetPath", $returnVar);
+if($returnVar > 0) die($returnVar);
