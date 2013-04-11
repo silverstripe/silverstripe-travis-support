@@ -58,7 +58,7 @@ printf("  * SQLite:     %s\n\n", trim(`sqlite3 -version`));
 // custom project composer file with the local package explicitly defined.
 echo "Reading composer information...\n";
 if(!file_exists("$modulePath/composer.json")) {
-	echo('File not found: $modulePath/composer.json');
+	echo("File not found: $modulePath/composer.json");
 	exit(1);
 }
 $package = json_decode(file_get_contents("$modulePath/composer.json"), true);
@@ -127,12 +127,6 @@ echo "Archiving $moduleName...\n";
 echo "Cloning installer@$coreBranch...\n";
 `git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath`;
 
-// Installer doesn't work out of the box without cms - delete the Page class if its not required
-if(!isset($composer['require']['silverstripe/cms']) && file_exists("$targetPath/mysite/code/Page.php")) {
-	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
-	unlink("$targetPath/mysite/code/Page.php");
-}
-
 echo "Setting up project...\n";
 `cp $dir/_ss_environment.php $targetPath/_ss_environment.php`;
 if($configPath) `cp $configPath $targetPath/mysite/_config.php`;
@@ -143,4 +137,11 @@ file_put_contents("$targetPath/composer.json", $composerStr);
 
 echo "Running composer...\n";
 passthru("composer install --prefer-dist --dev -d $targetPath", $returnVar);
+
+// Installer doesn't work out of the box without cms - delete the Page class if its not required
+if(!file_exists("$targetPath/cms") && file_exists("$targetPath/mysite/code/Page.php")) {
+	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
+	unlink("$targetPath/mysite/code/Page.php");
+}
+
 if($returnVar > 0) die($returnVar);
