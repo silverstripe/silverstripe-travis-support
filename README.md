@@ -123,6 +123,9 @@ env:
     - ...
 ```
 
+Note that this script comes with a default token. Since rate limitations on this token globally apply 
+to the user it is connected to, we ask to you be fair and configure your own tokens.
+
 ## Troubleshooting
 
 ### Testing travis_setup.php locally

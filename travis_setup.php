@@ -15,6 +15,12 @@ if (php_sapi_name() != 'cli') {
 	exit;
 }
 
+$defaults = array(
+	// Readonly token for 'silverstripe-issues' user to increase our rate limitation.
+	// Please be fair and define your own token if using for own projects.
+	'GITHUB_API_TOKEN' => '2434108664388ca0199319b98a6068af8e5dc547'
+);
+
 $opts = getopt('', array(
 	'source:', // required
 	'target:', // required
@@ -56,6 +62,7 @@ printf("  * SQLite:     %s\n\n", trim(`sqlite3 -version`));
 
 // Set up Github API token for higher rate limits (optional)
 // See http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/
+if(!getenv('GITHUB_API_TOKEN')) putenv('GITHUB_API_TOKEN=' . $defaults['GITHUB_API_TOKEN']);
 if(getenv('GITHUB_API_TOKEN') && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')) {
 	$composerGlobalConf = array('config' => array('github-oauth' => array('github.com' => getenv('GITHUB_API_TOKEN'))));
 	$composerConfDir = getenv("HOME") . '/.composer/';
