@@ -63,7 +63,11 @@ printf("  * SQLite:     %s\n\n", trim(`sqlite3 -version`));
 // Set up Github API token for higher rate limits (optional)
 // See http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/
 if(!getenv('GITHUB_API_TOKEN')) putenv('GITHUB_API_TOKEN=' . $defaults['GITHUB_API_TOKEN']);
-if(getenv('GITHUB_API_TOKEN') && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')) {
+if(
+	getenv('GITHUB_API_TOKEN') 
+	// Defaults to unencrypted tokens, so we don't need to exclude pull requests
+	// && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')
+) {
 	$composerGlobalConf = array('config' => array('github-oauth' => array('github.com' => getenv('GITHUB_API_TOKEN'))));
 	$composerConfDir = getenv("HOME") . '/.composer/';
 	if(!file_exists($composerConfDir)) mkdir($composerConfDir);
