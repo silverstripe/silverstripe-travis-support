@@ -64,10 +64,11 @@ Here's an example `.travis.yml`:
 	 - 5.3
 
 	env:
-	 - DB=MYSQL CORE_RELEASE=3.0
-	 - DB=MYSQL CORE_RELEASE=3.1
-	 - DB=MYSQL CORE_RELEASE=master
-	 - DB=PGSQL CORE_RELEASE=master
+    matrix:
+	   - DB=MYSQL CORE_RELEASE=3.0
+	   - DB=MYSQL CORE_RELEASE=3.1
+	   - DB=MYSQL CORE_RELEASE=master
+	   - DB=PGSQL CORE_RELEASE=master
 
 	matrix:
 	  include:
@@ -100,6 +101,27 @@ The first builds should start within a few minutes.
 
 As a bonus, you can include build status images in your README to promote the fact that
 your module values quality and does continuous integration. 
+
+## Github Rate Limitation
+
+Composer heavily relies on github's APIs for retrieving repository info and downloading archives.
+Github has a low rate limitation for unauthenticated requests. This means depending
+on how often your builds run (and the amount of executed API requests per build),
+your build can fail because of these side effects.
+
+This script supports a `GITHUB_API_TOKEN` value. If set, it'll write it to a global composer configuration
+([details](http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/)).
+It can optionally be encrypted through Travis' [secure environment variables](http://about.travis-ci.org/docs/user/build-configuration/#Secure-environment-variables).
+
+In order to activate the configuration, add an entry to `env.global` in your `.travis.yml`:
+
+```yml
+env:
+  global:
+    - GITHUB_API_TOKEN=<token>
+  matrix:
+    - ...
+```
 
 ## Troubleshooting
 

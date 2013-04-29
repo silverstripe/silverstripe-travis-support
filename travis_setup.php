@@ -54,6 +54,16 @@ printf("  * MySQL:      %s\n", trim(`mysql --version`));
 printf("  * PostgreSQL: %s\n", trim(`pg_config --version`));
 printf("  * SQLite:     %s\n\n", trim(`sqlite3 -version`));
 
+// Set up Github API token for higher rate limits (optional)
+// See http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/
+if(getenv('GITHUB_API_TOKEN') && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')) {
+	$composerGlobalConf = array('config' => array('github-oauth' => array('github.com' => getenv('GITHUB_API_TOKEN'))));
+	$composerConfDir = getenv("HOME") . '/.composer/';
+	if(!file_exists($composerConfDir)) mkdir($composerConfDir);
+	file_put_contents($composerConfDir . '/config.json', json_encode($composerGlobalConf));
+	echo "Using GITHUB_API_TOKEN...\n";
+}
+
 // Extract the package info from the module composer file, and build a
 // custom project composer file with the local package explicitly defined.
 echo "Reading composer information...\n";
