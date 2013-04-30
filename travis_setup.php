@@ -120,15 +120,6 @@ if(
 	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
 }
 
-// 2.x based installs need a custom path
-if(preg_match('/^\d\.\d/', $coreBranch) && version_compare($coreBranch, '3.0') == -1) {
-	$composer["extra"] = array(
-		"installer-paths" => array(
-			"sapphire" => array("silverstripe/framework")
-		)
-	);
-}
-
 // Override module dependencies in order to test with specific core branch.
 // This might be older than the latest permitted version based on the module definition.
 // Its up to the module author to declare compatible CORE_RELEASE values in the .travis.yml.
