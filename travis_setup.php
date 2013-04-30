@@ -112,7 +112,10 @@ $composer = array(
 );
 
 // Framework and CMS need special treatment for version dependencies
-if(in_array($package['name'], array('silverstripe/cms', 'silverstripe/framework'))) {
+if(
+	in_array($package['name'], array('silverstripe/cms', 'silverstripe/framework'))
+	&& $coreBranchComposer != $composer['require'][$package['name']]
+) {
 	// $composer['repositories'][0]['package']['version'] = $coreBranchComposer;
 	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
 }
