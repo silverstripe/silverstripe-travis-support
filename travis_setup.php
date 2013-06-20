@@ -146,9 +146,14 @@ echo "Setting up project...\n";
 `cp $dir/_ss_environment.php $targetPath/_ss_environment.php`;
 if($configPath) `cp $configPath $targetPath/mysite/_config.php`;
 
-echo "Replacing composer file...\n";
+echo "Replacing composer.json...\n";
 unlink("$targetPath/composer.json");
 file_put_contents("$targetPath/composer.json", $composerStr);
+
+if(file_exists("$targetPath/composer.lock")) {
+	echo "Removing composer.lock...\n";
+	unlink("$targetPath/composer.lock");
+}
 
 echo "Running composer...\n";
 passthru("composer install --prefer-dist --dev -d $targetPath", $returnVar);
