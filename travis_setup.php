@@ -111,13 +111,22 @@ $composer = array(
 	)
 );
 
+// Temporary workaround for removed framework dependency in 2.4 cms module
+// See https://github.com/silverstripe/silverstripe-cms/commit/2713c462a26494624169e0115323e5cdd5a07d50
+if(
+	version_compare($coreBranch, '3.0') == -1
+	&& $package['name'] == 'silverstripe/framework'
+) {
+	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
+}
+
 // Framework and CMS need special treatment for version dependencies
 if(
 	in_array($package['name'], array('silverstripe/cms', 'silverstripe/framework'))
 	&& $coreBranchComposer != $composer['require'][$package['name']]
 ) {
 	// $composer['repositories'][0]['package']['version'] = $coreBranchComposer;
-	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
+	$composer['require']['silverstripe/cms'] = $coreBranchComposer;
 }
 
 // Override module dependencies in order to test with specific core branch.
@@ -159,7 +168,11 @@ echo "Running composer...\n";
 passthru("composer install --prefer-dist --dev -d $targetPath", $returnVar);
 
 // Installer doesn't work out of the box without cms - delete the Page class if its not required
-if(!file_exists("$targetPath/cms") && file_exists("$targetPath/mysite/code/Page.php")) {
+if(
+	!file_exists("$targetPath/cms") 
+	&& file_exists("$targetPath/mysite/code/Page.php")
+	&& version_compare($coreBranch, '3.0') >= 0
+) {
 	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
 	unlink("$targetPath/mysite/code/Page.php");
 }
