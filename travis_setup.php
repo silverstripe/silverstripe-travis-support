@@ -90,6 +90,11 @@ $package += array(
 	'dist' => array(
 		'type' => 'tar',
 		'url' => "file://$parent/$moduleName.tar"
+	),
+	'extra' => array(
+		'branch-alias' => array(
+			'dev-' . $moduleBranch => $coreBranchComposer
+		)
 	)
 );
 
