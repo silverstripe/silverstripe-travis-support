@@ -112,7 +112,8 @@ $composer = array(
 	),
 	'minimum-stability' => 'dev',
 	'config' => array(
-		'notify-on-install' => false
+		'notify-on-install' => false,
+		'process-timeout' => 600, // double default timeout, github archive downloads tend to be slow
 	)
 );
 
