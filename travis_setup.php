@@ -50,9 +50,28 @@ $parent = dirname($modulePath);
 // Get exact version of downloaded module so we can re-download via composer
 $moduleRevision = getenv('TRAVIS_COMMIT');
 $moduleBranch = getenv('TRAVIS_BRANCH');
-$moduleBranchComposer = (preg_match('/^\d\.\d/', $moduleBranch)) ? $moduleBranch . '.x-dev' : 'dev-' . $moduleBranch;
+if(preg_match('/^\d\.\d$/', $moduleBranch)) {
+	// release branch
+	$moduleBranchComposer = $moduleBranch . '.x-dev';
+} else if(preg_match('/^\d\.\d\.\d$/', $moduleBranch)) {
+	// tag
+	$moduleBranchComposer = $moduleBranch;
+} else {
+	// pull request or "master"
+	$moduleBranchComposer = 'dev-' . $moduleBranch;
+}
+
 $coreBranch = getenv('CORE_RELEASE');
-$coreBranchComposer = (preg_match('/^\d\.\d/', $coreBranch)) ? $coreBranch . '.x-dev' : 'dev-' . $coreBranch;
+if(preg_match('/^\d\.\d$/', $coreBranch)) {
+	// release branch
+	$coreBranchComposer = $coreBranch . '.x-dev';
+} else if(preg_match('/^\d\.\d\.\d$/', $coreBranch)) {
+	// tag
+	$coreBranchComposer = $coreBranch;
+} else {
+	// pull request or "master"
+	$coreBranchComposer = 'dev-' . $coreBranch;
+}
 
 // Print out some environment information.
 printf("Environment:\n");
