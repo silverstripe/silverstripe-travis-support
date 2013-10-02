@@ -22,8 +22,6 @@ default:
 	define('SS_DATABASE_PASSWORD', '');
 }
 
-echo 'Building on ' . SS_DATABASE_CLASS . "\n\n";
-
 define('SS_DATABASE_SERVER', 'localhost'); 
 define('SS_DATABASE_CHOOSE_NAME', true);
 
