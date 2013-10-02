@@ -10,16 +10,17 @@ case "PGSQL";
 	define('SS_DATABASE_PASSWORD', '');
 	break;
 
-case "MYSQL":
-	define('SS_DATABASE_CLASS', 'MySQLDatabase');
+case "SQLITE":
+	define('SS_DATABASE_CLASS', 'SQLitePDODatabase');
 	define('SS_DATABASE_USERNAME', 'root'); 
 	define('SS_DATABASE_PASSWORD', '');
 	break;
 
 default:
-	define('SS_DATABASE_CLASS', 'SQLitePDODatabase');
+	define('SS_DATABASE_CLASS', 'MySQLDatabase');
 	define('SS_DATABASE_USERNAME', 'root'); 
 	define('SS_DATABASE_PASSWORD', '');
+
 }
 
 define('SS_DATABASE_SERVER', 'localhost'); 
