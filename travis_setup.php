@@ -25,6 +25,7 @@ $opts = getopt('', array(
 	'source:', // required
 	'target:', // required
 	'config:',
+	'require:'
 ));
 
 // Sanity checks
@@ -135,6 +136,9 @@ $composer = array(
 		'process-timeout' => 600, // double default timeout, github archive downloads tend to be slow
 	)
 );
+
+// Add a custom requirement
+if(!empty($opts['require'])) $composer['require'][$opts['require']] = "*";
 
 // Temporary workaround for removed framework dependency in 2.4 cms module
 // See https://github.com/silverstripe/silverstripe-cms/commit/2713c462a26494624169e0115323e5cdd5a07d50

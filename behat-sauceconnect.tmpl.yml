@@ -1,0 +1,23 @@
+default:
+  filters:
+    tags: "~@todo"
+  formatter:
+    name: pretty
+    parameters:
+      snippets: false
+
+  extensions:
+    SilverStripe\BehatExtension\MinkExtension:
+      base_url: $BASE_URL
+
+      # TODO Dynamically set through LocatorProcessor
+      files_path: %behat.paths.base%/framework/tests/behat/features/files/
+      default_session: saucelabs
+      javascript_session: saucelabs
+      goutte: ~
+      saucelabs:
+        connect: true
+        username: $SAUCE_USERNAME
+        access_key: $SAUCE_ACCESS_KEY
+
+    SilverStripe\BehatExtension\Extension: ~
