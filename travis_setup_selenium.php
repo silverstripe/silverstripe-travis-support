@@ -16,7 +16,7 @@ if(!empty($opts['if-env']) && !getenv($opts['if-env'])) {
 echo "Starting Sauce Connect...\n";
 
 passthru("sh -e /etc/init.d/xvfb start");
-passthru("export DISPLAY=:99.0");
+if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
 passthru("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar");
 passthru("java -jar selenium-server-standalone-2.31.0.jar > /dev/null &");
 sleep(5);
