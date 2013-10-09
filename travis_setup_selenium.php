@@ -21,5 +21,5 @@ passthru("wget http://selenium.googlecode.com/files/selenium-server-standalone-2
 passthru("java -jar selenium-server-standalone-2.31.0.jar > /dev/null &");
 sleep(5);
 
-passthru("export BEHAT_PARAMS=\"extensions[SilverStripe\BehatExtension\MinkExtension][base_url]={$opts['base-url']}\"");
+passthru("export BEHAT_PARAMS=\"extensions[SilverStripe\BehatExtension\MinkExtension][base_url]={$opts['base-url']}&extensions[SilverStripe\BehatExtension\Extension][screenshot_path]=%behat.paths.base%/artifacts/screenshots\"");
 passthru("php framework/cli-script.php dev/generatesecuretoken path=mysite/_config/behat.yml");
