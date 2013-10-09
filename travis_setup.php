@@ -9,11 +9,12 @@
  * and installs it into a separate webroot. The originally downloaded module
  * code is re-installed via composer.
  */
-
 if (php_sapi_name() != 'cli') {
 	header('HTTP/1.0 404 Not Found');
 	exit;
 }
+
+require_once 'lib.php';
 
 $defaults = array(
 	// Readonly token for 'silverstripe-issues' user to increase our rate limitation.
@@ -36,7 +37,7 @@ if (!$opts) {
 $requiredEnvs = array('TRAVIS_COMMIT', 'TRAVIS_BRANCH', 'CORE_RELEASE');
 foreach($requiredEnvs as $requiredEnv) {
 	if(!getenv($requiredEnv)) {
-		echo(sprintf('Environment variable "%s" not defined', $requiredEnv));
+		echo(sprintf('Environment variable "%s" not defined', $requiredEnv) . "\n");
 		exit(1);
 	}
 }
@@ -182,28 +183,24 @@ $composerStr = json_encode($composer);
 echo "Generated composer file:\n";
 echo "$composerStr\n\n";
 
-echo "Archiving $moduleName...\n";
-`cd $modulePath`;
-`tar -cf $parent/$moduleName.tar .`;
+run("cd $modulePath");
 
-echo "Cloning installer@$coreBranch...\n";
-`git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath`;
+run("tar -cf $parent/$moduleName.tar .");
 
-echo "Setting up project...\n";
-`cp $dir/_ss_environment.php $targetPath/_ss_environment.php`;
-if($configPath) `cp $configPath $targetPath/mysite/_config.php`;
+run("git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
 
-echo "Replacing composer.json...\n";
-unlink("$targetPath/composer.json");
+run("cp $dir/_ss_environment.php $targetPath/_ss_environment.php");
+if($configPath) run("cp $configPath $targetPath/mysite/_config.php");
+
+run("rm $targetPath/composer.json");
+echo "Writing new composer.json to $targetPath/composer.json\n";
 file_put_contents("$targetPath/composer.json", $composerStr);
 
 if(file_exists("$targetPath/composer.lock")) {
-	echo "Removing composer.lock...\n";
-	unlink("$targetPath/composer.lock");
+	run("rm $targetPath/composer.lock");
 }
 
-echo "Running composer...\n";
-passthru("composer install --prefer-dist --dev -d $targetPath", $returnVar);
+run("composer install --prefer-dist --dev -d $targetPath");
 
 // Installer doesn't work out of the box without cms - delete the Page class if its not required
 if(
@@ -212,7 +209,5 @@ if(
 	&& version_compare($coreBranch, '3.0') >= 0
 ) {
 	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
-	unlink("$targetPath/mysite/code/Page.php");
+	run("rm $targetPath/mysite/code/Page.php");
 }
-
-if($returnVar > 0) die($returnVar);

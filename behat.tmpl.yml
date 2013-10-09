@@ -10,13 +10,11 @@ default:
     SilverStripe\BehatExtension\MinkExtension:
       base_url: $BASE_URL
       files_path: %behat.paths.base%/framework/tests/behat/features/files/
-      default_session: saucelabs
-      javascript_session: saucelabs
+      default_session: selenium2
+      javascript_session: selenium2
       goutte: ~
-      saucelabs:
-        connect: true
-        username: $SAUCE_USERNAME
-        access_key: $SAUCE_ACCESS_KEY
+      selenium2:
+        browser: firefox
 
-    SilverStripe\BehatExtension\Extension: ~
+    SilverStripe\BehatExtension\Extension:
       screenshot_path: %behat.paths.base%/artifacts/screenshots

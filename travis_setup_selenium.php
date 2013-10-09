@@ -1,6 +1,9 @@
 #!/usr/bin/env php
 <?php
-
+/**
+ * Assumes to run in a SilverStripe webroot
+ */
+require_once 'lib.php';
 
 $opts = getopt('', array(
 	'if-env:',
@@ -8,18 +11,31 @@ $opts = getopt('', array(
 ));
 
 // --if-env=BEHAT_TEST means that this script will only be executed if the given environment var is set
-if(!empty($opts['if-env']) && !getenv($opts['if-env'])) {
+if(!checkenv(@$opts['if-env'])) {
 	echo "Apache skipped; {$opts['if-env']} wasn't set.\n";
 	exit(0);
 }
 
+$baseurl = (isset($opts['base-url'])) ? $opts['base-url'] : 'http://localhost:8000';
+
 echo "Starting Sauce Connect...\n";
 
-passthru("sh -e /etc/init.d/xvfb start");
+run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
-passthru("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar");
-passthru("java -jar selenium-server-standalone-2.31.0.jar > /dev/null &");
+run("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar");
+run("java -jar selenium-server-standalone-2.35.0.jar > /dev/null &");
 sleep(5);
 
-passthru("export BEHAT_PARAMS=\"extensions[SilverStripe\BehatExtension\MinkExtension][base_url]={$opts['base-url']}\"");
-passthru("php framework/cli-script.php dev/generatesecuretoken path=mysite/_config/behat.yml");
+// Write templated behat configuration
+$behatTemplate = file_get_contents(dirname(__FILE__).'/behat.tmpl.yml');
+$behat = str_replace(
+	array('$BASE_URL'),
+	array($baseurl),
+	$behatTemplate
+);
+echo "Writing behat.yml\n";
+echo $behat . "\n";
+file_put_contents("behat.yml", $behat);
+
+if(file_exists("mysite/_config/behat.yml")) unlink("mysite/_config/behat.yml");
+run("php framework/cli-script.php dev/generatesecuretoken path=mysite/_config/behat.yml");

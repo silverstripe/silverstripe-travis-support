@@ -1,6 +1,10 @@
 #!/usr/bin/env php
 <?php
+/**
+ * Assumes to run in a SilverStripe webroot
+ */
 
+require_once 'lib.php';
 
 $opts = getopt('', array(
 	'if-env:',
@@ -11,7 +15,7 @@ $opts = getopt('', array(
 ));
 
 // --if-env=BEHAT_TEST means that this script will only be executed if the given environment var is set
-if(!empty($opts['if-env']) && !getenv($opts['if-env'])) {
+if(!checkenv(@$opts['if-env'])) {
 	echo "Apache skipped; {$opts['if-env']} wasn't set.\n";
 	exit(0);
 }
@@ -33,13 +37,13 @@ mkdir($connectDir, 0777, true);
 
 // Download sauce connect if not already downloaded
 if(!file_exists("Sauce-Connect.jar")) {
-	passthru("curl $CLI_connectURL > $CLI_connectDownload");
-	passthru("unzip $CLI_connectDownload");
-	unlink($connectDownload);
+	run("curl $CLI_connectURL > $CLI_connectDownload");
+	run("unzip $CLI_connectDownload");
+	run("rm $CLI_connectDownload");
 }
 
 // Start Sauce Connect
-shell_exec("java -jar Sauce-Connect.jar --readyfile $CLI_readyFile --tunnel-identifier {$opts['tunnel-identifier']}"
+run("java -jar Sauce-Connect.jar --readyfile $CLI_readyFile --tunnel-identifier {$opts['tunnel-identifier']}"
 	. " {$opts['username']} {$opts['access-key']} > /dev/null &");
 
 while(!file_exists($readyFile)) {
@@ -53,8 +57,9 @@ $behat = str_replace(
 	array($opts['base-url'] ,$opts['username'], $opts['access-key'], $opts['tunnel-identifier']),
 	$behatTemplate
 );
-
+echo "Writing behat.yml\n";
+echo $behat . "\n";
 file_put_contents("behat.yml", $behat);
 
 if(file_exists("mysite/_config/behat.yml")) unlink("mysite/_config/behat.yml");
-passthru("php framework/cli-script.php dev/generatesecuretoken path=mysite/_config/behat.yml");
+run("php framework/cli-script.php dev/generatesecuretoken path=mysite/_config/behat.yml");

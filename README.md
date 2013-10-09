@@ -126,6 +126,70 @@ env:
 Note that this script comes with a default token. Since rate limitations on this token globally apply 
 to the user it is connected to, we ask to you be fair and configure your own tokens.
 
+## Behat and Selenium
+
+The scripts also allow behaviour testing through [Behat](http://behat.org).
+The easiest way to get this going is through a locally running Selenium server
+and PHP's built-in webserver. Here's a sample setup:
+
+```yml
+language: php 
+
+matrix:
+  include:
+    - php: 5.3
+      env: DB=MYSQL CORE_RELEASE=3.1
+    - php: 5.4
+      env: DB=MYSQL CORE_RELEASE=3.1 BEHAT_TEST=1
+
+before_script:
+ - composer self-update
+ - phpenv rehash
+ - git clone -b tmp/travis-artifacts git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
+ - "if [ \"$BEHAT_TEST\" = \"\" ]; then php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss; fi"
+ - "if [ \"$BEHAT_TEST\" = \"1\" ]; then php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension; fi"
+ - cd ~/builds/ss
+ - php ~/travis-support/travis_setup_selenium.php --if-env BEHAT_TEST
+ - php ~/travis-support/travis_setup_php54_webserver.php --if-env BEHAT_TEST
+
+script: 
+ - "if [ \"$BEHAT_TEST\" = \"\" ]; then phpunit framework/tests; fi"
+ - "if [ \"$BEHAT_TEST\" = \"1\" ]; then vendor/bin/behat @framework; fi"
+```
+
+## Artifacts Upload
+
+Since Travis builds are stateless, you can't inspect anything apart from the actual build log
+after the build has finished. This is an issue for larger files like server logs, and of course for images.
+Travis provides the ["travis-artifacts" gem](http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/)
+for this purpose, allowing upload to Amazon S3. Since Behat creates screenshots of any failed test step
+already, this is a useful addition to any Behat script. The `behat.yml` created through `travis_setup_selenium.php`
+is already set up to save its screenshots into `artifacts/screenshots/`.
+
+```yml
+language: php 
+
+env:
+  global:
+    - "ARTIFACTS_AWS_REGION=us-east-1"
+    - "ARTIFACTS_S3_BUCKET=my-bucket"
+    - secure: "..."
+    - secure: "..."
+
+matrix:
+  include:
+    - ...
+
+before_script:
+ - ...
+
+script: 
+ - ...
+
+after_script:
+ - php ~/travis-support/travis_upload_artifacts.php --if-env BEHAT_TEST,ARTIFACTS_AWS_SECRET_ACCESS_KEY --target-path artifacts/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID --artifacts-base-url https://s3.amazonaws.com/$ARTIFACTS_S3_BUCKET/
+```
+
 ## Troubleshooting
 
 ### Testing travis_setup.php locally
