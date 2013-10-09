@@ -62,6 +62,7 @@ if(preg_match('/^\d\.\d$/', $moduleBranch)) {
 	$moduleBranchComposer = 'dev-' . $moduleBranch;
 }
 
+// Identify core branch from environment data
 $coreBranch = getenv('CORE_RELEASE');
 if(preg_match('/^\d\.\d$/', $coreBranch)) {
 	// release branch
@@ -72,6 +73,14 @@ if(preg_match('/^\d\.\d$/', $coreBranch)) {
 } else {
 	// pull request or "master"
 	$coreBranchComposer = 'dev-' . $coreBranch;
+}
+
+// Respect branch alias in core
+$frameworkPackageInfo = json_decode(file_get_contents('https://packagist.org/packages/silverstripe/framework.json'), true);
+if(isset($frameworkPackageInfo['package']['versions'][$coreBranchComposer]['extra']['branch-alias'][$coreBranchComposer])) {
+	$coreBranchComposer = $frameworkPackageInfo['package']['versions'][$coreBranchComposer]['extra']['branch-alias'][$coreBranchComposer];
+	// Leave $coreBranch at original value, since it doesn't resolve as a git branch
+	// $coreBranch = preg_replace('/\.x-dev$/', '', $coreBranchComposer);
 }
 
 // Print out some environment information.
