@@ -1,6 +1,6 @@
 default:
   filters:
-    tags: "~@todo&&~@assets"
+    tags: "~@todo"
   formatter:
     name: pretty
     parameters:
