@@ -215,7 +215,7 @@ run("composer install --prefer-dist --dev -d $targetPath");
 if(
 	!file_exists("$targetPath/cms") 
 	&& file_exists("$targetPath/mysite/code/Page.php")
-	&& version_compare($coreBranch, '3.0') >= 0
+	&& ($coreBranch == 'master' || version_compare($coreBranch, '3.0') >= 0)
 ) {
 	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
 	run("rm $targetPath/mysite/code/Page.php");
