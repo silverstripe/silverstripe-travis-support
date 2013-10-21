@@ -181,10 +181,10 @@ if(isset($composer['require']['silverstripe/cms']) && $package['name'] != 'silve
 
 // Add theme based on version. Important for Behat testing.
 // TODO Determine dependency based on actual composer.json in silverstripe-installer
-if(version_compare($coreBranch, '3.0') == -1) {
-	$composer['require']['silverstripe-themes/blackcandy'] = '*';
-} else {
+if($coreBranch == 'master' || version_compare($coreBranch, '3.0') >= 0) {
 	$composer['require']['silverstripe-themes/simple'] = '*';
+} else {
+	$composer['require']['silverstripe-themes/blackcandy'] = '*';
 }
 
 $composerStr = json_encode($composer);
