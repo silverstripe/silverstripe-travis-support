@@ -23,7 +23,7 @@ echo "Starting Sauce Connect...\n";
 run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
 run("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar");
-run("java -jar selenium-server-standalone-2.35.0.jar > /dev/null &");
+run("java -jar selenium-server-standalone-2.35.0.jar &> artifacts/selenium.log &");
 sleep(5);
 
 // Write templated behat configuration
