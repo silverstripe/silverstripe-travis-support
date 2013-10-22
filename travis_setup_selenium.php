@@ -18,7 +18,7 @@ if(!checkenv(@$opts['if-env'])) {
 
 $baseurl = (isset($opts['base-url'])) ? $opts['base-url'] : 'http://localhost:8000';
 
-echo "Starting Sauce Connect...\n";
+echo "Starting Selenium...\n";
 
 run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
