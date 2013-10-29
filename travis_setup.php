@@ -115,7 +115,7 @@ if(!file_exists("$modulePath/composer.json")) {
 $package = json_decode(file_get_contents("$modulePath/composer.json"), true);
 
 // Override the default framework requirement with the one being built.
-$package = $package + array(
+$package = array_merge($package, array(
 	'version' => $moduleBranchComposer,
 	'dist' => array(
 		'type' => 'tar',
@@ -126,7 +126,7 @@ $package = $package + array(
 			'dev-' . $moduleBranch => $coreBranchComposer
 		)
 	)
-);
+));
 
 // Generate a custom composer file.
 $composer = array(
