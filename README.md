@@ -1,12 +1,14 @@
-# Howto: Continuous Integration for SilverStripe Modules with Travis and Composer
+# Travis Integration for SilverStripe Modules
 
 ## Introduction
 
-[Travis](http://travis-ci.org] is an open source platform for [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration), which mostly means running your unit tests every time you commit to a codebase.
+[Travis](http://travis-ci.org) is an open source platform for [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration), 
+which mostly means running your unit tests every time you commit to a codebase.
 The platform is free for open source projects, and integrates nicely with Github.
+Since each SilverStripe module needs to be tested within a SilverStripe project,
+there's a bit of setup work required on top of the standard [Composer](http://getcomposer.org) dependency management.
 
-In this guide, we'll show you how to set up a SilverStripe module to work with Travis
-across multiple branches, and different dependencies managed through [Composer](http://getcomposer.org).
+The scripts allow you to test across multiple branches, and rewrite the `composer.json` to match dependencies.
 The scripts will test your module against multiple core releases, as well as multiple databases (if supported).
 See it in action on the ["translatable" module](https://travis-ci.org/silverstripe/silverstripe-translatable/).
 
@@ -215,14 +217,3 @@ on building a specific commit on the `1.0` branch of the `translatable` module:
 Note: Each SilverStripe module only works as a subfolder in the context of a SilverStripe project,
 and requires at least the SilverStripe framework. So we need to ensure the plain module
 checkout which Travis performs by defaults get rewritten to this.
-
-### Testing Builds through Travis-provided VMs
-
-In the rare cases where Travis mysteriously fails to build your project
-in a way that you can't reproduce on your own development environment,
-Travis also provides virtual images to replicate its builder boxes,
-and run your builds in there. Here's how to get started:
-
- * http://ruby-journal.com/debug-your-failed-test-in-travis-ci/
- * http://reidburke.com/2013/01/28/debugging-travis-builds/
- * https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22
