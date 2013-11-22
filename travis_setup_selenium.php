@@ -22,9 +22,9 @@ echo "Starting Selenium...\n";
 
 run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
-run("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar");
+run("wget http://selenium.googlecode.com/files/selenium-server-standalone-2.37.0.jar");
 if(!file_exists('artifacts')) mkdir('artifacts');
-run("java -jar selenium-server-standalone-2.35.0.jar > artifacts/selenium.log 2>&1 &");
+run("java -jar selenium-server-standalone-2.37.0.jar > artifacts/selenium.log 2>&1 &");
 sleep(5);
 
 // Write templated behat configuration
