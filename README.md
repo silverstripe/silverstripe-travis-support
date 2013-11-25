@@ -54,7 +54,7 @@ so they're discoverable by Composer.
 
 ## Travis Setup
 
-The free [Travis](http://travis.org) CI service is configured by placing a hidden
+The free [Travis](http://travis-ci.com/) CI service is configured by placing a hidden
 `.travis.yml` file into the root of your module
 (read me about the [Travis YML format](http://about.travis-ci.org/docs/user/build-configuration)).
 
