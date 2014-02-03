@@ -188,7 +188,9 @@ if($coreBranch == 'master' || version_compare($coreBranch, '3.0') >= 0) {
 }
 
 //coveralls
-$composer['require']['satooshi/php-coveralls'] = '*';
+if(getenv('COVERALLS')){
+	$composer['require']['satooshi/php-coveralls'] = '*';
+}
 
 $composerStr = json_encode($composer);
 
