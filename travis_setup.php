@@ -187,6 +187,11 @@ if($coreBranch == 'master' || version_compare($coreBranch, '3.0') >= 0) {
 	$composer['require']['silverstripe-themes/blackcandy'] = '*';
 }
 
+//coveralls
+if(getenv('COVERALLS')){
+	$composer['require']['satooshi/php-coveralls'] = '*';
+}
+
 $composerStr = json_encode($composer);
 
 echo "Generated composer file:\n";
