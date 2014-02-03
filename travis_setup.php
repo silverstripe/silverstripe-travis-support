@@ -115,7 +115,7 @@ if(!file_exists("$modulePath/composer.json")) {
 $package = json_decode(file_get_contents("$modulePath/composer.json"), true);
 
 // Override the default framework requirement with the one being built.
-$package = array_merge_recursive($package, array(
+$package = array_replace_recursive($package, array(
 	'version' => $moduleBranchComposer,
 	'dist' => array(
 		'type' => 'tar',
