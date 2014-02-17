@@ -1,0 +1,112 @@
+#!/usr/bin/env php
+<?php
+
+if(!file_exists(".travis.yml")) {
+	echo "Can't see a .travis.yml file here; please run this script inside your git repo.\n";
+	exit(1);
+}
+
+$targetDirSuffix = '-'.str_replace(array('/','.'),'-',realpath(getcwd()));
+$targetDirSuffix = preg_replace('/-+/','-', $targetDirSuffix);
+
+$targetDir = "/tmp/travis-build" . $targetDirSuffix;
+
+$args = $_SERVER['argv'];
+array_shift($args);
+
+$envs = array(	
+	'DB' => 'DB=MYSQL',
+	'CORE_RELEASE' => 'CORE_RELEASE=master',
+);
+
+foreach($args as $arg) {
+	list($k, $v) = explode('=',$arg,2);
+	if($k == 'DB' || $k == 'CORE_RELEASE') {
+		$envs[$k] = $arg;
+	} else {
+		echo "Bad arg '$arg'\n";
+		exit(1);
+	}
+}
+
+$branch = trim(`git branch | grep ^* | awk ' { print $2 } '`);
+if($branch) {
+	$envs[] = "TRAVIS_BRANCH=$branch";
+	$envs[] = "TRAVIS_COMMIT=$branch";
+	
+} else {
+	echo "Can't determine current branch.\n";
+	exit(1);
+}
+
+echo "Using $targetDir as build directory...\n";
+
+
+if($targetDir && substr($targetDir,0,4) == "/tmp" && file_exists($targetDir)) {
+	$command = "rm -rf " . escapeshellarg($targetDir);
+	passthru($command);
+}
+
+mkdir($targetDir);
+
+$command = implode(" ", $envs) . " php"
+	. " " . escapeshellarg(__DIR__  . '/travis_setup.php')
+	. " " . escapeshellarg("--source=" . getcwd())
+	. " " . escapeshellarg("--target=" . $targetDir);
+
+// Check the source setup command for a --require option
+$origCommand = preg_replace('/^ +- +/', '', trim(`grep travis_setup.php .travis.yml`));
+if(preg_match('/--require[= ]([^ ]+)/', $origCommand, $matches)) {
+	$command .= " --require " . $matches[1];
+}
+
+echo "Executing $command...\n";
+
+passthru($command);
+
+// Modify the default Travis _ss_environment.php file with your database config
+$searches = $replacements = array();
+
+foreach(array("_ss_environment.php", "../_ss_environment.php", "../../_ss_environment.php", "../../../_ss_environment.php") as $envFile) {
+	if(file_exists($envFile)) {
+		include($envFile);
+		break;
+	}
+}
+if(defined('SS_DATABASE_USERNAME') || defined('SS_DATABASE_PASSWORD')) {
+	echo "Updating _ss_environment.php...\n";
+	$envContent = file_get_contents(__DIR__ . '/_ss_environment.tmpl.php');
+
+	if(defined('SS_DATABASE_USERNAME')) {
+		$searches[] = "#! SS_DATABASE_USERNAME !#";
+		$replacements[] = addslashes(SS_DATABASE_USERNAME);
+	}
+	if(defined('SS_DATABASE_PASSWORD')) {
+		$searches[] = "#! SS_DATABASE_PASSWORD !#";
+		$replacements[] = addslashes(SS_DATABASE_PASSWORD);
+	}
+
+	if(defined('SS_PGSQL_DATABASE_USERNAME')) {
+		$searches[] = "#! SS_PGSQL_DATABASE_USERNAME !#";
+		$replacements[] = addslashes(SS_PGSQL_DATABASE_USERNAME);
+	} elseif(defined('SS_POSTGRES_DATABASE_USERNAME')) {
+		$searches[] = "#! SS_PGSQL_DATABASE_USERNAME !#";
+		$replacements[] = addslashes(SS_POSTGRES_DATABASE_USERNAME);
+	}
+	if(defined('SS_PGSQL_DATABASE_PASSWORD')) {
+		$searches[] = "#! SS_PGSQL_DATABASE_PASSWORD !#";
+		$replacements[] = addslashes(SS_PGSQL_DATABASE_PASSWORD);
+	} elseif(defined('SS_POSTGRES_DATABASE_PASSWORD')) {
+		$searches[] = "#! SS_PGSQL_DATABASE_PASSWORD !#";
+		$replacements[] = addslashes(SS_POSTGRES_DATABASE_PASSWORD);
+	}
+
+	$envContent = str_replace($searches, $replacements, $envContent);
+	file_put_contents($targetDir . '/_ss_environment.php', $envContent);
+}
+
+echo "\n";
+echo "Test environment configured; now run
+
+cd $targetDir
+phpunit <module>/tests\n";
