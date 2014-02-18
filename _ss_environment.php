@@ -14,6 +14,7 @@ case "SQLITE":
 	define('SS_DATABASE_CLASS', 'SQLitePDODatabase');
 	define('SS_DATABASE_USERNAME', 'root'); 
 	define('SS_DATABASE_PASSWORD', '');
+	define('SS_SQLITE_DATABASE_PATH', ':memory:');
 	break;
 
 default:
