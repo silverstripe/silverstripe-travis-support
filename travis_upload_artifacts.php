@@ -30,7 +30,8 @@ if(!file_exists($artifactsPath)) {
 	exit(0);
 }
 
-run("gem install travis-artifacts");
+run("gem install --no-rdoc --no-ri --version 0.8.9 faraday");
+run("gem install --no-rdoc --no-ri travis-artifacts");
 
 echo "Creating $artifactsPath/index.html...\n";
 
