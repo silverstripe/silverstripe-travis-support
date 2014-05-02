@@ -84,7 +84,7 @@ Here's an example `.travis.yml`:
 	 - cd ~/builds/ss
 
 	script: 
-	 - phpunit <yourmodule>/tests/
+	 - vendor/bin/phpunit <yourmodule>/tests/
   ```
 
 Now adjust the `<yourmodule>` path in `.travis.yml`, in the example above it would be `my-awesome-module`.
@@ -155,7 +155,7 @@ before_script:
  - php ~/travis-support/travis_setup_php54_webserver.php --if-env BEHAT_TEST
 
 script: 
- - "if [ \"$BEHAT_TEST\" = \"\" ]; then phpunit framework/tests; fi"
+ - "if [ \"$BEHAT_TEST\" = \"\" ]; then vendor/bin/phpunit framework/tests; fi"
  - "if [ \"$BEHAT_TEST\" = \"1\" ]; then vendor/bin/behat @framework; fi"
 ```
 
