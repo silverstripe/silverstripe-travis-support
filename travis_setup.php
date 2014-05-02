@@ -96,7 +96,7 @@ printf("  * PHPUnit:     %s\n\n", trim(`phpunit --version`));
 // See http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/
 if(!getenv('GITHUB_API_TOKEN')) putenv('GITHUB_API_TOKEN=' . $defaults['GITHUB_API_TOKEN']);
 if(
-	getenv('GITHUB_API_TOKEN') 
+	getenv('GITHUB_API_TOKEN')
 	// Defaults to unencrypted tokens, so we don't need to exclude pull requests
 	// && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')
 ) {
@@ -139,7 +139,11 @@ $composer = array(
 	),
 	// Always include DBs, allow module specific version dependencies though
 	'require-dev' => array_merge(
-		array('silverstripe/postgresql' => '*','silverstripe/sqlite3' => '*'),
+		array(
+			'silverstripe/postgresql' => '*',
+			'silverstripe/sqlite3' => '*',
+			'phpunit/PHPUnit' => '~3.7' // Default phpunit version if none specified
+		),
 		isset($package['require-dev']) ? $package['require-dev'] : array()
 	),
 	'minimum-stability' => 'dev',
