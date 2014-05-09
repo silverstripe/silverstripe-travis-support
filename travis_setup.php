@@ -90,7 +90,6 @@ printf("  * MySQL:      %s\n", trim(`mysql --version`));
 printf("  * PostgreSQL: %s\n", trim(`pg_config --version`));
 printf("  * SQLite:     %s\n\n", trim(`sqlite3 -version`));
 printf("  * PHP:     %s\n\n", trim(`php --version`));
-printf("  * PHPUnit:     %s\n\n", trim(`phpunit --version`));
 
 // Set up Github API token for higher rate limits (optional)
 // See http://blog.simplytestable.com/creating-and-using-a-github-oauth-token-with-travis-and-composer/
@@ -142,7 +141,7 @@ $composer = array(
 		array(
 			'silverstripe/postgresql' => '*',
 			'silverstripe/sqlite3' => '*',
-			'phpunit/PHPUnit' => '~3.7' // Default phpunit version if none specified
+			'phpunit/PHPUnit' => '~3.7@stable' // Default phpunit version if none specified
 		),
 		isset($package['require-dev']) ? $package['require-dev'] : array()
 	),
