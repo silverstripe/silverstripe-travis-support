@@ -12,7 +12,6 @@ default:
       files_path: %behat.paths.base%/framework/tests/behat/features/files/
       default_session: saucelabs
       javascript_session: saucelabs
-      goutte: ~
       saucelabs:
         connect: true
         username: $SAUCE_USERNAME
