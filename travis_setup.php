@@ -153,7 +153,15 @@ $composer = array(
 );
 
 // Add a custom requirement
-if(!empty($opts['require'])) $composer['require'][$opts['require']] = "*";
+if(!empty($opts['require'])) {
+	// this allows for arguments like "silverstripe/behat-extension:dev-master" where "dev-master" would be the branch
+	// to use for that requirement. If just specifying "silverstripe/behat-extension" without the separator, default
+	// to the branch being "*"
+	$requireParts = explode(':', $opts['require']);
+	$requireName = $requireParts[0];
+	$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
+	$composer['require'][$requireName] = $requireBranch;
+}
 
 // Temporary workaround for removed framework dependency in 2.4 cms module
 // See https://github.com/silverstripe/silverstripe-cms/commit/2713c462a26494624169e0115323e5cdd5a07d50
