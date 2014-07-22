@@ -222,11 +222,11 @@ if(file_exists("$targetPath/composer.lock")) {
 	run("rm $targetPath/composer.lock");
 }
 
-run("composer install --prefer-dist --dev -d $targetPath");
+run("cd ~ && composer install --prefer-dist --dev -d $targetPath");
 
 // Installer doesn't work out of the box without cms - delete the Page class if its not required
 if(
-	!file_exists("$targetPath/cms") 
+	!file_exists("$targetPath/cms")
 	&& file_exists("$targetPath/mysite/code/Page.php")
 	&& ($coreBranch == 'master' || version_compare($coreBranch, '3.0') >= 0)
 ) {
