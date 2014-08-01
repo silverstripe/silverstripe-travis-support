@@ -104,6 +104,20 @@ The first builds should start within a few minutes.
 As a bonus, you can include build status images in your README to promote the fact that
 your module values quality and does continuous integration. 
 
+## PDO DB Connectors
+
+Many database connectors support connection via PDO. If you would like to include PDO support
+you can also add the PDO=1 environment variable.
+
+Note that this feature is only supported in SilverStripe 3.2 or later and will be ignored in 3.1 or below
+
+```yml
+env:
+  matrix:
+    - DB=MYSQL CORE_RELEASE=3.2 PDO=1
+    - DB=MYSQL CORE_RELEASE=3.2
+  ```
+
 ## Github Rate Limitation
 
 Composer heavily relies on github's APIs for retrieving repository info and downloading archives.
