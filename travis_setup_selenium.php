@@ -18,9 +18,16 @@ if(!checkenv(@$opts['if-env'])) {
 
 $baseurl = (isset($opts['base-url'])) ? $opts['base-url'] : 'http://localhost:8000';
 
-echo "Starting Selenium...\n";
 
-if(!putenv('XVFBARGS=:99 -ac -screen 0 1024x768x16"')) echo "ERROR: Could not set xvfb options!\n";
+$resolution = getenv('BEHAT_SCREEN_SIZE');
+if(!$resolution) {
+	$resolution = '1024x768';
+	putenv("BEHAT_SCREEN_SIZE=$resolution");
+}
+
+echo "Starting Selenium at {$resolution}...\n";
+
+if(!putenv("XVFBARGS=:99 -ac -screen 0 {$resolution}x16")) echo "ERROR: Could not set xvfb options!\n";
 run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99")) echo "ERROR: Could not set display!\n";
 run("wget https://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar");
