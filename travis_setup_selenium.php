@@ -20,8 +20,9 @@ $baseurl = (isset($opts['base-url'])) ? $opts['base-url'] : 'http://localhost:80
 
 echo "Starting Selenium...\n";
 
+if(!putenv('XVFBARGS=:99 -ac -screen 0 1024x768x16"')) echo "ERROR: Could not set xvfb options!\n";
 run("sh -e /etc/init.d/xvfb start");
-if(!putenv("DISPLAY=:99.0")) echo "ERROR: Could not set display!\n";
+if(!putenv("DISPLAY=:99")) echo "ERROR: Could not set display!\n";
 run("wget https://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar");
 if(!file_exists('artifacts')) mkdir('artifacts');
 run("java -jar selenium-server-standalone-2.41.0.jar > artifacts/selenium.log 2>&1 &");
