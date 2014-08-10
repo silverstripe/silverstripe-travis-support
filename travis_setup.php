@@ -131,7 +131,15 @@ $package = array_replace_recursive($package, array(
 
 // Generate a custom composer file.
 $composer = array(
-	'repositories' => array(array('type' => 'package', 'package' => $package)),
+	'repositories' => array_merge(
+		// Require this module via a direct package
+		array(array(
+			'type' => 'package',
+			'package' => $package
+		)),
+		// Promote any custom repositories to the top level
+		isset($package['repositories']) ? $package['repositories'] : array()
+	),
 	'require' => array_merge(
 		isset($package['require']) ? $package['require'] : array(),
 		array($package['name'] => $moduleBranchComposer)
