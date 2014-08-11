@@ -172,7 +172,7 @@ if(!empty($opts['require'])) {
 }
 
 // Force 2.x framework dependencies to also require cms.
-if(version_compare($coreBranch, '3.0') == -1 && $package['name'] == 'silverstripe/framework') {
+if($coreBranch != 'master' && version_compare($coreBranch, '3.0') == -1 && $package['name'] == 'silverstripe/framework') {
 	$composer['require']['silverstripe/framework'] .= ' as ' . $coreBranchComposer;
 	$composer['require']['silverstripe/cms'] = $coreBranchComposer;
 }
