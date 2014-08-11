@@ -171,21 +171,9 @@ if(!empty($opts['require'])) {
 	$composer['require'][$requireName] = $requireBranch;
 }
 
-// Temporary workaround for removed framework dependency in 2.4 cms module
-// See https://github.com/silverstripe/silverstripe-cms/commit/2713c462a26494624169e0115323e5cdd5a07d50
-if(
-	version_compare($coreBranch, '3.0') == -1
-	&& $package['name'] == 'silverstripe/framework'
-) {
-	$composer['require'][$package['name']] .= ' as ' . $coreBranchComposer;
-}
-
-// Framework and CMS need special treatment for version dependencies
-if(
-	in_array($package['name'], array('silverstripe/cms', 'silverstripe/framework'))
-	&& $coreBranchComposer != $composer['require'][$package['name']]
-) {
-	// $composer['repositories'][0]['package']['version'] = $coreBranchComposer;
+// Force 2.x framework dependencies to also require cms.
+if(version_compare($coreBranch, '3.0') == -1 && $package['name'] == 'silverstripe/framework') {
+	$composer['require']['silverstripe/framework'] .= ' as ' . $coreBranchComposer;
 	$composer['require']['silverstripe/cms'] = $coreBranchComposer;
 }
 
