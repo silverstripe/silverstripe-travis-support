@@ -5,7 +5,7 @@ define('SS_ENVIRONMENT_TYPE', 'dev');
 $db = getenv('DB');
 $release = getenv('CORE_RELEASE');
 $pdo = getenv('PDO');
-$legacy = strcasecmp($release, 'master') && version_compare($release, '3.2', '<');
+$legacy = strcasecmp($release, 'master') && version_compare($release, '3.2', '<') && $release != '3';
 $pdo = !$legacy && $pdo;
 switch($db) {
 case "PGSQL";
