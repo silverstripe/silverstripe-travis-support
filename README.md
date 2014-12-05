@@ -1,5 +1,7 @@
 # Travis Integration for SilverStripe Modules
 
+[![Build Status](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support.svg)](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support)
+
 ## Introduction
 
 [Travis](http://travis-ci.org) is an open source platform for [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration), 
