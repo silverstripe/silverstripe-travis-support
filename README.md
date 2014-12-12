@@ -61,31 +61,33 @@ The free [Travis](http://travis-ci.com/) CI service is configured by placing a h
 Here's an example `.travis.yml`:
 
   ```yml
-  language: php 
-	php: 
-	 - 5.3
+language: php 
+php: 
+ - 5.3
 
-	env:
-    matrix:
-	   - DB=MYSQL CORE_RELEASE=3.0
-	   - DB=MYSQL CORE_RELEASE=3.1
-	   - DB=MYSQL CORE_RELEASE=master
-	   - DB=PGSQL CORE_RELEASE=master
+env:
+  matrix:
+   - DB=MYSQL CORE_RELEASE=3.0
+   - DB=MYSQL CORE_RELEASE=3.1
+   - DB=MYSQL CORE_RELEASE=master
+   - DB=PGSQL CORE_RELEASE=master
 
-	matrix:
-	  include:
-	    - php: 5.4
-	      env: DB=MYSQL CORE_RELEASE=master
+matrix:
+  include:
+    - php: 5.4
+      env: DB=MYSQL CORE_RELEASE=master
 
-	before_script:
-	 - phpenv rehash
-	 - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
-	 - php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss
-	 - cd ~/builds/ss
+before_script:
+ - phpenv rehash
+ - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
+ - php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss
+ - cd ~/builds/ss
 
-	script: 
-	 - vendor/bin/phpunit <yourmodule>/tests/
-  ```
+script: 
+ - vendor/bin/phpunit <yourmodule>/tests/
+```
+
+When getting set up, to avoid repeatedly pushing to trigger the service hook, you should [save time by linting your configuration with Travis WebLint](https://lint.travis-ci.org/).
 
 Now adjust the `<yourmodule>` path in `.travis.yml`, in the example above it would be `my-awesome-module`.
 Adjust the supported PHP versions, SS core versions and databases in `.travis.yml` (read more about the [Travis PHP config](http://about.travis-ci.org/docs/user/languages/php/)). Consider [blacklisting or whitelisting](http://about.travis-ci.org/docs/user/build-configuration/#The-Build-Matrix) builds to keep the number of individual builds to a reasonable level.
