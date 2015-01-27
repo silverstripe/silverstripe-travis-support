@@ -1,0 +1,13 @@
+{
+	"name": "silverstripe/subsites",
+	"type": "silverstripe-module",
+	"require": {
+		"silverstripe/framework": "~3.2",
+		"silverstripe/cms": "~3.2"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.1.x-dev"
+		}
+	}
+}
