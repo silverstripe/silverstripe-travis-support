@@ -81,6 +81,7 @@ matrix:
 
 before_script:
  - phpenv rehash
+ - composer self-update
  - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
  - php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss
  - cd ~/builds/ss
