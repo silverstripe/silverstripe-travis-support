@@ -33,7 +33,7 @@ default:
 
 }
 
-define('SS_DATABASE_SERVER', 'localhost');
+define('SS_DATABASE_SERVER', '127.0.0.1');
 define('SS_DATABASE_CHOOSE_NAME', true);
 
 
