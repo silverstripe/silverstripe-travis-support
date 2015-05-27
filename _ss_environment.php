@@ -1,6 +1,9 @@
 <?php
 define('SS_ENVIRONMENT_TYPE', 'dev');
 
+// trust test environment
+define('SS_TRUSTED_PROXY_IPS', '*');
+
 // Database connection, including PDO and legacy ORM support
 $db = getenv('DB');
 $release = getenv('CORE_RELEASE');
