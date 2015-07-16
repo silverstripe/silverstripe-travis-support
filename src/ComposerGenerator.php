@@ -141,7 +141,7 @@ class ComposerGenerator {
 				array(
 					'dist' => array(
 						'type' => 'tar',
-						'url' => "file://{$installFromPath}"
+						'url' => "file://" . preg_replace('#^([A-Za-z]):(\\\\|/)#', '/$1:/', $installFromPath)
 					)
 				)
 			);
@@ -172,6 +172,7 @@ class ComposerGenerator {
 			'require-dev' => array(
 				'silverstripe/postgresql' => '*',
 				'silverstripe/sqlite3' => '*',
+				'silverstripe/mssql' => '*',
 				'phpunit/PHPUnit' => '~3.7@stable' // Default phpunit version if none specified
 			),
 			'minimum-stability' => 'dev',

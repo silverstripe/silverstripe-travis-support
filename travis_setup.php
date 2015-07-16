@@ -52,23 +52,33 @@ $parent = dirname($modulePath);
 /**
  * 2. Check and parse environment variables
  */
-$requiredEnvs = array('TRAVIS_COMMIT', 'CORE_RELEASE');
+$requiredEnvs = array('CORE_RELEASE');
 foreach($requiredEnvs as $requiredEnv) {
 	if(!getenv($requiredEnv)) {
 		echo(sprintf('Environment variable "%s" not defined', $requiredEnv) . "\n");
 		exit(1);
 	}
 }
-if(!getenv('TRAVIS_TAG') && !getenv('TRAVIS_BRANCH')) {
-	echo("One of TRAVIS_BRANCH or TRAVIS_TAG must be defined\n");
+if(!getenv('TRAVIS_TAG') && !getenv('TRAVIS_BRANCH') && !getenv('APPVEYOR_REPO_TAG_NAME') && !getenv('APPVEYOR_REPO_BRANCH')) {
+	echo("One of TRAVIS_BRANCH, TRAVIS_TAG, APPVEYOR_REPO_TAG_NAME, or APPVEYOR_REPO_BRANCH must be defined\n");
 	exit(1);
 }
 
 $coreBranch = getenv('CORE_RELEASE');
-$moduleVersion = getenv('TRAVIS_TAG') ?: getenv('TRAVIS_BRANCH');
-$moduleRef = getenv('TRAVIS_TAG')
-	? ComposerGenerator::REF_TAG
-	: ComposerGenerator::REF_BRANCH;
+
+if(getenv('APPVEYOR')) {
+	$moduleVersion = getenv('APPVEYOR_REPO_TAG_NAME') ?: getenv('APPVEYOR_REPO_BRANCH');
+	$moduleRef = getenv('APPVEYOR_REPO_TAG_NAME')
+		? ComposerGenerator::REF_TAG
+		: ComposerGenerator::REF_BRANCH;
+
+} else {
+	$moduleVersion = getenv('TRAVIS_TAG') ?: getenv('TRAVIS_BRANCH');
+	$moduleRef = getenv('TRAVIS_TAG')
+		? ComposerGenerator::REF_TAG
+		: ComposerGenerator::REF_BRANCH;
+}
+
 
 /**
  * 3. Display environment variables
@@ -129,24 +139,25 @@ echo "$composerStr\n\n";
 /**
  * 7. Run it
  */
-run("cd $modulePath");
+chdir($modulePath);
 
-run("tar -cf $moduleArchivePath .");
+run("tar -cf ../$moduleName.tar .");
+echo `dir ..`;
 
 run("git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
 
 run("cp $dir/_ss_environment.php $targetPath/_ss_environment.php");
 if($configPath) run("cp $configPath $targetPath/mysite/_config.php");
 
-run("rm $targetPath/composer.json");
+run_unlink("$targetPath/composer.json");
 echo "Writing new composer.json to $targetPath/composer.json\n";
 file_put_contents("$targetPath/composer.json", $composerStr);
 
 if(file_exists("$targetPath/composer.lock")) {
-	run("rm $targetPath/composer.lock");
+	run_unlink("$targetPath/composer.lock");
 }
 
-run("cd ~ && composer install --no-ansi --prefer-dist -d $targetPath");
+run("composer install --no-ansi --prefer-dist -d $targetPath");
 
 /**
  * 8. Installer doesn't work out of the box without cms - delete the Page class if its not required
@@ -157,5 +168,5 @@ if(
 	&& ($coreBranch == 'master' || version_compare($coreBranch, '3') >= 0)
 ) {
 	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
-	run("rm $targetPath/mysite/code/Page.php");
+	run_unlink("$targetPath/mysite/code/Page.php");
 }

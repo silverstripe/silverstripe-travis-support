@@ -15,6 +15,7 @@ case "PGSQL";
 	define('SS_DATABASE_CLASS', $pdo ? 'PostgrePDODatabase' : 'PostgreSQLDatabase');
 	define('SS_DATABASE_USERNAME', 'postgres');
 	define('SS_DATABASE_PASSWORD', '');
+	define('SS_DATABASE_SERVER', '127.0.0.1');
 	break;
 
 case "SQLITE":
@@ -27,16 +28,25 @@ case "SQLITE":
 	define('SS_DATABASE_USERNAME', 'root');
 	define('SS_DATABASE_PASSWORD', '');
 	define('SS_SQLITE_DATABASE_PATH', ':memory:');
+	define('SS_DATABASE_SERVER', '127.0.0.1');
+	break;
+
+case "MSSQL":
+	define('SS_DATABASE_CLASS', 'MSSQLDatabase');
+	// AppVeyor default details
+	define('SS_DATABASE_USERNAME', 'sa');
+	define('SS_DATABASE_PASSWORD', 'Password12!');
+	define('SS_DATABASE_NAME', 'appveyor');
+	define('SS_DATABASE_SERVER', '(local)\SQL2014');
 	break;
 
 default:
 	define('SS_DATABASE_CLASS', $pdo ? 'MySQLPDODatabase' : 'MySQLDatabase');
 	define('SS_DATABASE_USERNAME', 'root');
 	define('SS_DATABASE_PASSWORD', '');
-
+	define('SS_DATABASE_SERVER', '127.0.0.1');
 }
 
-define('SS_DATABASE_SERVER', '127.0.0.1');
 define('SS_DATABASE_CHOOSE_NAME', true);
 
 
