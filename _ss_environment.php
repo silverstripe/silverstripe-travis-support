@@ -44,4 +44,5 @@ define('SS_DATABASE_CHOOSE_NAME', true);
 define('SS_DEFAULT_ADMIN_USERNAME', 'username');
 define('SS_DEFAULT_ADMIN_PASSWORD', 'password');
 
+global $_FILE_TO_URL_MAPPING;
 $_FILE_TO_URL_MAPPING[dirname(__FILE__)] = 'http://localhost:8000';
