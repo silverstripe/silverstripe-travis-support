@@ -146,7 +146,7 @@ if(file_exists("$targetPath/composer.lock")) {
 	run("rm $targetPath/composer.lock");
 }
 
-run("cd ~ && composer install --prefer-dist -d $targetPath");
+run("cd ~ && composer install --no-ansi --prefer-dist -d $targetPath");
 
 /**
  * 8. Installer doesn't work out of the box without cms - delete the Page class if its not required
