@@ -53,6 +53,16 @@ class ComposerGenerator {
 	protected $modulePackageInfo = array();
 
 	/**
+	 * @var array Packages that form part of a core release of SilverStripe
+	 */
+	protected $coreModules = array(
+		'silverstripe/framework',
+		'silverstripe/cms',
+		'silverstripe/siteconfig',
+		'silverstripe/reports',
+	);
+
+	/**
 	 *
 	 * @param string $coreVersion Framework version to use (CORE_RELEASE)
 	 * @param string $moduleVersion Version of the module to use
@@ -87,7 +97,7 @@ class ComposerGenerator {
 		}
 
 		// Non-numeric branch (master, develop) as dev-master, dev-develop as per composer rules
-		return 'dev-' . $version;
+		return sprintf('dev-%s', $version);
 	}
 
 	/**
@@ -124,7 +134,12 @@ class ComposerGenerator {
 	 * @return array Composer config in array format
 	 */
 	public function generatePackageComposerConfig($installFromPath = null) {
-		$moduleConstraint = $this->getModuleComposerConstraint();
+		if ($this->isCoreModule($this->modulePackageInfo['name'])) {
+			$moduleConstraint = $this->getCoreComposerConstraint();
+		}
+		else {
+			$moduleConstraint = $this->getModuleComposerConstraint();
+		}
 		
 		// Set the module version
 		$composerConfig = array_replace_recursive(
@@ -288,6 +303,16 @@ class ComposerGenerator {
 		}
 
 		return $rootComposer;
+	}
+
+	/**
+	 * Determine if a package is part of the core release of SilverStripe packages
+	 *
+	 * @param $packageName string The name of a module to check (eg: silverstripe/framework)
+	 * @return bool
+	 */
+	protected function isCoreModule($packageName) {
+		return in_array($packageName, $this->coreModules);
 	}
 
 }
