@@ -131,7 +131,7 @@ echo "$composerStr\n\n";
  */
 run("cd $modulePath");
 
-run("tar -cf $moduleArchivePath .");
+run("tar -cf $moduleArchivePath ./*");
 
 run("git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
 
