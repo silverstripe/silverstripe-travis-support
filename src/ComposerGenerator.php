@@ -193,19 +193,20 @@ class ComposerGenerator {
 			'config' => array(
 				'notify-on-install' => false,
 				'process-timeout' => 600, // double default timeout, github archive downloads tend to be slow
-			)
+			),
+			'suggest' => array()
 		);
 
 		// Promote repositories, require, and require-dev to the top level from the package
-		foreach(array('repositories', 'require', 'require-dev') as $section) {
+		foreach(array('repositories', 'require', 'require-dev', 'suggest') as $section) {
 			if(!empty($packageComposer[$section])) {
 				$composer[$section] = array_merge(
 					$composer[$section],
 					$packageComposer[$section]
 				);
+
 			}
 		}
-
 		return $composer;
 	}
 
@@ -227,6 +228,19 @@ class ComposerGenerator {
 			$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
 			$composer['require'][$requireName] = $requireBranch;
 		}
+
+		if (!empty($options['install-suggested']) && $options['install-suggested'] == 'yes') {
+			if (!empty($composer['suggest'])) {
+				foreach (array_keys($composer['suggest']) as $suggestedName) {
+					$suggestedVersion = $composer['suggest'][$suggestedName];
+					$composer['require'][$suggestedName] = $suggestedVersion;
+					unset($composer['suggest'][$suggestedName]);
+				}
+
+				unset($composer['suggest']);
+			}
+
+		}
 		return $composer;
 	}
 
@@ -244,7 +258,6 @@ class ComposerGenerator {
 		// Merge this into the root package
 		$rootComposer = $this->generateRootComposerConfig($moduleComposer);
 
-		// Handle custom options
 		$rootComposer = $this->mergeCustomOptions($options, $rootComposer);
 
 		// Update framework / cms requirements

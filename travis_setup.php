@@ -33,7 +33,8 @@ $opts = getopt('', array(
 	'source:', // Required: Path to the module root directory
 	'target:', // Required: Path to where the environment will be built
 	'config:', // Optional: Location to custom mysite/_config.php to use
-	'require:' // Optional: Additional composer requirement. E.g. --require silverstripe/behat-extension:dev-master
+	'require:', // Optional: Additional composer requirement. E.g. --require silverstripe/behat-extension:dev-master
+	'install-suggested:' // Optional: Install the modules suggested packages
 ));
 
 // Sanity checks

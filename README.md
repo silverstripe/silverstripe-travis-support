@@ -89,6 +89,16 @@ before_script:
 script: 
  - vendor/bin/phpunit <yourmodule>/tests/
 ```
+If you wish to optionally add the packages suggested by a module, pass a flag ```install-suggested yes``` to
+the line that executes travis-support.
+```
+before_script:
+ - phpenv rehash
+ - composer self-update
+ - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
+ - php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --install-suggested=yes
+ - cd ~/builds/ss
+```
 
 When getting set up, to avoid repeatedly pushing to trigger the service hook, you should [save time by linting your configuration with Travis WebLint](https://lint.travis-ci.org/).
 
