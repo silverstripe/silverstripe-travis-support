@@ -222,10 +222,17 @@ class ComposerGenerator {
 			// this allows for arguments like "silverstripe/behat-extension:dev-master" where "dev-master" would be the branch
 			// to use for that requirement. If just specifying "silverstripe/behat-extension" without the separator, default
 			// to the branch being "*"
-			$requireParts = explode(':', $options['require']);
-			$requireName = $requireParts[0];
-			$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
-			$composer['require'][$requireName] = $requireBranch;
+
+			// If a single value is passed it's a string, if multiple then an array
+			// This ensure that $required is always an array
+			$requiredPackages = is_string($options['require']) ? array($options['require']) : $options['require'];
+
+			foreach ($requiredPackages as $requiredPackage) {
+				$requireParts = explode(':', $requiredPackage);
+				$requireName = $requireParts[0];
+				$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
+				$composer['require'][$requireName] = $requireBranch;
+			}
 		}
 		return $composer;
 	}
