@@ -330,4 +330,78 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 			$generator->mergeCustomOptions(array('require' => $requiredPackages), $base)
 		);
 	}
+
+
+
+	/**
+	 * Test custom options works when an array of required packages is provided
+	 */
+	public function testGenerateConfig() {
+		$frameworkComposer = $this->getMockFrameworkJson();
+
+		$generator = new ComposerGenerator(
+			'master',
+			'master',
+			ComposerGenerator::REF_BRANCH,
+			$frameworkComposer,
+			$this->getMockModuleJson('subsites-master')
+		);
+
+		$base = array(
+			'require' => array(
+				'silverstripe/framework' => '~3.1'
+			)
+		);
+
+		$requiredPackages = array(
+			'silverstripe/subsites:dev-master',
+			'silverstripe/comments:2.0.2',
+			'silverstripe/tagfield:1.2.1'
+		);
+
+		$options = array(
+			'require' => $requiredPackages,
+			'source' => '/home/user/checkout/travis/silverstripe/comments',
+ 			'target' => '/home/user/builds/ss'
+		);
+
+		$expected = array(
+			'repositories' => array(
+				0 => array(
+					'type' => 'package',
+					'package' => array(
+						'name' => 'silverstripe/subsites',
+						'type' => 'silverstripe-module',
+						'require' => array(
+							'silverstripe/framework' => '~3.2',
+							'silverstripe/cms' => '~3.2'
+						),
+						'extra' => array(
+							'branch-alias' => array('dev-master' => '1.1.x-dev')
+						),
+						'version' => 'dev-master'
+					)
+				)
+			),
+			'require' => array(
+				'silverstripe/subsites' => 'dev-master',
+				'silverstripe/framework' => '4.0.x-dev',
+				'silverstripe/cms' => '4.0.x-dev',
+				'silverstripe/comments' => '2.0.2',
+				'silverstripe/tagfield' => '1.2.1',
+				'silverstripe-themes/simple' => '*'
+			),
+			'require-dev' => array(
+				'silverstripe/postgresql' => '*',
+				'silverstripe/sqlite3' => '*',
+				'phpunit/PHPUnit' => '~3.7@stable'
+			),
+			'minimum-stability' => 'dev',
+			'config' => array(
+				'notify-on-install' => false,
+				'process-timeout' => 600
+			)
+		);
+		$this->assertEquals($expected, $generator->generateComposerConfig($options));
+	}
 }
