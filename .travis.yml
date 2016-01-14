@@ -18,8 +18,8 @@ script:
  - "vendor/bin/phpunit --coverage-clover=coverage.clover tests"
 
 after_success:
-	# Move coverage into originally checkout git folder, this is required so
-	# that third party services know which commit to associate the coverage with
+  # Move coverage into originally checkout git folder, this is required so
+  # that third party services know which commit to associate the coverage with
   - mv coverage.clover ~/build/$TRAVIS_REPO_SLUG/
   - cd ~/build/$TRAVIS_REPO_SLUG
 
