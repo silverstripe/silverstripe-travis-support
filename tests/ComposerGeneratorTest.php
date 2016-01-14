@@ -235,9 +235,30 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * Test custom options works
+	 * Test custom options works with one package required
 	 */
-	public function testMergeCustomOptions() {
+	public function testMergeCustomOptionsArrayNoneRequired() {
+		$generator = new ComposerGenerator('master', 'master', ComposerGenerator::REF_BRANCH);
+
+		$base = array(
+			'require' => array(
+				'silverstripe/framework' => '~3.1'
+			)
+		);
+		$this->assertEquals(
+			array(
+				'require' => array(
+					'silverstripe/framework' => '~3.1'
+				)
+			),
+			$generator->mergeCustomOptions(array(), $base)
+		);
+	}
+
+	/**
+	 * Test custom options works with one package required
+	 */
+	public function testMergeCustomOptionsArrayOneRequired() {
 		$generator = new ComposerGenerator('master', 'master', ComposerGenerator::REF_BRANCH);
 
 		$base = array(
@@ -262,6 +283,51 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 				)
 			),
 			$generator->mergeCustomOptions(array('require' => 'silverstripe/translatable'), $base)
+		);
+	}
+
+	/**
+	 * Test custom options works when an array of required packages is provided
+	 */
+	public function testMergeCustomOptionsArrayMoreThanOneRequired() {
+		$generator = new ComposerGenerator('master', 'master', ComposerGenerator::REF_BRANCH);
+
+		$base = array(
+			'require' => array(
+				'silverstripe/framework' => '~3.1'
+			)
+		);
+
+		$requiredPackages = array(
+			'silverstripe/subsites:dev-master',
+			'silverstripe/comments:2.0.2'
+		);
+		$this->assertEquals(
+			array(
+				'require' => array(
+					'silverstripe/framework' => '~3.1',
+					'silverstripe/subsites' => 'dev-master',
+					'silverstripe/comments' => '2.0.2'
+				)
+			),
+			$generator->mergeCustomOptions(array('require' => $requiredPackages), $base)
+		);
+
+		$requiredPackages = array(
+			'silverstripe/subsites:dev-master',
+			'silverstripe/comments:2.0.2',
+			'silverstripe/tagfield:1.2.1'
+		);
+		$this->assertEquals(
+			array(
+				'require' => array(
+					'silverstripe/framework' => '~3.1',
+					'silverstripe/subsites' => 'dev-master',
+					'silverstripe/comments' => '2.0.2',
+					'silverstripe/tagfield' => '1.2.1'
+				)
+			),
+			$generator->mergeCustomOptions(array('require' => $requiredPackages), $base)
 		);
 	}
 }
