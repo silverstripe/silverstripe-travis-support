@@ -121,7 +121,28 @@ After you committed the files, as a final step you'll want to enable your module
 The first builds should start within a few minutes.
 
 As a bonus, you can include build status images in your README to promote the fact that
-your module values quality and does continuous integration. 
+your module values quality and does continuous integration.
+
+## Adding extra modules
+
+If you need to add extra modules during setup, that aren't explicitly included in the module
+composer requirements, you can use the `--require` parameter.
+
+E.g.
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension
+    
+You can also specify multiple modules by either comma separating the names, or
+by the addition of multiple ``--require`` flags. Each name can also be suffixed
+with `:<version>` to add a version dependency.
+
+E.g.
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension:dev-master --require silverstripe-cms:4.0.x-dev
+
+or equivalently
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension:dev-master,silverstripe-cms:4.0.x-dev
 
 ## PDO DB Connectors
 
