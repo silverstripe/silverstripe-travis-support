@@ -201,6 +201,90 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
+	 * Test that the package sub-section of the composer config is generated properly
+	 */
+	public function testGeneratePackageConfigCoreModule() {
+		$frameworkComposer = $this->getMockFrameworkJson();
+
+		// Test subsites/master (1.1) vs framework/3 (3.2)
+		$generator = new ComposerGenerator(
+			'3',
+			'master',
+			ComposerGenerator::REF_BRANCH,
+			$frameworkComposer,
+			$this->getMockModuleJson('silverstripe-reports')
+		);
+
+		$result = $generator->generatePackageComposerConfig('/home/root/builds/ss/subsites.tar');
+		$expected = array(
+			'name' => 'silverstripe/reports',
+			'type' => 'silverstripe-module',
+			'homepage' => 'http://silverstripe.org',
+			'license' => 'BSD-3-Clause',
+			'keywords' => array(
+				'0' => 'silverstripe',
+				'1' => 'cms',
+				'2' => 'reports'
+			),
+			'authors' => array(
+				'0' => array(
+					'name' => 'SilverStripe',
+					'homepage' => 'http://silverstripe.com'
+				),
+				'1' => array(
+					'name' => 'The SilverStripe Community',
+					'homepage' => 'http://silverstripe.org'
+				),
+			),
+			'require' => array(
+				'php' => '>=5.3.3',
+				'silverstripe/framework' => '>=3.1.x-dev'
+			),
+			'extra' => array(
+				'branch-alias' => array(
+					'dev-master' => '4.0.x-dev'
+				),
+			),
+			'version' => '3.2.x-dev',
+			'dist' => array(
+				'type' => 'tar',
+				'url' => 'file:///home/root/builds/ss/subsites.tar'
+			),
+		);
+		$this->assertEquals(
+			$expected,
+			$result
+		);
+
+		// Test subsites/1.0 vs framework/3.1 (3.1)
+		$generator = new ComposerGenerator(
+			'3.1',
+			'1.0',
+			ComposerGenerator::REF_BRANCH,
+			$frameworkComposer,
+			$this->getMockModuleJson('subsites-1.0')
+		);
+
+		$result = $generator->generatePackageComposerConfig('/home/root/builds/ss/subsites.tar');
+		$this->assertEquals(
+			array(
+				'name' => 'silverstripe/subsites',
+				'type' => 'silverstripe-module',
+				'require' => array(
+					'silverstripe/framework' => '~3.1.0',
+					'silverstripe/cms' => '~3.1.0'
+				),
+				'version' => '1.0.x-dev',
+				'dist' => array(
+					'type' => 'tar',
+					'url' => 'file:///home/root/builds/ss/subsites.tar'
+				)
+			),
+			$result
+		);
+	}
+
+	/**
 	 * Test that requirements from packaged composer are copied to root level
 	 */
 	public function testRootRequirements() {
@@ -404,4 +488,59 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 		$this->assertEquals($expected, $generator->generateComposerConfig($options));
 	}
+
+
+
+    public function generateAssertionsFromArray($toAssert)
+    {
+        echo '$expected = array('."\n";
+        foreach ($toAssert as $key => $value) {
+            $escValue = str_replace("'", '\\\'', $value);
+            echo "'$key' => '$escValue',\n";
+        }
+        echo ");\n";
+        echo '$this->assertEquals($expected, $somevar);'."\n";
+    }
+
+    public function generateAssertionsFromArray1D($toAssert)
+    {
+        echo '$expected = array('."\n";
+        foreach ($toAssert as $key => $value) {
+            $escValue = str_replace("'", '\\\'', $value);
+            echo "'$escValue',";
+        }
+        echo ");\n";
+        echo '$this->assertEquals($expected, $somevar);'."\n";
+    }
+
+    public function generateAssertionsFromArrayRecurse($toAssert)
+    {
+        echo '$expected = ';
+        $this->recurseArrayAssertion($toAssert, 1, 'FIXME');
+        echo '$this->assertEquals($expected, $somevar);'."\n";
+    }
+
+    private function recurseArrayAssertion($toAssert, $depth, $parentKey)
+    {
+        $prefix = str_repeat("\t", $depth);
+        echo "\t{$prefix}'$parentKey' => array(\n";
+        $ctr = 0;
+        $len = sizeof(array_keys($toAssert));
+        foreach ($toAssert as $key => $value) {
+            if (is_array($value)) {
+                $this->recurseArrayAssertion($value, $depth + 1, $key);
+            } else {
+                $escValue = str_replace("'", '\\\'', $value);
+                $comma = ',';
+                if ($ctr == $len - 1) {
+                    $comma = '';
+                }
+                echo "\t\t$prefix'$key' => '$escValue'$comma\n";
+            }
+
+            ++$ctr;
+        }
+        echo "\t$prefix),\n";
+    }
+
 }
