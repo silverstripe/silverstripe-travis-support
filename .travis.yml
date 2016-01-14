@@ -2,12 +2,30 @@ language: php
 
 sudo: false
 
+before_install:
+  - pip install --user codecov
+
 php:
   - 5.4
+  - 5.5
+  - 5.6
 
 before_script:
  - composer self-update || true
  - composer install
 
 script: 
- - "vendor/bin/phpunit tests"
+ - "vendor/bin/phpunit --coverage-clover=coverage.clover tests"
+
+after_success:
+	# Move coverage into originally checkout git folder, this is required so
+	# that third party services know which commit to associate the coverage with
+  - mv coverage.clover ~/build/$TRAVIS_REPO_SLUG/
+  - cd ~/build/$TRAVIS_REPO_SLUG
+
+  # Upload coverage to Scrutinizer
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+  
+  # Upload coverage to Codecov
+  - codecov
