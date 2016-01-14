@@ -1,6 +1,21 @@
 # Travis Integration for SilverStripe Modules
+[![Build Status](https://travis-ci.org/gordonbanderson/silverstripe-travis-support.svg?branch=multiple_require_options)](https://travis-ci.org/gordonbanderson/silverstripe-travis-support)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/quality-score.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/?branch=multiple_require_options)
+[![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/coverage.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/?branch=multiple_require_options)
+[![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/build.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/build-status/multiple_require_options)
+[![codecov.io](https://codecov.io/github/gordonbanderson/silverstripe-travis-support/coverage.svg?branch=multiple_require_options)](https://codecov.io/github/gordonbanderson/silverstripe-travis-support?branch=multiple_require_options)
 
-[![Build Status](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support.svg)](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support)
+[![Latest Stable Version](https://poser.pugx.org/silverstripe/travis-support/version)](https://packagist.org/packages/silverstripe/travis-support)
+[![Latest Unstable Version](https://poser.pugx.org/silverstripe/travis-support/v/unstable)](//packagist.org/packages/silverstripe/travis-support)
+[![Total Downloads](https://poser.pugx.org/silverstripe/travis-support/downloads)](https://packagist.org/packages/silverstripe/travis-support)
+[![License](https://poser.pugx.org/silverstripe/travis-support/license)](https://packagist.org/packages/silverstripe/travis-support)
+[![Monthly Downloads](https://poser.pugx.org/silverstripe/travis-support/d/monthly)](https://packagist.org/packages/silverstripe/travis-support)
+[![Daily Downloads](https://poser.pugx.org/silverstripe/travis-support/d/daily)](https://packagist.org/packages/silverstripe/travis-support)
+
+[![Dependency Status](https://www.versioneye.com/php/silverstripe:travis-support/badge.svg)](https://www.versioneye.com/php/silverstripe:travis-support)
+[![Reference Status](https://www.versioneye.com/php/silverstripe:travis-support/reference_badge.svg?style=flat)](https://www.versioneye.com/php/silverstripe:travis-support/references)
+
+![codecov.io](https://codecov.io/github/gordonbanderson/silverstripe-travis-support/branch.svg?branch=multiple_require_options)
 
 ## Introduction
 
@@ -12,7 +27,6 @@ there's a bit of setup work required on top of the standard [Composer](http://ge
 
 The scripts allow you to test across multiple branches, and rewrite the `composer.json` to match dependencies.
 The scripts will test your module against multiple core releases, as well as multiple databases (if supported).
-See it in action on the ["translatable" module](https://travis-ci.org/silverstripe/silverstripe-translatable/).
 
 Why bother? Because it shows your users that you care about the quality of your codebase,
 and gives them a clear picture of the current status of it. And it helps you manage the complexity
