@@ -284,6 +284,128 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 	}
 
+	/*
+	Test a condition where framework < 3 as the module required
+	 */
+	public function testMergeFramework24() {
+		$frameworkComposer = $this->getMockFrameworkJson();
+
+		// Test subsites/master (1.1) vs framework/3 (3.2)
+		$generator = new ComposerGenerator(
+			'2,4',
+			'master',
+			ComposerGenerator::REF_BRANCH,
+			$frameworkComposer,
+			$this->getMockModuleJson('silverstripe-framework')
+		);
+
+		$result = $generator->generateComposerConfig('/home/root/builds/ss/subsites.tar');
+
+		$this->generateAssertionsFromArrayRecurse($result);
+		$expected = array(
+			'repositories' => array(
+				'0' => array(
+					'type' => 'package',
+					'package' => array(
+						'name' => 'silverstripe/framework',
+						'type' => 'silverstripe-module',
+						'description' => 'The SilverStripe framework',
+						'homepage' => 'http://silverstripe.org',
+						'license' => 'BSD-3-Clause',
+						'keywords' => array(
+							'0' => 'silverstripe',
+							'1' => 'framework'
+						),
+						'authors' => array(
+							'0' => array(
+								'name' => 'SilverStripe',
+								'homepage' => 'http://silverstripe.com'
+							),
+							'1' => array(
+								'name' => 'The SilverStripe Community',
+								'homepage' => 'http://silverstripe.org'
+							),
+						),
+						'require' => array(
+							'php' => '>=5.5.0',
+							'composer/installers' => '~1.0',
+							'monolog/monolog' => '~1.11',
+							'league/flysystem' => '~1.0.12',
+							'symfony/yaml' => '~2.7'
+						),
+						'require-dev' => array(
+							'phpunit/PHPUnit' => '~3.7'
+						),
+						'extra' => array(
+							'branch-alias' => array(
+								'dev-master' => '4.0.x-dev'
+							),
+						),
+						'autoload' => array(
+							'classmap' => array(
+								'0' => 'tests/behat/features/bootstrap'
+							),
+						),
+						'version' => 'dev-2,4'
+					),
+				),
+			),
+			'require' => array(
+				'silverstripe/framework' => 'dev-2,4 as dev-2,4',
+				'php' => '>=5.5.0',
+				'composer/installers' => '~1.0',
+				'monolog/monolog' => '~1.11',
+				'league/flysystem' => '~1.0.12',
+				'symfony/yaml' => '~2.7',
+				'silverstripe/cms' => 'dev-2,4',
+				'silverstripe-themes/blackcandy' => '*'
+			),
+			'require-dev' => array(
+				'silverstripe/postgresql' => '*',
+				'silverstripe/sqlite3' => '*',
+				'phpunit/PHPUnit' => '~3.7'
+			),
+			'minimum-stability' => 'dev',
+			'config' => array(
+				'notify-on-install' => '',
+				'process-timeout' => '600'
+			),
+		);
+
+
+		$this->assertEquals(
+			$expected,
+			$result
+		);
+
+		// Test subsites/1.0 vs framework/3.1 (3.1)
+		$generator = new ComposerGenerator(
+			'3.1',
+			'1.0',
+			ComposerGenerator::REF_BRANCH,
+			$frameworkComposer,
+			$this->getMockModuleJson('subsites-1.0')
+		);
+
+		$result = $generator->generatePackageComposerConfig('/home/root/builds/ss/subsites.tar');
+		$this->assertEquals(
+			array(
+				'name' => 'silverstripe/subsites',
+				'type' => 'silverstripe-module',
+				'require' => array(
+					'silverstripe/framework' => '~3.1.0',
+					'silverstripe/cms' => '~3.1.0'
+				),
+				'version' => '1.0.x-dev',
+				'dist' => array(
+					'type' => 'tar',
+					'url' => 'file:///home/root/builds/ss/subsites.tar'
+				)
+			),
+			$result
+		);
+	}
+
 	/**
 	 * Test that requirements from packaged composer are copied to root level
 	 */
@@ -415,8 +537,6 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 	}
 
-
-
 	/**
 	 * Test custom options works when an array of required packages is provided
 	 */
@@ -488,8 +608,6 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 		$this->assertEquals($expected, $generator->generateComposerConfig($options));
 	}
-
-
 
     public function generateAssertionsFromArray($toAssert)
     {
