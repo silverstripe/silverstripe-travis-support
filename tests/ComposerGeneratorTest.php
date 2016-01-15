@@ -457,6 +457,15 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 			),
 			$generator->mergeCustomOptions(array(), $base)
 		);
+
+		$this->assertEquals(
+			array(
+				'require' => array(
+					'silverstripe/framework' => '~3.1'
+				)
+			),
+			$generator->mergeCustomOptions('', $base)
+		);
 	}
 
 
