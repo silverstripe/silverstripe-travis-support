@@ -1,0 +1,23 @@
+{
+	"name": "silverstripe/reports",
+	"type": "silverstripe-module",
+	"homepage": "http://silverstripe.org",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "cms", "reports"],
+	"authors": [{
+		"name": "SilverStripe",
+		"homepage": "http://silverstripe.com"
+	}, {
+		"name": "The SilverStripe Community",
+		"homepage": "http://silverstripe.org"
+	}],
+	"require": {
+		"php": ">=5.3.3",
+		"silverstripe/framework": ">=3.1.x-dev"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "4.0.x-dev"
+		}
+	}
+}
