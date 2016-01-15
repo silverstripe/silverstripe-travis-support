@@ -300,8 +300,6 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 
 		$result = $generator->generateComposerConfig('/home/root/builds/ss/subsites.tar');
-
-		$this->generateAssertionsFromArrayRecurse($result);
 		$expected = array(
 			'repositories' => array(
 				'0' => array(
@@ -538,8 +536,6 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 	}
 
-
-
 	/**
 	 * Test custom options works when an array of required packages is provided
 	 */
@@ -565,11 +561,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 			$generator->mergeCustomOptions(array('require' => $requiredPackages), $base)
 		);
 
-		$requiredPackages = array(
-			'silverstripe/subsites:dev-master',
-			'silverstripe/comments:2.0.2',
-			'silverstripe/tagfield:1.2.1'
-		);
+		$requiredPackages = 'silverstripe/subsites:dev-master,silverstripe/comments:2.0.2,silverstripe/tagfield:1.2.1';
 		$this->assertEquals(
 			array(
 				'require' => array(
@@ -654,57 +646,4 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 		$this->assertEquals($expected, $generator->generateComposerConfig($options));
 	}
-
-    public function generateAssertionsFromArray($toAssert)
-    {
-        echo '$expected = array('."\n";
-        foreach ($toAssert as $key => $value) {
-            $escValue = str_replace("'", '\\\'', $value);
-            echo "'$key' => '$escValue',\n";
-        }
-        echo ");\n";
-        echo '$this->assertEquals($expected, $somevar);'."\n";
-    }
-
-    public function generateAssertionsFromArray1D($toAssert)
-    {
-        echo '$expected = array('."\n";
-        foreach ($toAssert as $key => $value) {
-            $escValue = str_replace("'", '\\\'', $value);
-            echo "'$escValue',";
-        }
-        echo ");\n";
-        echo '$this->assertEquals($expected, $somevar);'."\n";
-    }
-
-    public function generateAssertionsFromArrayRecurse($toAssert)
-    {
-        echo '$expected = ';
-        $this->recurseArrayAssertion($toAssert, 1, 'FIXME');
-        echo '$this->assertEquals($expected, $somevar);'."\n";
-    }
-
-    private function recurseArrayAssertion($toAssert, $depth, $parentKey)
-    {
-        $prefix = str_repeat("\t", $depth);
-        echo "\t{$prefix}'$parentKey' => array(\n";
-        $ctr = 0;
-        $len = sizeof(array_keys($toAssert));
-        foreach ($toAssert as $key => $value) {
-            if (is_array($value)) {
-                $this->recurseArrayAssertion($value, $depth + 1, $key);
-            } else {
-                $escValue = str_replace("'", '\\\'', $value);
-                $comma = ',';
-                if ($ctr == $len - 1) {
-                    $comma = '';
-                }
-                echo "\t\t$prefix'$key' => '$escValue'$comma\n";
-            }
-
-            ++$ctr;
-        }
-        echo "\t$prefix),\n";
-    }
-
 }
