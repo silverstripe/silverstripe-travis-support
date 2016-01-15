@@ -5,16 +5,6 @@
 [![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/build.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/build-status/multiple_require_options)
 [![codecov.io](https://codecov.io/github/gordonbanderson/silverstripe-travis-support/coverage.svg?branch=multiple_require_options)](https://codecov.io/github/gordonbanderson/silverstripe-travis-support?branch=multiple_require_options)
 
-[![Latest Stable Version](https://poser.pugx.org/silverstripe/travis-support/version)](https://packagist.org/packages/silverstripe/travis-support)
-[![Latest Unstable Version](https://poser.pugx.org/silverstripe/travis-support/v/unstable)](//packagist.org/packages/silverstripe/travis-support)
-[![Total Downloads](https://poser.pugx.org/silverstripe/travis-support/downloads)](https://packagist.org/packages/silverstripe/travis-support)
-[![License](https://poser.pugx.org/silverstripe/travis-support/license)](https://packagist.org/packages/silverstripe/travis-support)
-[![Monthly Downloads](https://poser.pugx.org/silverstripe/travis-support/d/monthly)](https://packagist.org/packages/silverstripe/travis-support)
-[![Daily Downloads](https://poser.pugx.org/silverstripe/travis-support/d/daily)](https://packagist.org/packages/silverstripe/travis-support)
-
-[![Dependency Status](https://www.versioneye.com/php/silverstripe:travis-support/badge.svg)](https://www.versioneye.com/php/silverstripe:travis-support)
-[![Reference Status](https://www.versioneye.com/php/silverstripe:travis-support/reference_badge.svg?style=flat)](https://www.versioneye.com/php/silverstripe:travis-support/references)
-
 ![codecov.io](https://codecov.io/github/gordonbanderson/silverstripe-travis-support/branch.svg?branch=multiple_require_options)
 
 ## Introduction
