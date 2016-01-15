@@ -228,9 +228,9 @@ class ComposerGenerator {
 			// This ensure that $required is always an array
 			$requiredPackages = $options['require'];
 			if (is_string($options['require'])) {
-				// if a comma is present split the CSV
+				// if a comma is present expldoe the CSV
 				if (strpos($options['require'], ',') !== false) {
-					$options['require'] = split(',', $options['require']);
+					$options['require'] = explode(',', $options['require']);
 				}
 			} else {
 				$requiredPackages = $options['require'];
