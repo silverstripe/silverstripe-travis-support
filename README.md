@@ -1,7 +1,6 @@
 # Travis Integration for SilverStripe Modules
 [![Build Status](https://travis-ci.org/gordonbanderson/silverstripe-travis-support.svg?branch=multiple_require_options)](https://travis-ci.org/gordonbanderson/silverstripe-travis-support)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/quality-score.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/?branch=multiple_require_options)
-[![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/coverage.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/?branch=multiple_require_options)
 [![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/badges/build.png?b=multiple_require_options)](https://scrutinizer-ci.com/g/gordonbanderson/silverstripe-travis-support/build-status/multiple_require_options)
 [![codecov.io](https://codecov.io/github/gordonbanderson/silverstripe-travis-support/coverage.svg?branch=multiple_require_options)](https://codecov.io/github/gordonbanderson/silverstripe-travis-support?branch=multiple_require_options)
 
