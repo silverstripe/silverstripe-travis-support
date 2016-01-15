@@ -150,7 +150,7 @@ class ComposerGenerator {
 		);
 
 		// If installing from a local archive, specify it
-		if($installFromPath) {
+		if($installFromPath !== null) {
 			$composerConfig = array_replace_recursive(
 				$composerConfig,
 				array(
@@ -282,9 +282,6 @@ class ComposerGenerator {
 	 */
 	public function mergeFrameworkRequirements($rootComposer, $moduleComposer) {
 		$coreConstraint = $this->getCoreComposerConstraint();
-		error_log('Core version:' . $this->coreVersion);
-		error_log('Version compare:' . version_compare($this->coreVersion, '3'));
-		error_log('Module name:' . $moduleComposer['name']);
 
 		// Force 2.x framework dependencies to also require cms.
 		if($this->coreVersion != 'master'
