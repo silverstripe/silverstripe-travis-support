@@ -224,7 +224,17 @@ class ComposerGenerator {
 			// to the branch being "*"
 
 			// If a single value is passed it's a string, if multiple then an array
+			// In the string case check for commas, if so assume it's CSV splitting of packages
 			// This ensure that $required is always an array
+			$requiredPackages = $options['require'];
+			if (is_string($options['require'])) {
+				// if a comma is present split the CSV
+				if (strpos($options['require'], ',') !== false) {
+					$options['require'] = split(',', $options['require']);
+				}
+			} else {
+				$requiredPackages = $options['require'];
+			}
 			$requiredPackages = is_string($options['require']) ? array($options['require']) : $options['require'];
 
 			foreach ($requiredPackages as $requiredPackage) {
@@ -254,6 +264,7 @@ class ComposerGenerator {
 		// Handle custom options
 		$rootComposer = $this->mergeCustomOptions($options, $rootComposer);
 
+
 		// Update framework / cms requirements
 		$rootComposer = $this->mergeFrameworkRequirements($rootComposer, $moduleComposer);
 
@@ -271,7 +282,10 @@ class ComposerGenerator {
 	 */
 	public function mergeFrameworkRequirements($rootComposer, $moduleComposer) {
 		$coreConstraint = $this->getCoreComposerConstraint();
-		
+		error_log('Core version:' . $this->coreVersion);
+		error_log('Version compare:' . version_compare($this->coreVersion, '3'));
+		error_log('Module name:' . $moduleComposer['name']);
+
 		// Force 2.x framework dependencies to also require cms.
 		if($this->coreVersion != 'master'
 			&& version_compare($this->coreVersion, '3') < 0
