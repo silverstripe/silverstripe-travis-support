@@ -150,7 +150,7 @@ class ComposerGenerator {
 		);
 
 		// If installing from a local archive, specify it
-		if($installFromPath) {
+		if($installFromPath !== null) {
 			$composerConfig = array_replace_recursive(
 				$composerConfig,
 				array(
@@ -222,10 +222,27 @@ class ComposerGenerator {
 			// this allows for arguments like "silverstripe/behat-extension:dev-master" where "dev-master" would be the branch
 			// to use for that requirement. If just specifying "silverstripe/behat-extension" without the separator, default
 			// to the branch being "*"
-			$requireParts = explode(':', $options['require']);
-			$requireName = $requireParts[0];
-			$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
-			$composer['require'][$requireName] = $requireBranch;
+
+			// If a single value is passed it's a string, if multiple then an array
+			// In the string case check for commas, if so assume it's CSV splitting of packages
+			// This ensure that $required is always an array
+			$requiredPackages = $options['require'];
+			if (is_string($options['require'])) {
+				// if a comma is present expldoe the CSV
+				if (strpos($options['require'], ',') !== false) {
+					$options['require'] = explode(',', $options['require']);
+				}
+			} else {
+				$requiredPackages = $options['require'];
+			}
+			$requiredPackages = is_string($options['require']) ? array($options['require']) : $options['require'];
+
+			foreach ($requiredPackages as $requiredPackage) {
+				$requireParts = explode(':', $requiredPackage);
+				$requireName = $requireParts[0];
+				$requireBranch = (isset($requireParts[1])) ? $requireParts[1] : '*';
+				$composer['require'][$requireName] = $requireBranch;
+			}
 		}
 		return $composer;
 	}
@@ -247,6 +264,7 @@ class ComposerGenerator {
 		// Handle custom options
 		$rootComposer = $this->mergeCustomOptions($options, $rootComposer);
 
+
 		// Update framework / cms requirements
 		$rootComposer = $this->mergeFrameworkRequirements($rootComposer, $moduleComposer);
 
@@ -264,7 +282,7 @@ class ComposerGenerator {
 	 */
 	public function mergeFrameworkRequirements($rootComposer, $moduleComposer) {
 		$coreConstraint = $this->getCoreComposerConstraint();
-		
+
 		// Force 2.x framework dependencies to also require cms.
 		if($this->coreVersion != 'master'
 			&& version_compare($this->coreVersion, '3') < 0

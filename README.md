@@ -1,6 +1,10 @@
 # Travis Integration for SilverStripe Modules
+[![Build Status](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support.svg?branch=master)](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/silverstripe-labs/silverstripe-travis-support/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/silverstripe-labs/silverstripe-travis-support/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/silverstripe-labs/silverstripe-travis-support/badges/build.png?b=master)](https://scrutinizer-ci.com/g/silverstripe-labs/silverstripe-travis-support/build-status/master)
+[![codecov.io](https://codecov.io/github/silverstripe-labs/silverstripe-travis-support/coverage.svg?branch=master)](https://codecov.io/github/silverstripe-labs/silverstripe-travis-support?branch=master)
 
-[![Build Status](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support.svg)](https://travis-ci.org/silverstripe-labs/silverstripe-travis-support)
+![codecov.io](https://codecov.io/github/silverstripe-labs/silverstripe-travis-support/branch.svg?branch=master)
 
 ## Introduction
 
@@ -12,7 +16,6 @@ there's a bit of setup work required on top of the standard [Composer](http://ge
 
 The scripts allow you to test across multiple branches, and rewrite the `composer.json` to match dependencies.
 The scripts will test your module against multiple core releases, as well as multiple databases (if supported).
-See it in action on the ["translatable" module](https://travis-ci.org/silverstripe/silverstripe-translatable/).
 
 Why bother? Because it shows your users that you care about the quality of your codebase,
 and gives them a clear picture of the current status of it. And it helps you manage the complexity
@@ -107,7 +110,28 @@ After you committed the files, as a final step you'll want to enable your module
 The first builds should start within a few minutes.
 
 As a bonus, you can include build status images in your README to promote the fact that
-your module values quality and does continuous integration. 
+your module values quality and does continuous integration.
+
+## Adding extra modules
+
+If you need to add extra modules during setup, that aren't explicitly included in the module
+composer requirements, you can use the `--require` parameter.
+
+E.g.
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension
+    
+You can also specify multiple modules by either comma separating the names, or
+by the addition of multiple ``--require`` flags. Each name can also be suffixed
+with `:<version>` to add a version dependency.
+
+E.g.
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension:dev-master --require silverstripe-cms:4.0.x-dev
+
+or equivalently
+
+    php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss --require silverstripe/behat-extension:dev-master,silverstripe-cms:4.0.x-dev
 
 ## PDO DB Connectors
 
