@@ -25,6 +25,14 @@ class ComposerGenerator {
 	protected $coreVersion = null;
 
 	/**
+	 * Composer inline alias version to use for {@link coreVersion}.
+	 * @see https://getcomposer.org/doc/articles/aliases.md
+	 *
+	 * @var string
+	 */
+	protected $coreAlias = null;
+
+	/**
 	 * Version of the module to use
 	 *
 	 * @var string
@@ -81,6 +89,18 @@ class ComposerGenerator {
 	}
 
 	/**
+	 * @param string $alias Support for inline aliases of {@link $coreVersion}.
+	 * @see https://getcomposer.org/doc/articles/aliases.md
+	 * @return self
+	 */
+	public function setCoreAlias($alias)
+	{
+		$this->coreAlias = $alias;
+
+		return $this;
+	}
+
+	/**
 	 * Parse a version in a form appropriate for a composer constraint
 	 *
 	 * @param string $version Version
@@ -122,6 +142,11 @@ class ComposerGenerator {
 		// Respect branch alias in core
 		if( isset( $this->corePackageInfo['package']['versions'][$version]['extra']['branch-alias'][$version])) {
 			return $this->corePackageInfo['package']['versions'][$version]['extra']['branch-alias'][$version];
+		}
+
+		// Respect branch alias configured externally
+		if ($this->coreAlias) {
+			$version .= ' as ' . $this->coreAlias;
 		}
 		
 		return $version;

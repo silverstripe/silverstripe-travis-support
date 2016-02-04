@@ -65,6 +65,7 @@ if(!getenv('TRAVIS_TAG') && !getenv('TRAVIS_BRANCH')) {
 }
 
 $coreBranch = getenv('CORE_RELEASE');
+$coreAlias = getenv('CORE_ALIAS');
 $moduleVersion = getenv('TRAVIS_TAG') ?: getenv('TRAVIS_BRANCH');
 $moduleRef = getenv('TRAVIS_TAG')
 	? ComposerGenerator::REF_TAG
@@ -118,6 +119,10 @@ $composerGenerator = new ComposerGenerator(
 	$corePackageInfo,
 	$modulePackageInfo
 );
+
+if($coreAlias) {
+	$composerGenerator->setCoreAlias($coreAlias);
+}
 
 $moduleArchivePath = "$parent/$moduleName.tar";
 $composer = $composerGenerator->generateComposerConfig($opts, $moduleArchivePath);
