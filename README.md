@@ -147,6 +147,26 @@ env:
     - DB=MYSQL CORE_RELEASE=3.2
   ```
 
+## Working with Pull Requests
+
+The logic relies on pulling in different core releases based on the `CORE_RELEASE` constant.
+This can lead to inconsistencies where pull requests rely on other branches,
+for example where a pull request for the `cms` module relies on an equivalent in the `framework` module.
+While there's no clean way to tell Travis which branches to use, temporary modifications
+to `travis.yml` can help prove a build is passing with the right dependencies.
+
+ * Add custom fork `repositories` to your module's `composer.json`. They'll get pulled up into the root `composer.json` automatically
+ * Set the `CORE_RELEASE` environment variable to the branch name on your fork.
+ * Create branches with the same name on both `cms` and `framework` modules
+ * Either create a branch on `installer`, or set a different `CORE_INSTALLER_RELEASE` environment variable
+ * Set a `CORE_ALIAS` environment variable in order to satisfy 
+   [constrains](https://getcomposer.org/doc/articles/aliases.md) (e.g. `4.0.x-dev`)
+
+Note that these `.travis.yml` changes in your fork are temporary,
+and need to be reverted before the pull request will be merged.
+Unfortunately Travis CI doesn't support per-build configuration settings
+outside of version control.
+
 ## Github Rate Limitation
 
 Composer heavily relies on github's APIs for retrieving repository info and downloading archives.

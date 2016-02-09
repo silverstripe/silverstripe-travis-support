@@ -65,6 +65,8 @@ if(!getenv('TRAVIS_TAG') && !getenv('TRAVIS_BRANCH')) {
 }
 
 $coreBranch = getenv('CORE_RELEASE');
+$coreInstallerBranch = getenv('CORE_INSTALLER_RELEASE') ? getenv('CORE_INSTALLER_RELEASE') : $coreBranch;
+$coreAlias = getenv('CORE_ALIAS');
 $moduleVersion = getenv('TRAVIS_TAG') ?: getenv('TRAVIS_BRANCH');
 $moduleRef = getenv('TRAVIS_TAG')
 	? ComposerGenerator::REF_TAG
@@ -119,6 +121,10 @@ $composerGenerator = new ComposerGenerator(
 	$modulePackageInfo
 );
 
+if($coreAlias) {
+	$composerGenerator->setCoreAlias($coreAlias);
+}
+
 $moduleArchivePath = "$parent/$moduleName.tar";
 $composer = $composerGenerator->generateComposerConfig($opts, $moduleArchivePath);
 $composerStr = json_encode($composer);
@@ -133,7 +139,7 @@ run("cd $modulePath");
 
 run("tar -cf $moduleArchivePath * .??*");
 
-run("git clone --depth=100 --quiet -b $coreBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
+run("git clone --depth=100 --quiet -b $coreInstallerBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
 
 run("cp $dir/_ss_environment.php $targetPath/_ss_environment.php");
 if($configPath) run("cp $configPath $targetPath/mysite/_config.php");

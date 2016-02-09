@@ -43,6 +43,11 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		$generator = new ComposerGenerator('3.2', '1.1.0', ComposerGenerator::REF_TAG);
 		$this->assertEquals('1.1.0', $generator->getModuleComposerConstraint());
 		$this->assertEquals('3.2.x-dev', $generator->getCoreComposerConstraint());
+
+		$generator = new ComposerGenerator('master', '1.1', ComposerGenerator::REF_BRANCH);
+		$generator->setCoreAlias('2.0.x-dev');
+		$this->assertEquals('1.1.x-dev', $generator->getModuleComposerConstraint());
+		$this->assertEquals('dev-master as 2.0.x-dev', $generator->getCoreComposerConstraint());
 	}
 
 	/**
