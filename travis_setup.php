@@ -91,10 +91,8 @@ if(
 	// Defaults to unencrypted tokens, so we don't need to exclude pull requests
 	// && (!getenv('TRAVIS_PULL_REQUEST') || getenv('TRAVIS_PULL_REQUEST') == 'false')
 ) {
-	$composerGlobalConf = array('config' => array('github-oauth' => array('github.com' => getenv('GITHUB_API_TOKEN'))));
-	$composerConfDir = getenv("HOME") . '/.composer/';
-	if(!file_exists($composerConfDir)) mkdir($composerConfDir);
-	file_put_contents($composerConfDir . '/config.json', json_encode($composerGlobalConf));
+	// Set the token without echo'ing the command to keep it secure
+	run('composer config -g github-oauth.github.com ' . getenv('GITHUB_API_TOKEN'), false);
 	echo "Using GITHUB_API_TOKEN...\n";
 }
 
