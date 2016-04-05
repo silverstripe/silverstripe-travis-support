@@ -30,15 +30,17 @@ if(!file_exists($artifactsPath)) {
 	exit(0);
 }
 
-run("gem install --no-rdoc --no-ri --version 0.8.9 faraday");
-run("gem install --no-rdoc --no-ri travis-artifacts");
+echo "Installing artifacts script to ~/bin/artifacts\n";
+run("curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash");
 
 echo "Creating $artifactsPath/index.html...\n";
 
 $html = '<html><head></head><body><ul>';
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(realpath($artifactsPath)), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $name => $object){
-	if($object->isDir()) continue;
+	if($object->isDir()) {
+		continue;
+	}
 	$relativePath = trim(str_replace(realpath($artifactsPath) . '/', '', $object->getPathName()), '/');
     $html .= sprintf('<li><a href="%s">%s</a></li>', $relativePath, $relativePath);
 }
@@ -46,7 +48,8 @@ $html .= '</ul></body></html>';
 
 file_put_contents("$artifactsPath/index.html", $html);
 
-run("travis-artifacts upload --path $artifactsPath --target-path $targetPath");
+run("~/bin/artifacts upload --permissions public-read --target-paths $targetPath $artifactsPath");
 
 $fullPath = str_replace('//', '/', "$baseUrl/$targetPath/index.html");
+$fullPath = str_replace('https:/s3','https://s3', $fullPath);
 echo "Uploaded artifacts to $fullPath\n";
