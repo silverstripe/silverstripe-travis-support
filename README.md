@@ -226,20 +226,21 @@ script:
 
 Since Travis builds are stateless, you can't inspect anything apart from the actual build log
 after the build has finished. This is an issue for larger files like server logs, and of course for images.
-Travis provides the ["travis-artifacts" gem](http://about.travis-ci.org/blog/2012-12-18-travis-artifacts/)
-for this purpose, allowing upload to Amazon S3. Since Behat creates screenshots of any failed test step
-already, this is a useful addition to any Behat script. The `behat.yml` created through `travis_setup_selenium.php`
-is already set up to save its screenshots into `artifacts/screenshots/`.
+
+You can use https://github.com/travis-ci/artifacts for this purpose, allowing upload to Amazon S3.
+Since Behat creates screenshots of any failed test step already, this is a useful addition to any
+Behat script. The `behat.yml` created through `travis_setup_selenium.php` is already set up to
+save its screenshots into `artifacts/screenshots/`.
 
 ```yml
 language: php 
 
 env:
   global:
-    - "ARTIFACTS_AWS_REGION=us-east-1"
-    - "ARTIFACTS_S3_BUCKET=my-bucket"
-    - secure: "..."
-    - secure: "..."
+    - ARTIFACTS_REGION=us-east-1
+    - ARTIFACTS_BUCKET=silverstripe-travis-artifacts
+    - secure: "..." # Encrypted ARTIFACTS_KEY
+    - secure: "..." # Encrypted ARTIFACTS_SECRET
 
 matrix:
   include:
@@ -252,7 +253,7 @@ script:
  - ...
 
 after_script:
- - php ~/travis-support/travis_upload_artifacts.php --if-env BEHAT_TEST,ARTIFACTS_AWS_SECRET_ACCESS_KEY --target-path artifacts/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID --artifacts-base-url https://s3.amazonaws.com/$ARTIFACTS_S3_BUCKET/
+ - php ~/travis-support/travis_upload_artifacts.php --if-env BEHAT_TEST,ARTIFACTS_BUCKET,ARTIFACTS_KEY,ARTIFACTS_SECRET --target-path artifacts/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID --artifacts-base-url https://s3.amazonaws.com/$ARTIFACTS_BUCKET/
 ```
 
 ## Troubleshooting
