@@ -30,9 +30,9 @@ echo "Starting Selenium at {$resolution}...\n";
 if(!putenv("XVFBARGS=:99 -ac -screen 0 {$resolution}x16")) echo "ERROR: Could not set xvfb options!\n";
 run("sh -e /etc/init.d/xvfb start");
 if(!putenv("DISPLAY=:99")) echo "ERROR: Could not set display!\n";
-run("wget https://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar");
+run("wget https://selenium-release.storage.googleapis.com/2.51/selenium-server-standalone-2.51.0.jar");
 if(!file_exists('artifacts')) mkdir('artifacts');
-run("java -jar selenium-server-standalone-2.41.0.jar > artifacts/selenium.log 2>&1 &");
+run("java -jar selenium-server-standalone-2.51.0.jar > artifacts/selenium.log 2>&1 &");
 sleep(5);
 
 // Write templated behat configuration
