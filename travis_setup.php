@@ -30,10 +30,11 @@ $defaults = array(
  * 1. Check and parse command line options
  */
 $opts = getopt('', array(
-	'source:', // Required: Path to the module root directory
-	'target:', // Required: Path to where the environment will be built
-	'config:', // Optional: Location to custom mysite/_config.php to use
-	'require:' // Optional: Additional composer requirement. E.g. --require silverstripe/behat-extension:dev-master
+	'source:',      // Required: Path to the module root directory
+	'target:',      // Required: Path to where the environment will be built
+	'config:',      // Optional: Location to custom mysite/_config.php to use
+	'require:',     // Optional: Additional composer requirement. E.g. --require silverstripe/behat-extension:dev-master
+	'prefer-source' // Optional: Prefer source (i.e. version control repository) when running composer install
 ));
 
 // Sanity checks
@@ -48,6 +49,7 @@ $targetPath = $opts['target'];
 $modulePath = $opts['source'];
 $moduleName = basename($modulePath);
 $parent = dirname($modulePath);
+$installType = (isset($opts['prefer-source'])) ? '--prefer-source' : '--prefer-dist';
 
 /**
  * 2. Check and parse environment variables
@@ -150,7 +152,7 @@ if(file_exists("$targetPath/composer.lock")) {
 	run("rm $targetPath/composer.lock");
 }
 
-run("cd ~ && composer install --no-ansi --prefer-dist -d $targetPath");
+run("cd ~ && composer install --no-ansi $installType -d $targetPath");
 
 /**
  * 8. Installer doesn't work out of the box without cms - delete the Page class if its not required
