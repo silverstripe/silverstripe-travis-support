@@ -8,7 +8,11 @@
 	"autoload": {
 		"psr-4": {
 			"SilverStripe\\TravisSupport\\": "src/"
-		}
+		},
+		"files": ["lib.php"]
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+	"require": {
+		"composer/semver": "^1.4"
+	}
 }

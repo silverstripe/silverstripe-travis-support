@@ -1,6 +1,7 @@
 <?php
 
 namespace SilverStripe\TravisSupport;
+use Composer\Semver\Semver;
 
 /**
  * Given a set of environment variables, determine the appropriate composer script for this test run
@@ -130,6 +131,31 @@ class ComposerGenerator {
 	}
 
 	/**
+	 * Build an array of valid versions from the corePackageInfo - this allows us to match to real versions of the core
+	 * release so CORE_RELEASE=3.1 will match to a tag 3.1.x as the 3.1 branch is no more
+	 *
+	 * @return array
+	 */
+	public function buildValidVersions() {
+		$validVersions = array();
+		if (empty($this->corePackageInfo['package']['versions'])) {
+			return $validVersions;
+		}
+		foreach ($this->corePackageInfo['package']['versions'] as $version => $versionInfo) {
+			$validVersions[$version] = $version;
+			if (!empty($versionInfo['extra']['branch-alias'])) {
+				$aliases = $versionInfo['extra']['branch-alias'];
+				foreach ($aliases as $real => $ghost) {
+					if (!array_key_exists($ghost, $validVersions)) {
+						$validVersions[$ghost] = $real;
+					}
+				}
+			}
+		}
+		return $validVersions;
+	}
+
+	/**
 	 * Gets the version constraint to use for the framework.
 	 * Note that major or minor versions are assumed to be branches, while
 	 * constraints with patch version are assumed to be tags.
@@ -137,9 +163,26 @@ class ComposerGenerator {
 	 * @return string
 	 */
 	public function getCoreComposerConstraint() {
-		$version = $this->parseComposerConstraint($this->coreVersion, self::REF_BRANCH);
+		$coreConstraint = $this->parseComposerConstraint($this->coreVersion, self::REF_BRANCH);
+		$version = $coreConstraint;
+		$validVersions = $this->buildValidVersions();
+		$versions = false;
 
-		// Respect branch alias in core
+		// if we are looking for a branch ending with 'x-dev' try and find the best matching constraint (there might
+		// not be a x-dev branch)
+		if (substr($coreConstraint, -5) == 'x-dev') {
+			$coreConstraint = substr($coreConstraint, 0, -5) . '*';
+		}
+		// find the versions that match our coreConstraint
+		if (!empty($validVersions)) {
+			$versions = Semver::satisfiedBy(Semver::sort(array_keys($this->buildValidVersions())), $coreConstraint);
+		}
+		// if we found some, use the most recent release that matches
+		if ($versions) {
+			$version = array_pop($versions);
+		}
+
+		// use the package alias if it exists
 		if( isset( $this->corePackageInfo['package']['versions'][$version]['extra']['branch-alias'][$version])) {
 			return $this->corePackageInfo['package']['versions'][$version]['extra']['branch-alias'][$version];
 		}

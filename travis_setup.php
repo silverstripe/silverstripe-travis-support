@@ -1,8 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'src/ComposerGenerator.php';
-require_once 'lib.php';
+require_once 'vendor/autoload.php';
 
 use SilverStripe\TravisSupport\ComposerGenerator;
 
