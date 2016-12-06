@@ -188,6 +188,8 @@ env:
     - ...
 ```
 
+Alternatively you can add the Token through the Travis CI web interface for your repo under the "settings" area. 
+
 ## Behat and Selenium
 
 The scripts also allow behaviour testing through [Behat](http://behat.org).
