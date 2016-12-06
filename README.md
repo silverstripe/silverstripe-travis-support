@@ -188,9 +188,6 @@ env:
     - ...
 ```
 
-Note that this script comes with a default token. Since rate limitations on this token globally apply 
-to the user it is connected to, we ask to you be fair and configure your own tokens.
-
 ## Behat and Selenium
 
 The scripts also allow behaviour testing through [Behat](http://behat.org).
