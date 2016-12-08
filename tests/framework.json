@@ -3,210 +3,315 @@
 		"name": "silverstripe\/framework",
 		"description": "The SilverStripe framework",
 		"time": "2012-11-01T17:18:32+00:00",
-		"maintainers": [{
-				"name": "ajshort"
-			}, {
+		"maintainers": [
+			{
 				"name": "chillu"
-			}, {
+			},
+			{
 				"name": "sminnee"
-			}, {
+			},
+			{
+				"name": "wilr"
+			},
+			{
 				"name": "tractorcow"
-			}],
+			},
+			{
+				"name": "kinglozzer"
+			},
+			{
+				"name": "willmorgan"
+			},
+			{
+				"name": "dhensby"
+			}
+		],
 		"versions": {
-			"3.1.x-dev": {
-				"name": "silverstripe\/framework",
-				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
-				"homepage": "http:\/\/silverstripe.org",
-				"version": "3.1.x-dev",
-				"version_normalized": "3.1.9999999.9999999-dev",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
-						"name": "SilverStripe",
-						"homepage": "http:\/\/silverstripe.com"
-					}, {
-						"name": "The SilverStripe Community",
-						"homepage": "http:\/\/silverstripe.org"
-					}],
-				"source": {
-					"type": "git",
-					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "e349a13968095e3d9e56f1ad1847dacb6a771abc"
-				},
-				"dist": {
-					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/e349a13968095e3d9e56f1ad1847dacb6a771abc",
-					"reference": "e349a13968095e3d9e56f1ad1847dacb6a771abc",
-					"shasum": ""
-				},
-				"type": "silverstripe-module",
-				"time": "2014-12-04T20:04:38+00:00",
-				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
-				},
-				"require": {
-					"php": ">=5.3.2",
-					"composer\/installers": "*"
-				},
-				"require-dev": {
-					"phpunit\/phpunit": "~3.7@stable"
-				}
-			},
-			"3.0.x-dev": {
-				"name": "silverstripe\/framework",
-				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
-				"homepage": "http:\/\/silverstripe.org",
-				"version": "3.0.x-dev",
-				"version_normalized": "3.0.9999999.9999999-dev",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
-						"name": "SilverStripe",
-						"homepage": "http:\/\/silverstripe.com"
-					}, {
-						"name": "The SilverStripe Community",
-						"homepage": "http:\/\/silverstripe.org"
-					}],
-				"source": {
-					"type": "git",
-					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "28760e051d325f9879a5e92db8d01f787d39522c"
-				},
-				"dist": {
-					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/28760e051d325f9879a5e92db8d01f787d39522c",
-					"reference": "28760e051d325f9879a5e92db8d01f787d39522c",
-					"shasum": ""
-				},
-				"type": "silverstripe-module",
-				"time": "2014-11-24T19:23:44+00:00",
-				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
-				},
-				"require": {
-					"php": ">=5.3.2",
-					"composer\/installers": "*"
-				},
-				"require-dev": {
-					"phpunit\/phpunit": "~3.7@stable"
-				}
-			},
-			"3.x-dev": {
-				"name": "silverstripe\/framework",
-				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
-				"homepage": "http:\/\/silverstripe.org",
-				"version": "3.x-dev",
-				"version_normalized": "3.9999999.9999999.9999999-dev",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
-						"name": "SilverStripe",
-						"homepage": "http:\/\/silverstripe.com"
-					}, {
-						"name": "The SilverStripe Community",
-						"homepage": "http:\/\/silverstripe.org"
-					}],
-				"source": {
-					"type": "git",
-					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "2aa1c1e11e8475ff6fc99f33e933143a193fc57e"
-				},
-				"dist": {
-					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2aa1c1e11e8475ff6fc99f33e933143a193fc57e",
-					"reference": "2aa1c1e11e8475ff6fc99f33e933143a193fc57e",
-					"shasum": ""
-				},
-				"type": "silverstripe-module",
-				"time": "2014-11-20T04:26:23+00:00",
-				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
-				},
-				"extra": {
-					"branch-alias": {
-						"3.x-dev": "3.2.x-dev"
-					}
-				},
-				"require": {
-					"php": ">=5.3.3",
-					"composer\/installers": "*"
-				},
-				"require-dev": {
-					"phpunit\/phpunit": "~3.7@stable"
-				}
-			},
 			"dev-master": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "dev-master",
 				"version_normalized": "9999999-dev",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "f17d594141f6db54f868add149ed201989b7f96d"
+					"reference": "322d3e18fd8cc7cfa2f62813774be86f82612ba3"
 				},
 				"dist": {
 					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/f17d594141f6db54f868add149ed201989b7f96d",
-					"reference": "f17d594141f6db54f868add149ed201989b7f96d",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/322d3e18fd8cc7cfa2f62813774be86f82612ba3",
+					"reference": "322d3e18fd8cc7cfa2f62813774be86f82612ba3",
 					"shasum": ""
 				},
 				"type": "silverstripe-module",
-				"time": "2014-11-20T04:15:02+00:00",
+				"time": "2016-12-08T10:24:58+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"psr-4": {
+						"SilverStripe\\Admin\\": "admin\/code\/",
+						"SilverStripe\\Admin\\Tests\\": "admin\/tests\/",
+						"SilverStripe\\Assets\\": "src\/Assets\/",
+						"SilverStripe\\Assets\\Tests\\": "tests\/php\/Assets\/",
+						"SilverStripe\\Control\\": "src\/Control\/",
+						"SilverStripe\\Control\\Tests\\": "tests\/php\/Control\/",
+						"SilverStripe\\Core\\": "src\/Core\/",
+						"SilverStripe\\Core\\Tests\\": "tests\/php\/Core\/",
+						"SilverStripe\\Dev\\": "src\/Dev\/",
+						"SilverStripe\\Dev\\Tests\\": "tests\/php\/Dev\/",
+						"SilverStripe\\Forms\\": "src\/Forms\/",
+						"SilverStripe\\Forms\\Tests\\": "tests\/php\/Forms\/",
+						"SilverStripe\\i18n\\": "src\/i18n\/",
+						"SilverStripe\\i18n\\Tests\\": "tests\/php\/i18n\/",
+						"SilverStripe\\Logging\\": "src\/Logging\/",
+						"SilverStripe\\ORM\\": "src\/ORM\/",
+						"SilverStripe\\ORM\\Tests\\": "tests\/php\/ORM\/",
+						"SilverStripe\\Security\\": "src\/Security\/",
+						"SilverStripe\\Security\\Tests\\": "tests\/php\/Security\/",
+						"SilverStripe\\View\\": "src\/View\/",
+						"SilverStripe\\View\\Tests\\": "tests\/php\/View\/"
+					},
+					"files": [
+						"src\/Core\/Constants.php"
+					],
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"extra": {
 					"branch-alias": {
 						"dev-master": "4.0.x-dev"
 					}
 				},
+				"include-path": [
+					"src\/",
+					"thirdparty\/"
+				],
 				"require": {
-					"composer\/installers": "*",
-					"php": ">=5.3.3"
+					"composer\/installers": "~1.0",
+					"monolog\/monolog": "~1.11",
+					"league\/flysystem": "~1.0.12",
+					"symfony\/yaml": "~2.7",
+					"php": "\u003E=5.5.0",
+					"embed\/embed": "^2.6"
 				},
 				"require-dev": {
-					"phpunit\/phpunit": "~3.7@stable"
+					"phpunit\/phpunit": "~4.8",
+					"silverstripe\/behat-extension": "^2.1.0",
+					"silverstripe\/serve": "dev-master",
+					"silverstripe\/testsession": "^2.0.0-alpha3",
+					"se\/selenium-server-standalone": "2.41.0"
+				}
+			},
+			"3.x-dev": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.x-dev",
+				"version_normalized": "3.9999999.9999999.9999999-dev",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "5f5d682176fa3e27dc227465dba516d3cc0d29af"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/5f5d682176fa3e27dc227465dba516d3cc0d29af",
+					"reference": "5f5d682176fa3e27dc227465dba516d3cc0d29af",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-12-08T04:28:13+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.6.x-dev"
+					}
+				},
+				"require": {
+					"composer\/installers": "~1.0",
+					"php": "\u003E=5.3.3,\u003C7"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.5.x-dev": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.5.x-dev",
+				"version_normalized": "3.5.9999999.9999999-dev",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "16fe69fdefa641860bf63959ed9018e7ffd2be70"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/16fe69fdefa641860bf63959ed9018e7ffd2be70",
+					"reference": "16fe69fdefa641860bf63959ed9018e7ffd2be70",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-12-07T13:14:14+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.5.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.4.x-dev": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.x-dev",
+				"version_normalized": "3.4.9999999.9999999-dev",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "7ca876a4c7665a83915b0c6c64647803d9892cab"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/7ca876a4c7665a83915b0c6c64647803d9892cab",
+					"reference": "7ca876a4c7665a83915b0c6c64647803d9892cab",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-12-06T23:17:01+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
 				}
 			},
 			"dev-post-2.4": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "dev-post-2.4",
 				"version_normalized": "dev-post-2.4",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "411c53908c397f18883de3f8ef6a63b3f28e19a1"
+					"reference": "0c0e375e9c9cebb2cd1edcd2b778669c72e438b5"
 				},
 				"dist": {
 					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/411c53908c397f18883de3f8ef6a63b3f28e19a1",
-					"reference": "411c53908c397f18883de3f8ef6a63b3f28e19a1",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/0c0e375e9c9cebb2cd1edcd2b778669c72e438b5",
+					"reference": "0c0e375e9c9cebb2cd1edcd2b778669c72e438b5",
 					"shasum": ""
 				},
 				"type": "silverstripe-module",
-				"time": "2014-08-22T04:06:57+00:00",
+				"time": "2016-03-15T16:55:54+00:00",
 				"extra": {
 					"branch-alias": {
 						"dev-post-2.4": "2.5.x-dev"
@@ -214,7 +319,7 @@
 					"installer-name": "sapphire"
 				},
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -224,33 +329,4020 @@
 			"2.4.x-dev": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.x-dev",
 				"version_normalized": "2.4.9999999.9999999-dev",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "ba73b03e6c706af9d8314dca98cae3a15b5957cf"
+					"reference": "b9ff0ea7d4dcef796d1114ddee2229fcfc2f08e3"
 				},
 				"dist": {
 					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/ba73b03e6c706af9d8314dca98cae3a15b5957cf",
-					"reference": "ba73b03e6c706af9d8314dca98cae3a15b5957cf",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b9ff0ea7d4dcef796d1114ddee2229fcfc2f08e3",
+					"reference": "b9ff0ea7d4dcef796d1114ddee2229fcfc2f08e3",
 					"shasum": ""
 				},
 				"type": "silverstripe-module",
-				"time": "2014-08-22T01:13:12+00:00",
+				"time": "2016-03-15T16:27:15+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.0.x-dev": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.0.x-dev",
+				"version_normalized": "3.0.9999999.9999999-dev",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "2291434a230903d69b5e85926ea2183fcc638447"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2291434a230903d69b5e85926ea2183fcc638447",
+					"reference": "2291434a230903d69b5e85926ea2183fcc638447",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-10T20:51:49+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.5.0": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.5.0",
+				"version_normalized": "3.5.0.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "179996b5f9ccbaab8882cafbf16c389623521b72"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/179996b5f9ccbaab8882cafbf16c389623521b72",
+					"reference": "179996b5f9ccbaab8882cafbf16c389623521b72",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-28T12:35:19+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.5.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.5.0-rc3": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.5.0-rc3",
+				"version_normalized": "3.5.0.0-RC3",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "47c33dc7c25ed71fccac70d1596829b9ec1a3a97"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/47c33dc7c25ed71fccac70d1596829b9ec1a3a97",
+					"reference": "47c33dc7c25ed71fccac70d1596829b9ec1a3a97",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-22T14:53:03+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.5.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.4.2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.2",
+				"version_normalized": "3.4.2.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "64595118fea44d70d621cce15502e53b490266b9"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/64595118fea44d70d621cce15502e53b490266b9",
+					"reference": "64595118fea44d70d621cce15502e53b490266b9",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-22T13:55:31+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.4": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.4",
+				"version_normalized": "3.3.4.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "be86c342b6f0c6f5cdb60c263bc95965ae3ee301"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/be86c342b6f0c6f5cdb60c263bc95965ae3ee301",
+					"reference": "be86c342b6f0c6f5cdb60c263bc95965ae3ee301",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-22T13:12:14+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.6": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.6",
+				"version_normalized": "3.2.6.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "182522b0185efff331d68196ff4e1e53933dc5ba"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/182522b0185efff331d68196ff4e1e53933dc5ba",
+					"reference": "182522b0185efff331d68196ff4e1e53933dc5ba",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-22T11:59:04+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.21": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.21",
+				"version_normalized": "3.1.21.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "586e5281e0fac726c98d2176b63d3350932a6588"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/586e5281e0fac726c98d2176b63d3350932a6588",
+					"reference": "586e5281e0fac726c98d2176b63d3350932a6588",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-18T12:17:03+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.5.0-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.5.0-rc2",
+				"version_normalized": "3.5.0.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "fcd3d2478ce9d3be286e8d3fd063cc49ced1d80e"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/fcd3d2478ce9d3be286e8d3fd063cc49ced1d80e",
+					"reference": "fcd3d2478ce9d3be286e8d3fd063cc49ced1d80e",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-10T14:30:07+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.5.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.5.0-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.5.0-rc1",
+				"version_normalized": "3.5.0.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "e1c092e73ace0c7580e28c98e075cca81c9040f6"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/e1c092e73ace0c7580e28c98e075cca81c9040f6",
+					"reference": "e1c092e73ace0c7580e28c98e075cca81c9040f6",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-09T11:45:29+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.5.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"4.0.0-alpha3": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "4.0.0-alpha3",
+				"version_normalized": "4.0.0.0-alpha3",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "af27a0f88832e0bd7470335773390bf6475675aa"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/af27a0f88832e0bd7470335773390bf6475675aa",
+					"reference": "af27a0f88832e0bd7470335773390bf6475675aa",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-11-03T02:27:10+00:00",
+				"autoload": {
+					"psr-4": {
+						"SilverStripe\\Admin\\": "admin\/code\/",
+						"SilverStripe\\Assets\\": "src\/Assets\/",
+						"SilverStripe\\Control\\": "src\/Control\/",
+						"SilverStripe\\Core\\": "src\/Core\/",
+						"SilverStripe\\Dev\\": "src\/Dev\/",
+						"SilverStripe\\Forms\\": "src\/Forms\/",
+						"SilverStripe\\i18n\\": "src\/i18n\/",
+						"SilverStripe\\Logging\\": "src\/Logging\/",
+						"SilverStripe\\ORM\\": "src\/ORM\/",
+						"SilverStripe\\Security\\": "src\/Security\/",
+						"SilverStripe\\View\\": "src\/View\/"
+					},
+					"files": [
+						"src\/Core\/Constants.php"
+					],
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"dev-master": "4.0.x-dev"
+					}
+				},
+				"include-path": [
+					"src\/",
+					"thirdparty\/"
+				],
+				"require": {
+					"php": "\u003E=5.5.0",
+					"composer\/installers": "~1.0",
+					"monolog\/monolog": "~1.11",
+					"league\/flysystem": "~1.0.12",
+					"symfony\/yaml": "~2.7",
+					"embed\/embed": "^2.6"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~4.8",
+					"silverstripe\/behat-extension": "^2.1.0",
+					"silverstripe\/serve": "dev-master",
+					"silverstripe\/testsession": "^2.0.0-alpha3",
+					"se\/selenium-server-standalone": "2.41.0"
+				}
+			},
+			"4.0.0-alpha2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "4.0.0-alpha2",
+				"version_normalized": "4.0.0.0-alpha2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "68ac1283d0358a751f3f2b8c5614f9956cfac7d0"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/68ac1283d0358a751f3f2b8c5614f9956cfac7d0",
+					"reference": "68ac1283d0358a751f3f2b8c5614f9956cfac7d0",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-09-23T04:27:11+00:00",
+				"autoload": {
+					"psr-4": {
+						"SilverStripe\\Admin\\": "admin\/code\/",
+						"SilverStripe\\Assets\\": "Assets\/",
+						"SilverStripe\\Control\\": "Control\/",
+						"SilverStripe\\Core\\": "Core\/",
+						"SilverStripe\\Dev\\": "Dev\/",
+						"SilverStripe\\Forms\\": "Forms\/",
+						"SilverStripe\\i18n\\": "i18n\/",
+						"SilverStripe\\Logging\\": "Logging\/",
+						"SilverStripe\\ORM\\": "ORM\/",
+						"SilverStripe\\Security\\": "Security\/",
+						"SilverStripe\\View\\": "View\/"
+					},
+					"psr-0": {
+						"HTML_": "thirdparty\/HTML_BBCodeParser2"
+					},
+					"files": [
+						"Core\/Constants.php"
+					],
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"dev-master": "4.0.x-dev"
+					}
+				},
+				"include-path": [
+					"thirdparty\/",
+					"thirdparty\/HTML_BBCodeParser2\/"
+				],
+				"require": {
+					"php": "\u003E=5.5.0",
+					"composer\/installers": "~1.0",
+					"monolog\/monolog": "~1.11",
+					"league\/flysystem": "~1.0.12",
+					"symfony\/yaml": "~2.7",
+					"embed\/embed": "^2.6"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~4.8",
+					"silverstripe\/behat-extension": "^2.1.0",
+					"silverstripe\/serve": "dev-master",
+					"silverstripe\/testsession": "^2.0.0-alpha3",
+					"se\/selenium-server-standalone": "2.41.0"
+				}
+			},
+			"3.4.1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.1",
+				"version_normalized": "3.4.1.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/1f06e6dd18419cda02d58a78f39f6613c067a3ed",
+					"reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T06:29:38+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.3": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.3",
+				"version_normalized": "3.3.3.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "68986558c998cf7799e4eb7d2e504fa1deba78cb"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/68986558c998cf7799e4eb7d2e504fa1deba78cb",
+					"reference": "68986558c998cf7799e4eb7d2e504fa1deba78cb",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T06:05:32+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.5": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.5",
+				"version_normalized": "3.2.5.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "351bf6cfe4cf54a883087921ddc5d4cc8dd0805e"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/351bf6cfe4cf54a883087921ddc5d4cc8dd0805e",
+					"reference": "351bf6cfe4cf54a883087921ddc5d4cc8dd0805e",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T05:22:23+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.20": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.20",
+				"version_normalized": "3.1.20.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "6f60d2518bf5265265c00935221a4b17d3c83e99"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/6f60d2518bf5265265c00935221a4b17d3c83e99",
+					"reference": "6f60d2518bf5265265c00935221a4b17d3c83e99",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T04:44:36+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.4.1-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.1-rc2",
+				"version_normalized": "3.4.1.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "02000e5446e9be00e8687507fff4bac17ff9db80"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/02000e5446e9be00e8687507fff4bac17ff9db80",
+					"reference": "02000e5446e9be00e8687507fff4bac17ff9db80",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T03:55:19+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.3-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.3-rc2",
+				"version_normalized": "3.3.3.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "7c0669486ae8ba2b87a1f7374ab759fa12854da9"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/7c0669486ae8ba2b87a1f7374ab759fa12854da9",
+					"reference": "7c0669486ae8ba2b87a1f7374ab759fa12854da9",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T03:34:41+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.5-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.5-rc2",
+				"version_normalized": "3.2.5.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "1a03bdba7a0f857705922e2554c48c1092e9584c"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/1a03bdba7a0f857705922e2554c48c1092e9584c",
+					"reference": "1a03bdba7a0f857705922e2554c48c1092e9584c",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T02:17:41+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.20-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.20-rc2",
+				"version_normalized": "3.1.20.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "b2a7170c64cbe86d7beb453da956454452c50cba"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b2a7170c64cbe86d7beb453da956454452c50cba",
+					"reference": "b2a7170c64cbe86d7beb453da956454452c50cba",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-15T01:41:31+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.4.1-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.1-rc1",
+				"version_normalized": "3.4.1.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "2299b8e67a4ba4b765bdc607d303eab55cc8c2b9"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2299b8e67a4ba4b765bdc607d303eab55cc8c2b9",
+					"reference": "2299b8e67a4ba4b765bdc607d303eab55cc8c2b9",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-05T06:52:14+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.3-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.3-rc1",
+				"version_normalized": "3.3.3.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "958344eb5d5477f4ec3ed8f864e950b30ad452e2"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/958344eb5d5477f4ec3ed8f864e950b30ad452e2",
+					"reference": "958344eb5d5477f4ec3ed8f864e950b30ad452e2",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-05T04:33:22+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.5-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.5-rc1",
+				"version_normalized": "3.2.5.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "6e6451fa71738c4e2232fb7cae2ba8ac15e50fa7"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/6e6451fa71738c4e2232fb7cae2ba8ac15e50fa7",
+					"reference": "6e6451fa71738c4e2232fb7cae2ba8ac15e50fa7",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-05T01:24:35+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.20-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.20-rc1",
+				"version_normalized": "3.1.20.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "ec969c21e672eba7ecb1c0bbba03e2923bbc2ba6"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/ec969c21e672eba7ecb1c0bbba03e2923bbc2ba6",
+					"reference": "ec969c21e672eba7ecb1c0bbba03e2923bbc2ba6",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-08-04T23:17:57+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.4.0": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.0",
+				"version_normalized": "3.4.0.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "8008fcbe9769f1d2cb53c542f302ad6d32d185d6"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/8008fcbe9769f1d2cb53c542f302ad6d32d185d6",
+					"reference": "8008fcbe9769f1d2cb53c542f302ad6d32d185d6",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-06-02T22:59:29+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.4.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.4.0-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.4.0-rc1",
+				"version_normalized": "3.4.0.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "0d356d078d1a030e664e44e4b251719452e9af3c"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/0d356d078d1a030e664e44e4b251719452e9af3c",
+					"reference": "0d356d078d1a030e664e44e4b251719452e9af3c",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-19T03:27:07+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.4.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"4.0.0-alpha1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "4.0.0-alpha1",
+				"version_normalized": "4.0.0.0-alpha1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "2d07f9b24c03a823f65f90647b2dd4a72ae8a23b"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2d07f9b24c03a823f65f90647b2dd4a72ae8a23b",
+					"reference": "2d07f9b24c03a823f65f90647b2dd4a72ae8a23b",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-12T04:07:35+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"dev-master": "4.0.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.5.0",
+					"composer\/installers": "~1.0",
+					"monolog\/monolog": "~1.11",
+					"league\/flysystem": "~1.0.12",
+					"symfony\/yaml": "~2.7"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~4.8"
+				}
+			},
+			"3.3.2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.2",
+				"version_normalized": "3.3.2.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "de5949b3dd135b38d308f680435dbe45ba82419d"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/de5949b3dd135b38d308f680435dbe45ba82419d",
+					"reference": "de5949b3dd135b38d308f680435dbe45ba82419d",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-10T23:25:17+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.4": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.4",
+				"version_normalized": "3.2.4.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "cfb3d96a0352d3de96d05fabb8f3980129df6355"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/cfb3d96a0352d3de96d05fabb8f3980129df6355",
+					"reference": "cfb3d96a0352d3de96d05fabb8f3980129df6355",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-10T23:24:49+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.19": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.19",
+				"version_normalized": "3.1.19.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "68dca6f6c0cc14b1b0f1e1f70a608f78939ac156"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/68dca6f6c0cc14b1b0f1e1f70a608f78939ac156",
+					"reference": "68dca6f6c0cc14b1b0f1e1f70a608f78939ac156",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-10T23:09:20+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.2-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.2-rc1",
+				"version_normalized": "3.3.2.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "5eafdce963be323a5652e7f720df9a69c069d072"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/5eafdce963be323a5652e7f720df9a69c069d072",
+					"reference": "5eafdce963be323a5652e7f720df9a69c069d072",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-05T12:38:46+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.4-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.4-rc1",
+				"version_normalized": "3.2.4.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "73b922d43b3cd304857d04238669ff55446ba2a7"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/73b922d43b3cd304857d04238669ff55446ba2a7",
+					"reference": "73b922d43b3cd304857d04238669ff55446ba2a7",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-05T10:48:07+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.19-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.19-rc1",
+				"version_normalized": "3.1.19.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "ee5133f355a1d89c25d6594bbceb0bb00a31867f"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/ee5133f355a1d89c25d6594bbceb0bb00a31867f",
+					"reference": "ee5133f355a1d89c25d6594bbceb0bb00a31867f",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-05-05T08:33:57+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.1",
+				"version_normalized": "3.3.1.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "fb582332010873c1ec03f5644263667f615b1f98"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/fb582332010873c1ec03f5644263667f615b1f98",
+					"reference": "fb582332010873c1ec03f5644263667f615b1f98",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-29T02:23:25+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.3": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.3",
+				"version_normalized": "3.2.3.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "9050761f1750578847a6f912660e54c14930aa7d"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/9050761f1750578847a6f912660e54c14930aa7d",
+					"reference": "9050761f1750578847a6f912660e54c14930aa7d",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-29T02:22:39+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.18": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.18",
+				"version_normalized": "3.1.18.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "2147205dc155e87c336c7f66063d2b089cff7816"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2147205dc155e87c336c7f66063d2b089cff7816",
+					"reference": "2147205dc155e87c336c7f66063d2b089cff7816",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-29T02:10:05+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.1-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.1-rc2",
+				"version_normalized": "3.3.1.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "807377ad2dba641594793d3a7ddaf3696ccf3c68"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/807377ad2dba641594793d3a7ddaf3696ccf3c68",
+					"reference": "807377ad2dba641594793d3a7ddaf3696ccf3c68",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-27T08:02:09+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.3-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.3-rc2",
+				"version_normalized": "3.2.3.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "3c053bb85d1b236a0f3eb29ae16c8b760aa9b132"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/3c053bb85d1b236a0f3eb29ae16c8b760aa9b132",
+					"reference": "3c053bb85d1b236a0f3eb29ae16c8b760aa9b132",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-27T08:00:59+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.18-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.18-rc2",
+				"version_normalized": "3.1.18.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "b77acaeeb7e723ef322484712a6ccf54fcc3f2b2"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b77acaeeb7e723ef322484712a6ccf54fcc3f2b2",
+					"reference": "b77acaeeb7e723ef322484712a6ccf54fcc3f2b2",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-27T07:53:23+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.1-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.1-rc1",
+				"version_normalized": "3.3.1.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "a80c6e1e8c3621e379e0cf969d455af51c204d92"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/a80c6e1e8c3621e379e0cf969d455af51c204d92",
+					"reference": "a80c6e1e8c3621e379e0cf969d455af51c204d92",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-26T04:30:07+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.3-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.3-rc1",
+				"version_normalized": "3.2.3.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "8c12b6f9926db61b10d58ea0d4f2777f8f80bc82"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/8c12b6f9926db61b10d58ea0d4f2777f8f80bc82",
+					"reference": "8c12b6f9926db61b10d58ea0d4f2777f8f80bc82",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-26T04:25:00+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.18-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.18-rc1",
+				"version_normalized": "3.1.18.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "9e0037d43e693a328a570bafe3f349b5cfb7e21e"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/9e0037d43e693a328a570bafe3f349b5cfb7e21e",
+					"reference": "9e0037d43e693a328a570bafe3f349b5cfb7e21e",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-26T04:13:49+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.0": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.0",
+				"version_normalized": "3.3.0.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "0ec021dac89590fd103696737a1d65a3c543786e"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/0ec021dac89590fd103696737a1d65a3c543786e",
+					"reference": "0ec021dac89590fd103696737a1d65a3c543786e",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-24T03:30:34+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.2",
+				"version_normalized": "3.2.2.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "531b8b167baf2954ee53747cfa4ad00946a79c84"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/531b8b167baf2954ee53747cfa4ad00946a79c84",
+					"reference": "531b8b167baf2954ee53747cfa4ad00946a79c84",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-24T02:33:02+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.17": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.17",
+				"version_normalized": "3.1.17.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "1fe7d029db06723a86e400cfd035cecf21c9ed59"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/1fe7d029db06723a86e400cfd035cecf21c9ed59",
+					"reference": "1fe7d029db06723a86e400cfd035cecf21c9ed59",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-24T02:31:12+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.17-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.17-rc2",
+				"version_normalized": "3.1.17.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "9a4f0b48df4965f8baa9db29ae52106aae7ffbfd"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/9a4f0b48df4965f8baa9db29ae52106aae7ffbfd",
+					"reference": "9a4f0b48df4965f8baa9db29ae52106aae7ffbfd",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-23T23:38:54+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.2.2-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.2-rc2",
+				"version_normalized": "3.2.2.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "6cd66a6b13e47439da503df5185e20c3ea0f01e3"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/6cd66a6b13e47439da503df5185e20c3ea0f01e3",
+					"reference": "6cd66a6b13e47439da503df5185e20c3ea0f01e3",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-23T23:01:41+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.2-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.2-rc1",
+				"version_normalized": "3.2.2.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "af28b0a414d2a01548fe19f2ab36e4c87ac7f77a"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/af28b0a414d2a01548fe19f2ab36e4c87ac7f77a",
+					"reference": "af28b0a414d2a01548fe19f2ab36e4c87ac7f77a",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-18T22:22:10+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.17-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.17-rc1",
+				"version_normalized": "3.1.17.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "f32302522cbc4afde237b281fed4b72aacf27ba4"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/f32302522cbc4afde237b281fed4b72aacf27ba4",
+					"reference": "f32302522cbc4afde237b281fed4b72aacf27ba4",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-18T21:30:25+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.3.0-rc3": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.0-rc3",
+				"version_normalized": "3.3.0.0-RC3",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "97089db8a6a6a454702f9e36a3cce35c4598ca61"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/97089db8a6a6a454702f9e36a3cce35c4598ca61",
+					"reference": "97089db8a6a6a454702f9e36a3cce35c4598ca61",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-18T04:29:18+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.0-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.0-rc2",
+				"version_normalized": "3.3.0.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "96a905aa098dffc5d0fa32dcdaa3a22f8e6b5b62"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/96a905aa098dffc5d0fa32dcdaa3a22f8e6b5b62",
+					"reference": "96a905aa098dffc5d0fa32dcdaa3a22f8e6b5b62",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-02-09T05:07:11+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.0-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.0-rc1",
+				"version_normalized": "3.3.0.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "b4e76df531d3fb2c1e61f907a29505fc815f00d2"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b4e76df531d3fb2c1e61f907a29505fc815f00d2",
+					"reference": "b4e76df531d3fb2c1e61f907a29505fc815f00d2",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2016-01-25T02:35:42+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.3.0-beta1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.3.0-beta1",
+				"version_normalized": "3.3.0.0-beta1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "5507ce89c61e32199a90cf1e919b011d7b3d57cc"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/5507ce89c61e32199a90cf1e919b011d7b3d57cc",
+					"reference": "5507ce89c61e32199a90cf1e919b011d7b3d57cc",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-12-23T01:12:02+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"extra": {
+					"branch-alias": {
+						"3.x-dev": "3.3.x-dev"
+					}
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.1",
+				"version_normalized": "3.2.1.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "0178fa5a1873a0f1d6100268c86dab81a18c23a5"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/0178fa5a1873a0f1d6100268c86dab81a18c23a5",
+					"reference": "0178fa5a1873a0f1d6100268c86dab81a18c23a5",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-11-16T03:17:10+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.16": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.16",
+				"version_normalized": "3.1.16.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "2e6469956fa76513c6c9c70587c806f095ddb6d7"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/2e6469956fa76513c6c9c70587c806f095ddb6d7",
+					"reference": "2e6469956fa76513c6c9c70587c806f095ddb6d7",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-11-16T02:20:30+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.2.1-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.1-rc2",
+				"version_normalized": "3.2.1.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "c19420f545a32f86b843a6fb7c893482f7812ad3"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/c19420f545a32f86b843a6fb7c893482f7812ad3",
+					"reference": "c19420f545a32f86b843a6fb7c893482f7812ad3",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-11-13T02:32:09+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.16-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.16-rc1",
+				"version_normalized": "3.1.16.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "245e0aae2f5f3eb0acba1d198ad8e196bb224462"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/245e0aae2f5f3eb0acba1d198ad8e196bb224462",
+					"reference": "245e0aae2f5f3eb0acba1d198ad8e196bb224462",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-11-11T04:50:02+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.2.1-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.1-rc1",
+				"version_normalized": "3.2.1.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "1c1c0a23bdf21df0d57ff5d3185cbbca5aef20da"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/1c1c0a23bdf21df0d57ff5d3185cbbca5aef20da",
+					"reference": "1c1c0a23bdf21df0d57ff5d3185cbbca5aef20da",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-11-11T04:10:41+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.0": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.0",
+				"version_normalized": "3.2.0.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "0092792568fb8a33674669aa200c7c81b163a365"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/0092792568fb8a33674669aa200c7c81b163a365",
+					"reference": "0092792568fb8a33674669aa200c7c81b163a365",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-10-11T19:44:34+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.0-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.0-rc2",
+				"version_normalized": "3.2.0.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "557c4211fa0e2ebaf10fb65bbad5af20712141cb"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/557c4211fa0e2ebaf10fb65bbad5af20712141cb",
+					"reference": "557c4211fa0e2ebaf10fb65bbad5af20712141cb",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-10-06T20:51:24+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.1.15": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.15",
+				"version_normalized": "3.1.15.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "c2a407a01b362981d070d6062fef52c8679e4a2b"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/c2a407a01b362981d070d6062fef52c8679e4a2b",
+					"reference": "c2a407a01b362981d070d6062fef52c8679e4a2b",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-09-18T02:51:04+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.14": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.14",
+				"version_normalized": "3.1.14.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "00caeb700dc0a291087b92f0499980e5cded0f4d"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/00caeb700dc0a291087b92f0499980e5cded0f4d",
+					"reference": "00caeb700dc0a291087b92f0499980e5cded0f4d",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-09-14T22:58:15+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.14-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.14-rc1",
+				"version_normalized": "3.1.14.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "92f9af1984558f7053792451afff0248048e7d70"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/92f9af1984558f7053792451afff0248048e7d70",
+					"reference": "92f9af1984558f7053792451afff0248048e7d70",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-09-01T23:15:53+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2,\u003C7",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.2.0-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.0-rc1",
+				"version_normalized": "3.2.0.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "b49149d9d273b357ba9a9a3d2858284b554f9daf"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b49149d9d273b357ba9a9a3d2858284b554f9daf",
+					"reference": "b49149d9d273b357ba9a9a3d2858284b554f9daf",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-08-26T02:16:06+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3,\u003C7",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.0-beta2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.0-beta2",
+				"version_normalized": "3.2.0.0-beta2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "102892e2477b1b24a030d2e60172bbe99dbb83ad"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/102892e2477b1b24a030d2e60172bbe99dbb83ad",
+					"reference": "102892e2477b1b24a030d2e60172bbe99dbb83ad",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-08-04T01:02:20+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3",
+					"composer\/installers": "~1.0"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7"
+				}
+			},
+			"3.2.0-beta1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.2.0-beta1",
+				"version_normalized": "3.2.0.0-beta1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "9cccfec1a067bdb172d6d1af80aa0d19aab85bed"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/9cccfec1a067bdb172d6d1af80aa0d19aab85bed",
+					"reference": "9cccfec1a067bdb172d6d1af80aa0d19aab85bed",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-06-19T07:22:38+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.3",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.0.14": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.0.14",
+				"version_normalized": "3.0.14.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "01255c109bf6ee31f3c802177aa08819b88de804"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/01255c109bf6ee31f3c802177aa08819b88de804",
+					"reference": "01255c109bf6ee31f3c802177aa08819b88de804",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-05-28T07:20:23+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.13": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.13",
+				"version_normalized": "3.1.13.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "04b803dfc6dc60f2e6a38fa74f957156230b54be"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/04b803dfc6dc60f2e6a38fa74f957156230b54be",
+					"reference": "04b803dfc6dc60f2e6a38fa74f957156230b54be",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-05-28T06:59:11+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.13-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.13-rc1",
+				"version_normalized": "3.1.13.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "c1d500dedc0b46a3edbde6efb8a693601f0cc3fe"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/c1d500dedc0b46a3edbde6efb8a693601f0cc3fe",
+					"reference": "c1d500dedc0b46a3edbde6efb8a693601f0cc3fe",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-05-14T02:34:09+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.0.13": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.0.13",
+				"version_normalized": "3.0.13.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/94b2963ad8532bda5da08d7e27387ce44ae26bdc",
+					"reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-03-31T01:11:11+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.12": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.12",
+				"version_normalized": "3.1.12.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "ffcbeb581258764a01f498e3fb8fa6d9dccbc501"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/ffcbeb581258764a01f498e3fb8fa6d9dccbc501",
+					"reference": "ffcbeb581258764a01f498e3fb8fa6d9dccbc501",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-03-20T06:29:20+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.11": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.11",
+				"version_normalized": "3.1.11.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "b3364150f9eebb169a00438fdb2277678a8ed9c5"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/b3364150f9eebb169a00438fdb2277678a8ed9c5",
+					"reference": "b3364150f9eebb169a00438fdb2277678a8ed9c5",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-03-19T04:46:36+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.0.12": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.0.12",
+				"version_normalized": "3.0.12.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "11521fb92d0a3ae44857e0059a222f41fba8a447"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/11521fb92d0a3ae44857e0059a222f41fba8a447",
+					"reference": "11521fb92d0a3ae44857e0059a222f41fba8a447",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-03-19T04:35:09+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.11-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.11-rc1",
+				"version_normalized": "3.1.11.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "872d05fd1b946a953c517642a50dc3fab283179a"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/872d05fd1b946a953c517642a50dc3fab283179a",
+					"reference": "872d05fd1b946a953c517642a50dc3fab283179a",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-03-09T05:28:50+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.10": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.10",
+				"version_normalized": "3.1.10.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b",
+					"reference": "c302edc4e72dd93ac2c7d9bbf0ee42d2d74cd48b",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-02-18T23:37:16+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.10-rc2": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.10-rc2",
+				"version_normalized": "3.1.10.0-RC2",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "fab44dce75e4c95e9aba78828e92b81db0b2e749"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/fab44dce75e4c95e9aba78828e92b81db0b2e749",
+					"reference": "fab44dce75e4c95e9aba78828e92b81db0b2e749",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-02-17T05:05:16+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.10-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.10-rc1",
+				"version_normalized": "3.1.10.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "9a97cbc255d7681e068347a95b4790037ab599d3"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/9a97cbc255d7681e068347a95b4790037ab599d3",
+					"reference": "9a97cbc255d7681e068347a95b4790037ab599d3",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-02-16T03:39:01+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.9": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.9",
+				"version_normalized": "3.1.9.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "87d6250ea75f5e1c765d9004c51bd5ffd5633185"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/87d6250ea75f5e1c765d9004c51bd5ffd5633185",
+					"reference": "87d6250ea75f5e1c765d9004c51bd5ffd5633185",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-01-14T22:56:46+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				},
+				"require-dev": {
+					"phpunit\/phpunit": "~3.7@stable"
+				}
+			},
+			"3.1.9-rc1": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.1.9-rc1",
+				"version_normalized": "3.1.9.0-RC1",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "db314b2a766cdb99161d88d43fb42eceb2756c37"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/db314b2a766cdb99161d88d43fb42eceb2756c37",
+					"reference": "db314b2a766cdb99161d88d43fb42eceb2756c37",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2015-01-12T20:04:39+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -260,18 +4352,26 @@
 			"3.1.8": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.8",
 				"version_normalized": "3.1.8.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -286,10 +4386,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-11-18T05:30:19+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -299,18 +4401,26 @@
 			"3.1.7": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.7",
 				"version_normalized": "3.1.7.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -325,10 +4435,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-11-14T02:38:19+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -338,18 +4450,26 @@
 			"3.1.7-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.7-rc1",
 				"version_normalized": "3.1.7.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -364,10 +4484,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-11-08T05:50:54+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -377,18 +4499,26 @@
 			"3.1.6": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.6",
 				"version_normalized": "3.1.6.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -403,10 +4533,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-08-24T23:25:01+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -416,18 +4548,26 @@
 			"3.1.6-rc3": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.6-rc3",
 				"version_normalized": "3.1.6.0-RC3",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -442,10 +4582,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-08-18T05:42:31+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -455,18 +4597,26 @@
 			"3.1.6-rc2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.6-rc2",
 				"version_normalized": "3.1.6.0-RC2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -481,10 +4631,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-08-12T03:12:44+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -494,18 +4646,26 @@
 			"3.1.6-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.6-rc1",
 				"version_normalized": "3.1.6.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -520,10 +4680,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-08-05T03:50:03+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -533,18 +4695,26 @@
 			"3.1.5": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.5",
 				"version_normalized": "3.1.5.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -559,10 +4729,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-05-13T03:06:43+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -572,18 +4744,26 @@
 			"3.0.11": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.11",
 				"version_normalized": "3.0.11.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -598,10 +4778,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-05-13T01:02:21+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -611,18 +4793,26 @@
 			"3.0.11-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.11-rc1",
 				"version_normalized": "3.0.11.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -637,10 +4827,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-05-07T03:54:55+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -650,18 +4842,26 @@
 			"3.1.5-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.5-rc1",
 				"version_normalized": "3.1.5.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -676,10 +4876,12 @@
 				"type": "silverstripe-module",
 				"time": "2014-05-06T23:06:34+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				},
 				"require-dev": {
@@ -689,18 +4891,26 @@
 			"3.1.4": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.4",
 				"version_normalized": "3.1.4.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -715,28 +4925,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-04-08T04:19:19+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.10": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.10",
 				"version_normalized": "3.0.10.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -751,28 +4971,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-04-08T00:30:24+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.4-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.4-rc1",
 				"version_normalized": "3.1.4.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -787,28 +5017,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-03-31T22:30:43+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.10-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.10-rc1",
 				"version_normalized": "3.0.10.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -823,28 +5063,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-03-31T03:31:25+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.9": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.9",
 				"version_normalized": "3.0.9.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -859,28 +5109,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-03-02T21:19:08+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.3": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.3",
 				"version_normalized": "3.1.3.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -895,28 +5155,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-03-02T19:54:18+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.3-rc2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.3-rc2",
 				"version_normalized": "3.1.3.0-RC2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -931,28 +5201,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-02-23T21:08:09+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.3-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.3-rc1",
 				"version_normalized": "3.1.3.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -967,28 +5247,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-02-19T03:39:10+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.9-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.9-rc1",
 				"version_normalized": "3.0.9.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1003,28 +5293,38 @@
 				"type": "silverstripe-module",
 				"time": "2014-02-19T02:39:54+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.2",
 				"version_normalized": "3.1.2.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1039,28 +5339,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-11-12T18:43:44+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.2-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.2-rc1",
 				"version_normalized": "3.1.2.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1075,28 +5385,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-11-08T00:11:57+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.1",
 				"version_normalized": "3.1.1.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1111,28 +5431,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-10-07T12:57:56+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.8": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.8",
 				"version_normalized": "3.0.8.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1147,28 +5477,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-10-06T23:31:28+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.7": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.7",
 				"version_normalized": "3.0.7.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1183,28 +5523,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-30T22:26:11+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0",
 				"version_normalized": "3.1.0.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1219,28 +5569,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-30T22:22:53+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-rc3": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-rc3",
 				"version_normalized": "3.1.0.0-RC3",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1255,28 +5615,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-25T23:42:31+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.7-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.7-rc1",
 				"version_normalized": "3.0.7.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1291,28 +5661,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-25T23:32:45+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"2.4.13": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.13",
 				"version_normalized": "2.4.13.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1327,25 +5707,33 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-25T23:12:03+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-rc2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-rc2",
 				"version_normalized": "3.1.0.0-RC2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1360,64 +5748,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-12T15:02:20+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
-					"composer\/installers": "*"
-				}
-			},
-			"3.0.6": {
-				"name": "silverstripe\/framework",
-				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
-				"homepage": "http:\/\/silverstripe.org",
-				"version": "3.0.6",
-				"version_normalized": "3.0.6.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
-						"name": "SilverStripe",
-						"homepage": "http:\/\/silverstripe.com"
-					}, {
-						"name": "The SilverStripe Community",
-						"homepage": "http:\/\/silverstripe.org"
-					}],
-				"source": {
-					"type": "git",
-					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
-					"reference": "24bae3f922b8ca0cd9e5ce175ad205baeac96a7b"
-				},
-				"dist": {
-					"type": "zip",
-					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/24bae3f922b8ca0cd9e5ce175ad205baeac96a7b",
-					"reference": "24bae3f922b8ca0cd9e5ce175ad205baeac96a7b",
-					"shasum": ""
-				},
-				"type": "silverstripe-module",
-				"time": "2013-09-12T14:48:20+00:00",
-				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
-				},
-				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.6-rc2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.6-rc2",
 				"version_normalized": "3.0.6.0-RC2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1432,28 +5794,84 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-12T14:48:20+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
+					"composer\/installers": "*"
+				}
+			},
+			"3.0.6": {
+				"name": "silverstripe\/framework",
+				"description": "The SilverStripe framework",
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
+				"homepage": "http:\/\/silverstripe.org",
+				"version": "3.0.6",
+				"version_normalized": "3.0.6.0",
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
+						"name": "SilverStripe",
+						"homepage": "http:\/\/silverstripe.com"
+					},
+					{
+						"name": "The SilverStripe Community",
+						"homepage": "http:\/\/silverstripe.org"
+					}
+				],
+				"source": {
+					"type": "git",
+					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
+					"reference": "24bae3f922b8ca0cd9e5ce175ad205baeac96a7b"
+				},
+				"dist": {
+					"type": "zip",
+					"url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-framework\/zipball\/24bae3f922b8ca0cd9e5ce175ad205baeac96a7b",
+					"reference": "24bae3f922b8ca0cd9e5ce175ad205baeac96a7b",
+					"shasum": ""
+				},
+				"type": "silverstripe-module",
+				"time": "2013-09-12T14:48:20+00:00",
+				"autoload": {
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
+				},
+				"require": {
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"2.4.12": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.12",
 				"version_normalized": "2.4.12.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1468,25 +5886,33 @@
 				"type": "silverstripe-module",
 				"time": "2013-09-12T14:29:35+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-rc1",
 				"version_normalized": "3.1.0.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1501,28 +5927,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-08-09T02:25:58+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.6-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.6-rc1",
 				"version_normalized": "3.0.6.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1537,28 +5973,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-08-07T18:55:10+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"2.4.11": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.11",
 				"version_normalized": "2.4.11.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1573,25 +6019,33 @@
 				"type": "silverstripe-module",
 				"time": "2013-08-07T13:23:46+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-beta3": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-beta3",
 				"version_normalized": "3.1.0.0-beta3",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1606,28 +6060,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-04-19T09:32:21+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-beta2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-beta2",
 				"version_normalized": "3.1.0.0-beta2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1642,28 +6106,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-02-26T01:17:47+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.5": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.5",
 				"version_normalized": "3.0.5.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1678,28 +6152,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-02-19T23:39:00+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.4": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.4",
 				"version_normalized": "3.0.4.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1714,28 +6198,38 @@
 				"type": "silverstripe-module",
 				"time": "2013-02-18T00:34:51+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"2.4.10": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.10",
 				"version_normalized": "2.4.10.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1750,25 +6244,33 @@
 				"type": "silverstripe-module",
 				"time": "2013-02-18T00:03:57+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				}
 			},
 			"3.1.0-beta1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.1.0-beta1",
 				"version_normalized": "3.1.0.0-beta1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1783,28 +6285,38 @@
 				"type": "silverstripe-module",
 				"time": "2012-12-17T15:40:33+00:00",
 				"autoload": {
-					"classmap": ["tests\/behat\/features\/bootstrap"]
+					"classmap": [
+						"tests\/behat\/features\/bootstrap"
+					]
 				},
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"2.4.9": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe Framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "2.4.9",
 				"version_normalized": "2.4.9.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1819,25 +6331,33 @@
 				"type": "silverstripe-module",
 				"time": "2012-12-04T21:47:47+00:00",
 				"require": {
-					"php": ">=5.2.4",
+					"php": "\u003E=5.2.4",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.3": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.3",
 				"version_normalized": "3.0.3.0",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1852,25 +6372,33 @@
 				"type": "silverstripe-module",
 				"time": "2012-11-25T22:20:21+00:00",
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.3-rc2": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.3-rc2",
 				"version_normalized": "3.0.3.0-RC2",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1885,25 +6413,33 @@
 				"type": "silverstripe-module",
 				"time": "2012-11-16T01:45:20+00:00",
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.3-rc1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.3-rc1",
 				"version_normalized": "3.0.3.0-RC1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1918,25 +6454,33 @@
 				"type": "silverstripe-module",
 				"time": "2012-11-05T21:41:24+00:00",
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			},
 			"3.0.2.1": {
 				"name": "silverstripe\/framework",
 				"description": "The SilverStripe framework",
-				"keywords": ["framework", "silverstripe"],
+				"keywords": [
+					"framework",
+					"silverstripe"
+				],
 				"homepage": "http:\/\/silverstripe.org",
 				"version": "3.0.2.1",
 				"version_normalized": "3.0.2.1",
-				"license": ["BSD-3-Clause"],
-				"authors": [{
+				"license": [
+					"BSD-3-Clause"
+				],
+				"authors": [
+					{
 						"name": "SilverStripe",
 						"homepage": "http:\/\/silverstripe.com"
-					}, {
+					},
+					{
 						"name": "The SilverStripe Community",
 						"homepage": "http:\/\/silverstripe.org"
-					}],
+					}
+				],
 				"source": {
 					"type": "git",
 					"url": "https:\/\/github.com\/silverstripe\/silverstripe-framework.git",
@@ -1951,18 +6495,25 @@
 				"type": "silverstripe-module",
 				"time": "2012-11-03T02:41:00+00:00",
 				"require": {
-					"php": ">=5.3.2",
+					"php": "\u003E=5.3.2",
 					"composer\/installers": "*"
 				}
 			}
 		},
 		"type": "silverstripe-module",
 		"repository": "https:\/\/github.com\/silverstripe\/silverstripe-framework",
+		"github_stars": 535,
+		"github_watchers": 73,
+		"github_forks": 625,
+		"github_open_issues": 676,
+		"language": "PHP",
+		"dependents": 1546,
+		"suggesters": 0,
 		"downloads": {
-			"total": 101511,
-			"monthly": 7594,
-			"daily": 75
+			"total": 370608,
+			"monthly": 13741,
+			"daily": 415
 		},
-		"favers": 5
+		"favers": 544
 	}
 }
