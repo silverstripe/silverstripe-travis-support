@@ -58,17 +58,17 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		$generator = new ComposerGenerator('master', null, null, $this->getMockFrameworkJson());
 		$this->assertEquals('4.0.x-dev', $generator->getCoreComposerConstraint());
 
-		// 3.x-dev is aliased as 3.2.x-dev
+		// 3.x-dev is aliased as 3.6.x-dev
 		$generator = new ComposerGenerator('3', null, null, $this->getMockFrameworkJson());
-		$this->assertEquals('3.2.x-dev', $generator->getCoreComposerConstraint());
+		$this->assertEquals('3.6.x-dev', $generator->getCoreComposerConstraint());
 
-		// 3.1 has no alias
+		// 3.1 has no branch or alias - fallback to latest release
 		$generator = new ComposerGenerator('3.1', null, null, $this->getMockFrameworkJson());
-		$this->assertEquals('3.1.x-dev', $generator->getCoreComposerConstraint());
+		$this->assertEquals('3.1.21', $generator->getCoreComposerConstraint());
 
-		// 3.2 has no alias (and no branch)
-		$generator = new ComposerGenerator('3.2', null, null, $this->getMockFrameworkJson());
-		$this->assertEquals('3.2.x-dev', $generator->getCoreComposerConstraint());
+		// 3.4 has no alias
+		$generator = new ComposerGenerator('3.4', null, null, $this->getMockFrameworkJson());
+		$this->assertEquals('3.4.x-dev', $generator->getCoreComposerConstraint());
 	}
 
 	/**
@@ -250,7 +250,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 					'dev-master' => '4.0.x-dev'
 				),
 			),
-			'version' => '3.2.x-dev',
+			'version' => '3.6.x-dev',
 			'dist' => array(
 				'type' => 'tar',
 				'url' => 'file:///home/root/builds/ss/subsites.tar'
