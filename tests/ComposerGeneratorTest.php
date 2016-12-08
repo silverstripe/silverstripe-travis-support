@@ -205,6 +205,17 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		);
 	}
 
+	public function testGetDistLocationForVersion() {
+		$generator = new ComposerGenerator(
+			'3.1',
+			'1.0',
+			ComposerGenerator::REF_BRANCH,
+			$this->getMockFrameworkJson()
+		);
+		$this->assertEquals("https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/5f5d682176fa3e27dc227465dba516d3cc0d29af", $generator->getDistLocationForVersion('3.x-dev'));
+		$this->assertEquals("https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/5f5d682176fa3e27dc227465dba516d3cc0d29af", $generator->getDistLocationForVersion('3.6.x-dev'));
+	}
+
 	/**
 	 * Test that the package sub-section of the composer config is generated properly
 	 */

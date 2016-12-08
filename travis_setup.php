@@ -98,6 +98,7 @@ if(!file_exists("$modulePath/composer.json")) {
 }
 $modulePackageInfo = json_decode(file_get_contents("$modulePath/composer.json"), true);
 $corePackageInfo = json_decode(file_get_contents('https://packagist.org/packages/silverstripe/framework.json'), true);
+$installerPackageInfo = json_decode(file_get_contents('https://packagist.org/packages/silverstripe/installer.json'), true);
 
 /**
  * 6. Generate composer data
@@ -114,6 +115,16 @@ if($coreAlias) {
 	$composerGenerator->setCoreAlias($coreAlias);
 }
 
+$installerGenerator = new ComposerGenerator(
+	$coreInstallerBranch,
+	$moduleVersion,
+	$moduleRef,
+	$installerPackageInfo,
+	$modulePackageInfo
+);
+
+$coreInstallerConstraint = $installerGenerator->getCoreComposerConstraint();
+
 $moduleArchivePath = "$parent/$moduleName.tar";
 $composer = $composerGenerator->generateComposerConfig($opts, $moduleArchivePath);
 $composerStr = json_encode($composer);
@@ -128,7 +139,7 @@ run("cd $modulePath");
 
 run("tar -cf $moduleArchivePath * .??*");
 
-run("git clone --depth=100 --quiet -b $coreInstallerBranch git://github.com/silverstripe/silverstripe-installer.git $targetPath");
+run("composer create-project --verbose --no-interaction --no-ansi --prefer-source --no-install --no-progress silverstripe/installer $targetPath $coreInstallerConstraint");
 
 run("cp $dir/_ss_environment.php $targetPath/_ss_environment.php");
 if($configPath) run("cp $configPath $targetPath/mysite/_config.php");
