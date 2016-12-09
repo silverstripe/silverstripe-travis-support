@@ -131,6 +131,22 @@ class ComposerGenerator {
 	}
 
 	/**
+	 * Find the zipball of the version from the corePackageInfo
+	 * 
+	 * @param string $version
+	 * @return string
+	 */
+	public function getDistLocationForVersion($version) {
+		$versions = $this->corePackageInfo['package']['versions'];
+		$legitVersions = $this->buildValidVersions();
+		$version = $legitVersions[$version];
+		if (!array_key_exists($version, $versions)) {
+			return;
+		}
+		return $versions[$version]['dist']['url'];
+	}
+
+	/**
 	 * Build an array of valid versions from the corePackageInfo - this allows us to match to real versions of the core
 	 * release so CORE_RELEASE=3.1 will match to a tag 3.1.x as the 3.1 branch is no more
 	 *
