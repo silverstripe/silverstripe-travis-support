@@ -1,0 +1,4404 @@
+{
+  "package": {
+	"name": "silverstripe\/installer",
+	"description": "The SilverStripe Framework Installer",
+	"time": "2012-11-02T00:04:08+00:00",
+	"maintainers": [
+	  {
+		"name": "ajshort"
+	  },
+	  {
+		"name": "chillu"
+	  },
+	  {
+		"name": "sminnee"
+	  },
+	  {
+		"name": "wilr"
+	  },
+	  {
+		"name": "tractorcow"
+	  },
+	  {
+		"name": "kinglozzer"
+	  },
+	  {
+		"name": "willmorgan"
+	  },
+	  {
+		"name": "dhensby"
+	  }
+	],
+	"versions": {
+	  "dev-master": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "dev-master",
+		"version_normalized": "9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "51a9fdf5d1e3e41974e31b9a40716912f8161edc"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/51a9fdf5d1e3e41974e31b9a40716912f8161edc",
+		  "reference": "51a9fdf5d1e3e41974e31b9a40716912f8161edc",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-11-01T22:13:46+00:00",
+		"extra": {
+		  "branch-alias": {
+			"dev-master": "4.0.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.5.0",
+		  "silverstripe-themes\/simple": "~3.2.0",
+		  "silverstripe\/asset-admin": "1.0.x-dev",
+		  "silverstripe\/cms": "4.0.x-dev",
+		  "silverstripe\/framework": "4.0.x-dev",
+		  "silverstripe\/reports": "4.0.x-dev",
+		  "silverstripe\/siteconfig": "4.0.x-dev"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~4.8"
+		}
+	  },
+	  "3.5.x-dev": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.5.x-dev",
+		"version_normalized": "3.5.9999999.9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.x-dev": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.x-dev",
+		"version_normalized": "3.9999999.9999999.9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.x-dev": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.x-dev",
+		"version_normalized": "3.4.9999999.9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-07-28T02:32:15+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "2.4.x-dev": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.x-dev",
+		"version_normalized": "2.4.9999999.9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "e89f5fe9689e8d13de6d8e724e4f11d1630d6721"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/e89f5fe9689e8d13de6d8e724e4f11d1630d6721",
+		  "reference": "e89f5fe9689e8d13de6d8e724e4f11d1630d6721",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-26T01:28:03+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.0.x-dev": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.x-dev",
+		"version_normalized": "3.0.9999999.9999999-dev",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-26T01:26:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "dev-post-2.4": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "dev-post-2.4",
+		"version_normalized": "dev-post-2.4",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9c0c049b6408ca0bfaa6e2787de6a7a6cfa9b12d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9c0c049b6408ca0bfaa6e2787de6a7a6cfa9b12d",
+		  "reference": "9c0c049b6408ca0bfaa6e2787de6a7a6cfa9b12d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-08-07T19:54:34+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "4.0.0-alpha3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "4.0.0-alpha3",
+		"version_normalized": "4.0.0.0-alpha3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c08cd0ae6eb83c6a2f89d23555b699921b26e8f3"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c08cd0ae6eb83c6a2f89d23555b699921b26e8f3",
+		  "reference": "c08cd0ae6eb83c6a2f89d23555b699921b26e8f3",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-11-03T02:31:13+00:00",
+		"require": {
+		  "php": "\u003E=5.5.0",
+		  "silverstripe-themes\/simple": "~3.2.0",
+		  "silverstripe\/asset-admin": "~1.0.0-alpha3",
+		  "silverstripe\/cms": "~4.0.0-alpha3",
+		  "silverstripe\/framework": "~4.0.0-alpha3",
+		  "silverstripe\/reports": "~4.0.0-alpha3",
+		  "silverstripe\/siteconfig": "~4.0.0-alpha3"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~4.8"
+		}
+	  },
+	  "4.0.0-alpha2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "4.0.0-alpha2",
+		"version_normalized": "4.0.0.0-alpha2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1311aede1caca49c654f3b9d8e8a7da14cb8e1b0"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1311aede1caca49c654f3b9d8e8a7da14cb8e1b0",
+		  "reference": "1311aede1caca49c654f3b9d8e8a7da14cb8e1b0",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-09-23T04:42:34+00:00",
+		"require": {
+		  "php": "\u003E=5.5.0",
+		  "silverstripe-themes\/simple": "~3.2.0",
+		  "silverstripe\/asset-admin": "~1.0.0-alpha2",
+		  "silverstripe\/cms": "~4.0.0-alpha2",
+		  "silverstripe\/framework": "~4.0.0-alpha2",
+		  "silverstripe\/reports": "~4.0.0-alpha2",
+		  "silverstripe\/siteconfig": "~4.0.0-alpha2"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~4.8"
+		}
+	  },
+	  "3.5.0": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.5.0",
+		"version_normalized": "3.5.0.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.5.0-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.5.0-rc1",
+		"version_normalized": "3.5.0.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.5.0-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.5.0-rc2",
+		"version_normalized": "3.5.0.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.5.0-rc3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.5.0-rc3",
+		"version_normalized": "3.5.0.0-RC3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "reference": "a54cd1fa31639a85885eaf603a165626034cf73b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-08-05T07:13:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.5.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.1",
+		"version_normalized": "3.4.1.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-07-28T02:32:15+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.1-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.1-rc1",
+		"version_normalized": "3.4.1.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-07-28T02:32:15+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.1-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.1-rc2",
+		"version_normalized": "3.4.1.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-07-28T02:32:15+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.2",
+		"version_normalized": "3.4.2.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "reference": "f299c4d18d4a9aab505740dd3aa17d44457c9425",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-07-28T02:32:15+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.0": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.0",
+		"version_normalized": "3.4.0.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "bede06a1aa75b293f846eddb27e87d500673c978"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/bede06a1aa75b293f846eddb27e87d500673c978",
+		  "reference": "bede06a1aa75b293f846eddb27e87d500673c978",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-18T03:37:54+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.4.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.4.0-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.4.0-rc1",
+		"version_normalized": "3.4.0.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "bede06a1aa75b293f846eddb27e87d500673c978"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/bede06a1aa75b293f846eddb27e87d500673c978",
+		  "reference": "bede06a1aa75b293f846eddb27e87d500673c978",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-18T03:37:54+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.4.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.3.3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.3",
+		"version_normalized": "3.3.3.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:35+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.3.3-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.3-rc1",
+		"version_normalized": "3.3.3.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:35+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.3.3-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.3-rc2",
+		"version_normalized": "3.3.3.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:35+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.3.4": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.4",
+		"version_normalized": "3.3.4.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "reference": "9c42bb7b4dcc1ed1eb07bc4f623fe8cd369a8b0d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:35+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.2.5": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.5",
+		"version_normalized": "3.2.5.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:09+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.2.5-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.5-rc1",
+		"version_normalized": "3.2.5.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:09+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.2.5-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.5-rc2",
+		"version_normalized": "3.2.5.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:09+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.2.6": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.6",
+		"version_normalized": "3.2.6.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "reference": "ff589cb4e3867e870c3c5ef86f53b831cefe8185",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-13T04:50:09+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "4.0.0-alpha1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "4.0.0-alpha1",
+		"version_normalized": "4.0.0.0-alpha1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "639092d333e04a5eae9f126b7824e812179eb993"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/639092d333e04a5eae9f126b7824e812179eb993",
+		  "reference": "639092d333e04a5eae9f126b7824e812179eb993",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-11T05:54:40+00:00",
+		"extra": {
+		  "branch-alias": {
+			"dev-master": "4.0.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/asset-admin": "^1",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~4.8"
+		}
+	  },
+	  "3.1.20": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.20",
+		"version_normalized": "3.1.20.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-11T05:46:13+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.20-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.20-rc1",
+		"version_normalized": "3.1.20.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-11T05:46:13+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.20-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.20-rc2",
+		"version_normalized": "3.1.20.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-11T05:46:13+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.21": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.21",
+		"version_normalized": "3.1.21.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "reference": "2aa2d9a7f0195a77d46270228f6886c7f5b3c1e1",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-05-11T05:46:13+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.3.2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.2",
+		"version_normalized": "3.3.2.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1c1b277c9356150ebd73648dbbd20f7e0af851e7"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1c1b277c9356150ebd73648dbbd20f7e0af851e7",
+		  "reference": "1c1b277c9356150ebd73648dbbd20f7e0af851e7",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-04-26T01:04:36+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.2-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.2-rc1",
+		"version_normalized": "3.3.2.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1c1b277c9356150ebd73648dbbd20f7e0af851e7"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1c1b277c9356150ebd73648dbbd20f7e0af851e7",
+		  "reference": "1c1b277c9356150ebd73648dbbd20f7e0af851e7",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2016-04-26T01:04:36+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.2",
+		"version_normalized": "3.2.2.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.2-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.2-rc1",
+		"version_normalized": "3.2.2.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.2-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.2-rc2",
+		"version_normalized": "3.2.2.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.3",
+		"version_normalized": "3.2.3.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.3-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.3-rc1",
+		"version_normalized": "3.2.3.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.3-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.3-rc2",
+		"version_normalized": "3.2.3.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.4": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.4",
+		"version_normalized": "3.2.4.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.4-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.4-rc1",
+		"version_normalized": "3.2.4.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "reference": "0ef455f2b7f0471f46563c3a35323ee90b46a036",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-12-07T19:38:45+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.0": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.0",
+		"version_normalized": "3.3.0.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.0-beta1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.0-beta1",
+		"version_normalized": "3.3.0.0-beta1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.0-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.0-rc1",
+		"version_normalized": "3.3.0.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.0-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.0-rc2",
+		"version_normalized": "3.3.0.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.0-rc3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.0-rc3",
+		"version_normalized": "3.3.0.0-RC3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.1",
+		"version_normalized": "3.3.1.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.1-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.1-rc1",
+		"version_normalized": "3.3.1.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.3.1-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.3.1-rc2",
+		"version_normalized": "3.3.1.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "reference": "0f0e4e85a5badb5f3378d2ebc0acc14f451b8962",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:55:06+00:00",
+		"extra": {
+		  "branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.1",
+		"version_normalized": "3.2.1.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:54:37+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.1-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.1-rc1",
+		"version_normalized": "3.2.1.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:54:37+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.1-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.1-rc2",
+		"version_normalized": "3.2.1.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "reference": "0572ce7a9ab57ab09b471f2b526109b6a21664c7",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:54:37+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.1.16": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.16",
+		"version_normalized": "3.1.16.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.16-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.16-rc1",
+		"version_normalized": "3.1.16.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.17": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.17",
+		"version_normalized": "3.1.17.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.17-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.17-rc1",
+		"version_normalized": "3.1.17.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.17-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.17-rc2",
+		"version_normalized": "3.1.17.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.18": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.18",
+		"version_normalized": "3.1.18.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.18-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.18-rc1",
+		"version_normalized": "3.1.18.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.18-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.18-rc2",
+		"version_normalized": "3.1.18.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.19": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.19",
+		"version_normalized": "3.1.19.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.19-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.19-rc1",
+		"version_normalized": "3.1.19.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "reference": "df6cbb20f787729dd60e77a2683266b4a31529d5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-11-10T10:34:11+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.2.0": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.0",
+		"version_normalized": "3.2.0.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-07-07T23:11:30+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.0-beta2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.0-beta2",
+		"version_normalized": "3.2.0.0-beta2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-07-07T23:11:30+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.0-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.0-rc1",
+		"version_normalized": "3.2.0.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-07-07T23:11:30+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.0-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.0-rc2",
+		"version_normalized": "3.2.0.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "reference": "00d26d5f2d8584ae6a1680607f18dd12dec2b5d2",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-07-07T23:11:30+00:00",
+		"require": {
+		  "php": "\u003E=5.3.3",
+		  "silverstripe-themes\/simple": "3.1.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7"
+		}
+	  },
+	  "3.2.0-beta1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.2.0-beta1",
+		"version_normalized": "3.2.0.0-beta1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "24f7cd12be59ae952d8a1a78223da7d137e9f5b4"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/24f7cd12be59ae952d8a1a78223da7d137e9f5b4",
+		  "reference": "24f7cd12be59ae952d8a1a78223da7d137e9f5b4",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-06-18T22:50:26+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version",
+		  "silverstripe\/reports": "self.version",
+		  "silverstripe\/siteconfig": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.14": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.14",
+		"version_normalized": "3.1.14.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-06-18T22:21:59+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.14-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.14-rc1",
+		"version_normalized": "3.1.14.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-06-18T22:21:59+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.15": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.15",
+		"version_normalized": "3.1.15.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "reference": "ae3c7ebcafacddd83bd8d29f99198b5c6e691f66",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-06-18T22:21:59+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.13": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.13",
+		"version_normalized": "3.1.13.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "e759ffbcdc613f32a6723e35e11fea529c6a4b4b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/e759ffbcdc613f32a6723e35e11fea529c6a4b4b",
+		  "reference": "e759ffbcdc613f32a6723e35e11fea529c6a4b4b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-05-27T22:03:42+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.11": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.11",
+		"version_normalized": "3.1.11.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-03-09T05:34:17+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.11-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.11-rc1",
+		"version_normalized": "3.1.11.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-03-09T05:34:17+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.12": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.12",
+		"version_normalized": "3.1.12.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-03-09T05:34:17+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.13-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.13-rc1",
+		"version_normalized": "3.1.13.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "reference": "9f686e0908cb3ddf40d1f380747a454f590e6394",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-03-09T05:34:17+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.0.12": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.12",
+		"version_normalized": "3.0.12.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-26T01:26:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.0.13": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.13",
+		"version_normalized": "3.0.13.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-26T01:26:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.0.14": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.14",
+		"version_normalized": "3.0.14.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "reference": "a2e1540c11c72afbbf6597d31c6d51f2044d5932",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-26T01:26:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "phpunit\/phpunit": "~3.7@stable"
+		}
+	  },
+	  "3.1.10": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.10",
+		"version_normalized": "3.1.10.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c9cb22f6485656463833705c21f02eb419436c8e",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-15T22:34:40+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.10-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.10-rc1",
+		"version_normalized": "3.1.10.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c9cb22f6485656463833705c21f02eb419436c8e",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-15T22:34:40+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.10-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.10-rc2",
+		"version_normalized": "3.1.10.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c9cb22f6485656463833705c21f02eb419436c8e",
+		  "reference": "c9cb22f6485656463833705c21f02eb419436c8e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-02-15T22:34:40+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.9": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.9",
+		"version_normalized": "3.1.9.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c",
+		  "reference": "4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-01-12T04:38:50+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.9-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.9-rc1",
+		"version_normalized": "3.1.9.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c",
+		  "reference": "4d8ab05f90e5d1d15e03334d0a6ffa2b29f6dd6c",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2015-01-12T04:38:50+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.7": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.7",
+		"version_normalized": "3.1.7.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-08-17T22:54:04+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.7-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.7-rc1",
+		"version_normalized": "3.1.7.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-08-17T22:54:04+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.8": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.8",
+		"version_normalized": "3.1.8.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "reference": "c23348d5d1d74a5b15d6acdcae03801dd3ab340d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-08-17T22:54:04+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.6": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.6",
+		"version_normalized": "3.1.6.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-06-17T20:35:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.6-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.6-rc1",
+		"version_normalized": "3.1.6.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-06-17T20:35:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.6-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.6-rc2",
+		"version_normalized": "3.1.6.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-06-17T20:35:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.6-rc3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.6-rc3",
+		"version_normalized": "3.1.6.0-RC3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "reference": "4e6e8f1dbc4cac6b98187fd34ebd17987c9a434d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-06-17T20:35:16+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.4": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.4",
+		"version_normalized": "3.1.4.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-03-31T19:52:34+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.4-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.4-rc1",
+		"version_normalized": "3.1.4.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-03-31T19:52:34+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.5": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.5",
+		"version_normalized": "3.1.5.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-03-31T19:52:34+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.5-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.5-rc1",
+		"version_normalized": "3.1.5.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-03-31T19:52:34+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.3",
+		"version_normalized": "3.1.3.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-02-18T09:37:49+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.3-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.3-rc1",
+		"version_normalized": "3.1.3.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-02-18T09:37:49+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.3-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.3-rc2",
+		"version_normalized": "3.1.3.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "reference": "aa07a0edd87f0bf88ec259c500d5355046686d9f",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2014-02-18T09:37:49+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.10": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.10",
+		"version_normalized": "3.0.10.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.10-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.10-rc1",
+		"version_normalized": "3.0.10.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.11": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.11",
+		"version_normalized": "3.0.11.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.11-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.11-rc1",
+		"version_normalized": "3.0.11.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.9": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.9",
+		"version_normalized": "3.0.9.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.9-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.9-rc1",
+		"version_normalized": "3.0.9.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "reference": "1098bdee31df8aee101dca8be06becd2c49d88f8",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-12-20T00:39:35+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.2",
+		"version_normalized": "3.1.2.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1e729183c8d0c1d5335d86ed335538bf46ffe54a"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1e729183c8d0c1d5335d86ed335538bf46ffe54a",
+		  "reference": "1e729183c8d0c1d5335d86ed335538bf46ffe54a",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-10-21T11:17:43+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.2-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.2-rc1",
+		"version_normalized": "3.1.2.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1e729183c8d0c1d5335d86ed335538bf46ffe54a"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1e729183c8d0c1d5335d86ed335538bf46ffe54a",
+		  "reference": "1e729183c8d0c1d5335d86ed335538bf46ffe54a",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-10-21T11:17:43+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.7": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.7",
+		"version_normalized": "3.0.7.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "dae9b18558807c8748696207dbb72b1dd9de68af"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/dae9b18558807c8748696207dbb72b1dd9de68af",
+		  "reference": "dae9b18558807c8748696207dbb72b1dd9de68af",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-26T22:21:56+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.8": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.8",
+		"version_normalized": "3.0.8.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "dae9b18558807c8748696207dbb72b1dd9de68af"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/dae9b18558807c8748696207dbb72b1dd9de68af",
+		  "reference": "dae9b18558807c8748696207dbb72b1dd9de68af",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-26T22:21:56+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.0": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0",
+		"version_normalized": "3.1.0.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T23:42:31+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.0-rc3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-rc3",
+		"version_normalized": "3.1.0.0-RC3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T23:42:31+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.1",
+		"version_normalized": "3.1.1.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "reference": "1434fedf10acba79c6ead7bb5a3206a719c624c6",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T23:42:31+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.7-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.7-rc1",
+		"version_normalized": "3.0.7.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2a70eedee14e2a6298a965923f3f723f627f1669"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2a70eedee14e2a6298a965923f3f723f627f1669",
+		  "reference": "2a70eedee14e2a6298a965923f3f723f627f1669",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T23:32:46+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "2.4.13": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.13",
+		"version_normalized": "2.4.13.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "73344bcce08aad25866079b501248547899aaf0e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/73344bcce08aad25866079b501248547899aaf0e",
+		  "reference": "73344bcce08aad25866079b501248547899aaf0e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T23:12:04+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.6": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.6",
+		"version_normalized": "3.0.6.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "0d5eab3a5fd5baeeeb9a7116ea3e0cfa9daabc33"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/0d5eab3a5fd5baeeeb9a7116ea3e0cfa9daabc33",
+		  "reference": "0d5eab3a5fd5baeeeb9a7116ea3e0cfa9daabc33",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-25T22:35:09+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.0-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-rc2",
+		"version_normalized": "3.1.0.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2cc4150b6c5a4d03bc19164ca873eb33f51549ab"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2cc4150b6c5a4d03bc19164ca873eb33f51549ab",
+		  "reference": "2cc4150b6c5a4d03bc19164ca873eb33f51549ab",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-12T15:02:20+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.6-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.6-rc2",
+		"version_normalized": "3.0.6.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "f80f7a5291a9bff5619f9d022d92edc5c7bdb6a1"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/f80f7a5291a9bff5619f9d022d92edc5c7bdb6a1",
+		  "reference": "f80f7a5291a9bff5619f9d022d92edc5c7bdb6a1",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-12T14:48:20+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "2.4.12": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.12",
+		"version_normalized": "2.4.12.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "55c538bd47ac380657b3613c70389e16e9f65cba"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/55c538bd47ac380657b3613c70389e16e9f65cba",
+		  "reference": "55c538bd47ac380657b3613c70389e16e9f65cba",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-09-12T14:29:36+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.0.6-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.6-rc1",
+		"version_normalized": "3.0.6.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b1eba0f9b9d9991ce1452779eb5da66fbde7d2d6"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b1eba0f9b9d9991ce1452779eb5da66fbde7d2d6",
+		  "reference": "b1eba0f9b9d9991ce1452779eb5da66fbde7d2d6",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-08-07T18:37:03+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "2.4.11": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.11",
+		"version_normalized": "2.4.11.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "77ef39fedd1c99d2ee6da919596fc4ee3d734a21"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/77ef39fedd1c99d2ee6da919596fc4ee3d734a21",
+		  "reference": "77ef39fedd1c99d2ee6da919596fc4ee3d734a21",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-08-07T12:40:34+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.0-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-rc1",
+		"version_normalized": "3.1.0.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "d4e574883565c36b095620ebc01cd347ac50195d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/d4e574883565c36b095620ebc01cd347ac50195d",
+		  "reference": "d4e574883565c36b095620ebc01cd347ac50195d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-07-30T00:03:47+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		}
+	  },
+	  "3.1.0-beta3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-beta3",
+		"version_normalized": "3.1.0.0-beta3",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "63a2d1abf972c07490f5c883b4b8d15dd37ed03e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/63a2d1abf972c07490f5c883b4b8d15dd37ed03e",
+		  "reference": "63a2d1abf972c07490f5c883b4b8d15dd37ed03e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-04-18T18:03:41+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.1.x-dev",
+		  "silverstripe\/framework": "3.1.x-dev"
+		},
+		"require-dev": {
+		  "silverstripe\/docsviewer": "*",
+		  "silverstripe\/behat-extension": "*",
+		  "silverstripe\/buildtools": "*",
+		  "phpunit\/phpunit": "3.7.*"
+		}
+	  },
+	  "3.1.0-beta2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-beta2",
+		"version_normalized": "3.1.0.0-beta2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "df360c05fb41a795da3e24bf865271267c6a936e"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/df360c05fb41a795da3e24bf865271267c6a936e",
+		  "reference": "df360c05fb41a795da3e24bf865271267c6a936e",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-02-26T01:24:32+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.1.x-dev",
+		  "silverstripe\/framework": "3.1.x-dev"
+		},
+		"require-dev": {
+		  "silverstripe\/docsviewer": "*",
+		  "silverstripe\/behat-extension": "*",
+		  "silverstripe\/buildtools": "*",
+		  "phpunit\/phpunit": "3.7.*"
+		}
+	  },
+	  "3.0.5": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.5",
+		"version_normalized": "3.0.5.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "12b2e4d53978c45a6e35a96124395b47844d49af"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/12b2e4d53978c45a6e35a96124395b47844d49af",
+		  "reference": "12b2e4d53978c45a6e35a96124395b47844d49af",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-02-20T01:01:22+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.0.*@stable",
+		  "silverstripe\/framework": "3.0.*@stable"
+		},
+		"require-dev": {
+		  "silverstripe\/docsviewer": "*",
+		  "silverstripe\/behat-extension": "*",
+		  "silverstripe\/buildtools": "*",
+		  "phpunit\/phpunit": "3.7.*"
+		}
+	  },
+	  "3.0.4": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.4",
+		"version_normalized": "3.0.4.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "bf74c4173d35b47a86b9539d5e50aa6dfb844dde"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/bf74c4173d35b47a86b9539d5e50aa6dfb844dde",
+		  "reference": "bf74c4173d35b47a86b9539d5e50aa6dfb844dde",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-02-18T00:36:33+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.0.*",
+		  "silverstripe\/framework": "3.0.*"
+		},
+		"require-dev": {
+		  "silverstripe\/docsviewer": "*",
+		  "silverstripe\/behat-extension": "*",
+		  "silverstripe\/buildtools": "*",
+		  "phpunit\/phpunit": "3.7.*"
+		}
+	  },
+	  "2.4.10": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.10",
+		"version_normalized": "2.4.10.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "65ddbbecd947142a7324a805cceb7b4eb8fb0f0b"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/65ddbbecd947142a7324a805cceb7b4eb8fb0f0b",
+		  "reference": "65ddbbecd947142a7324a805cceb7b4eb8fb0f0b",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2013-02-18T00:07:35+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "2.4.*",
+		  "silverstripe\/framework": "2.4.*"
+		}
+	  },
+	  "3.1.0-beta1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.1.0-beta1",
+		"version_normalized": "3.1.0.0-beta1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "de74377eccd243a30276616db907e9d15f76af7d"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/de74377eccd243a30276616db907e9d15f76af7d",
+		  "reference": "de74377eccd243a30276616db907e9d15f76af7d",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-12-17T15:47:44+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.1.x-dev",
+		  "silverstripe\/framework": "3.1.x-dev"
+		},
+		"require-dev": {
+		  "silverstripe\/docsviewer": "*",
+		  "silverstripe\/behat-extension": "*",
+		  "silverstripe\/buildtools": "*",
+		  "phpunit\/phpunit": "3.7.*"
+		}
+	  },
+	  "2.4.9": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "2.4.9",
+		"version_normalized": "2.4.9.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "c9bd03ad2c4ab5b5edb686b39d206e67cf127d19"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/c9bd03ad2c4ab5b5edb686b39d206e67cf127d19",
+		  "reference": "c9bd03ad2c4ab5b5edb686b39d206e67cf127d19",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-12-04T23:37:35+00:00",
+		"extra": {
+		  "installer-paths": {
+			"sapphire": [
+			  "silverstripe\/framework"
+			]
+		  }
+		},
+		"require": {
+		  "php": "\u003E=5.2.4",
+		  "silverstripe-themes\/blackcandy": "2.4.*",
+		  "silverstripe\/cms": "2.4.*",
+		  "silverstripe\/framework": "2.4.*"
+		}
+	  },
+	  "3.0.3": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.3",
+		"version_normalized": "3.0.3.0",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "b3b2716e57b28f47b77c81a282916edf582118d6"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/b3b2716e57b28f47b77c81a282916edf582118d6",
+		  "reference": "b3b2716e57b28f47b77c81a282916edf582118d6",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-11-25T23:02:04+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "3.0.*@stable",
+		  "silverstripe\/framework": "3.0.*@stable"
+		},
+		"require-dev": {
+		  "silverstripe\/compass": "*",
+		  "silverstripe\/docsviewer": "*"
+		}
+	  },
+	  "3.0.3-rc1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.3-rc1",
+		"version_normalized": "3.0.3.0-RC1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2debb0ddfd4342cafb85b4814e26170de3de404c"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2debb0ddfd4342cafb85b4814e26170de3de404c",
+		  "reference": "2debb0ddfd4342cafb85b4814e26170de3de404c",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-11-04T21:34:24+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "silverstripe\/compass": "*",
+		  "silverstripe\/docsviewer": "*"
+		}
+	  },
+	  "3.0.3-rc2": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.3-rc2",
+		"version_normalized": "3.0.3.0-RC2",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "2debb0ddfd4342cafb85b4814e26170de3de404c"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/2debb0ddfd4342cafb85b4814e26170de3de404c",
+		  "reference": "2debb0ddfd4342cafb85b4814e26170de3de404c",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-11-04T21:34:24+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "silverstripe\/compass": "*",
+		  "silverstripe\/docsviewer": "*"
+		}
+	  },
+	  "3.0.2.1": {
+		"name": "silverstripe\/installer",
+		"description": "The SilverStripe Framework Installer",
+		"keywords": [],
+		"homepage": "",
+		"version": "3.0.2.1",
+		"version_normalized": "3.0.2.1",
+		"license": [],
+		"authors": [],
+		"source": {
+		  "type": "git",
+		  "url": "https:\/\/github.com\/silverstripe\/silverstripe-installer.git",
+		  "reference": "3d6bd4576f9f65f9230cd95b02ab5900e8fb0183"
+		},
+		"dist": {
+		  "type": "zip",
+		  "url": "https:\/\/api.github.com\/repos\/silverstripe\/silverstripe-installer\/zipball\/3d6bd4576f9f65f9230cd95b02ab5900e8fb0183",
+		  "reference": "3d6bd4576f9f65f9230cd95b02ab5900e8fb0183",
+		  "shasum": ""
+		},
+		"type": "library",
+		"time": "2012-11-04T08:26:32+00:00",
+		"require": {
+		  "php": "\u003E=5.3.2",
+		  "silverstripe-themes\/simple": "*",
+		  "silverstripe\/cms": "self.version",
+		  "silverstripe\/framework": "self.version"
+		},
+		"require-dev": {
+		  "silverstripe\/compass": "*",
+		  "silverstripe\/docsviewer": "*"
+		}
+	  }
+	},
+	"type": "library",
+	"repository": "https:\/\/github.com\/silverstripe\/silverstripe-installer",
+	"github_stars": 139,
+	"github_watchers": 31,
+	"github_forks": 155,
+	"github_open_issues": 13,
+	"language": "PHP",
+	"dependents": 2,
+	"suggesters": 0,
+	"downloads": {
+	  "total": 51279,
+	  "monthly": 1316,
+	  "daily": 16
+	},
+	"favers": 142
+  }
+}

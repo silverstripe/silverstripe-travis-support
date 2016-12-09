@@ -10,7 +10,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 	 * @return array
 	 */
 	protected function getMockFrameworkJson() {
-		return json_decode(file_get_contents(__DIR__.'/framework.json'), true);
+		return $this->getMockModuleJson('framework');
 	}
 
 	/**
@@ -69,6 +69,17 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 		// 3.4 has no alias
 		$generator = new ComposerGenerator('3.4', null, null, $this->getMockFrameworkJson());
 		$this->assertEquals('3.4.x-dev', $generator->getCoreComposerConstraint());
+	}
+
+	public function testCoreInstallerConstraint() {
+		$generator = new ComposerGenerator(
+			'3.3',
+			null,
+			null,
+			$this->getMockModuleJson('installer')
+		);
+
+		$this->assertEquals('3.3.4', $generator->getCoreComposerConstraint());
 	}
 
 	/**

@@ -162,7 +162,7 @@ class ComposerGenerator {
 			if (!empty($versionInfo['extra']['branch-alias'])) {
 				$aliases = $versionInfo['extra']['branch-alias'];
 				foreach ($aliases as $real => $ghost) {
-					if (!array_key_exists($ghost, $validVersions)) {
+					if ($real == $version) {
 						$validVersions[$ghost] = $real;
 					}
 				}
