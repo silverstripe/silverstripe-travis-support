@@ -191,7 +191,7 @@ $_ss_env = array(
 );
 $dotEnv = array();
 foreach ($envVars as $envName => $envVal) {
-	$_ss_env[] = sprintf("if (!defined('%s') define('%s', '%s'));", $envName, $envName, $envVal);
+	$_ss_env[] = sprintf("if (!defined('%s')) define('%s', '%s');", $envName, $envName, $envVal);
 	$dotEnv[] = (sprintf('%s="%s"', $envName, $envVal));
 }
 $_ss_env[] = 'global $_FILE_TO_URL_MAPPING;';
