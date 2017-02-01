@@ -141,7 +141,64 @@ run("tar -cf $moduleArchivePath * .??*");
 
 run("composer create-project --verbose --no-interaction --no-ansi --prefer-source --no-install --no-progress silverstripe/installer $targetPath $coreInstallerConstraint");
 
-run("cp $dir/_ss_environment.php $targetPath/_ss_environment.php");
+$envVars = array(
+	'SS_ENVIRONMENT_TYPE' => 'dev',
+	'SS_TRUSTED_PROXY_IPS' => '*',
+	'SS_DATABASE_SERVER' => '127.0.0.1',
+	'SS_DATABASE_PASSWORD' => '127.0.0.1',
+	'SS_DATABASE_CHOOSE_NAME' => '1',
+	'SS_DEFAULT_ADMIN_USERNAME' => 'username',
+	'SS_DEFAULT_ADMIN_PASSWORD' => 'password',
+	'SS_HOST' => 'localhost',
+);
+
+// Database connection, including PDO and legacy ORM support
+$db = getenv('DB');
+$release = getenv('CORE_RELEASE');
+$pdo = getenv('PDO');
+$legacy = strcasecmp($release, 'master') && version_compare($release, '3.2', '<') && $release != '3';
+$pdo = !$legacy && $pdo;
+switch($db) {
+	case "PGSQL";
+		$envVars['SS_DATABASE_CLASS'] = $pdo ? 'PostgrePDODatabase' : 'PostgreSQLDatabase';
+		$envVars['SS_DATABASE_USERNAME'] = 'postgres';
+		$envVars['SS_DATABASE_PASSWORD'] = '';
+		break;
+
+	case "SQLITE":
+		if($legacy) {
+			// Legacy default is to use PDO
+			$envVars['SS_DATABASE_CLASS'] = 'SQLitePDODatabase';
+		} else {
+			$envVars['SS_DATABASE_CLASS'] = $pdo ? 'SQLite3PDODatabase' : 'SQLite3Database';
+		}
+		$envVars['SS_DATABASE_USERNAME'] = 'root';
+		$envVars['SS_DATABASE_PASSWORD'] = '';
+		$envVars['SS_SQLITE_DATABASE_PATH'] = ':memory:';
+		break;
+
+	default:
+		$envVars['SS_DATABASE_CLASS'] = $pdo ? 'MySQLPDODatabase' : 'MySQLDatabase';
+		$envVars['SS_DATABASE_USERNAME'] = 'root';
+		$envVars['SS_DATABASE_PASSWORD'] = '';
+
+}
+
+
+// build up an _ss_environment.php file for SS <4 and define real env vars for
+$_ss_env = array(
+	'<?php',
+);
+$dotEnv = array();
+foreach ($envVars as $envName => $envVal) {
+	$_ss_env[] = sprintf("if (!defined('%s') define('%s', '%s');", $envName, $envName, $envVal);
+	$dotEnv[] = (sprintf('%s="%s"', $envName, $envVal));
+}
+$_ss_env[] = 'global $_FILE_TO_URL_MAPPING;';
+$_ss_env[] = '$_FILE_TO_URL_MAPPING[dirname(__FILE__)] = \'http://localhost:8000\';';
+file_put_contents("$targetPath/_ss_environment.php", implode(PHP_EOL, $_ss_env));
+file_put_contents("$targetPath/.env", implode(PHP_EOL, $dotEnv));
+
 if($configPath) run("cp $configPath $targetPath/mysite/_config.php");
 
 run("rm $targetPath/composer.json");
