@@ -214,11 +214,11 @@ run("cd ~ && composer install --verbose --optimize-autoloader --no-interaction -
 /**
  * 8. Installer doesn't work out of the box without cms - delete the Page class if its not required
  */
-if(
-	!file_exists("$targetPath/cms")
-	&& file_exists("$targetPath/mysite/code/Page.php")
-	&& ($coreBranch == 'master' || version_compare($coreBranch, '3') >= 0)
-) {
-	echo "Removing Page.php (building without 'silverstripe/cms')...\n";
-	run("rm $targetPath/mysite/code/Page.php");
+if (!file_exists("{$targetPath}/cms") && ($coreBranch == 'master' || version_compare($coreBranch, '3') >= 0)) {
+	foreach (array('Page.php', 'PageController.php') as $cmsFile) {
+		if (file_exists("$targetPath/mysite/code/{$cmsFile}")) {
+			echo "Removing {$cmsFile} (building without 'silverstripe/cms')...\n";
+			run("rm $targetPath/mysite/code/{$cmsFile}");
+		}
+	}
 }
