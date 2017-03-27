@@ -271,7 +271,7 @@ class ComposerGenerator {
 			'require-dev' => array(
 				'silverstripe/postgresql' => '*',
 				'silverstripe/sqlite3' => '*',
-				'phpunit/PHPUnit' => '~3.7@stable' // Default phpunit version if none specified
+				'phpunit/PHPUnit' => '^4.8' // Default phpunit version if none specified
 			),
 			'minimum-stability' => 'dev',
 			'config' => array(
