@@ -97,8 +97,8 @@ if(!file_exists("$modulePath/composer.json")) {
 	exit(1);
 }
 $modulePackageInfo = json_decode(file_get_contents("$modulePath/composer.json"), true);
-$corePackageInfo = json_decode(file_get_contents('https://packagist.org/packages/silverstripe/framework.json'), true);
-$installerPackageInfo = json_decode(file_get_contents('https://packagist.org/packages/silverstripe/installer.json'), true);
+$corePackageInfo = json_decode(file_get_contents('https://packagist.org/p/silverstripe/framework.json'), true);
+$installerPackageInfo = json_decode(file_get_contents('https://packagist.org/p/silverstripe/installer.json'), true);
 
 /**
  * 6. Generate composer data
