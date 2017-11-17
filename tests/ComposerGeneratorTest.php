@@ -388,7 +388,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 			'require-dev' => array(
 				'silverstripe/postgresql' => '*',
 				'silverstripe/sqlite3' => '*',
-				'phpunit/PHPUnit' => '~3.7'
+				'phpunit/phpunit' => '~3.7'
 			),
 			'minimum-stability' => 'dev',
 			'config' => array(

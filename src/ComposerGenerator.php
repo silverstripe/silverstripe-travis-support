@@ -284,8 +284,8 @@ class ComposerGenerator {
 		foreach(array('repositories', 'require', 'require-dev') as $section) {
 			if(!empty($packageComposer[$section])) {
 				$composer[$section] = array_merge(
-					$composer[$section],
-					$packageComposer[$section]
+					array_change_key_case($composer[$section], CASE_LOWER),
+					array_change_key_case($packageComposer[$section], CASE_LOWER)
 				);
 			}
 		}
