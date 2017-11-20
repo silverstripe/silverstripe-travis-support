@@ -271,7 +271,7 @@ class ComposerGenerator {
 			'require-dev' => array(
 				'silverstripe/postgresql' => '*',
 				'silverstripe/sqlite3' => '*',
-				'phpunit/PHPUnit' => '~3.7@stable' // Default phpunit version if none specified
+				'phpunit/phpunit' => '^3 || ^4 || ^5' // Default phpunit version if none specified
 			),
 			'minimum-stability' => 'dev',
 			'config' => array(
@@ -284,8 +284,8 @@ class ComposerGenerator {
 		foreach(array('repositories', 'require', 'require-dev') as $section) {
 			if(!empty($packageComposer[$section])) {
 				$composer[$section] = array_merge(
-					$composer[$section],
-					$packageComposer[$section]
+					array_change_key_case($composer[$section], CASE_LOWER),
+					array_change_key_case($packageComposer[$section], CASE_LOWER)
 				);
 			}
 		}
