@@ -391,6 +391,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 				'phpunit/phpunit' => '~3.7'
 			),
 			'minimum-stability' => 'dev',
+			'prefer-stable' => true,
 			'config' => array(
 				'notify-on-install' => '',
 				'process-timeout' => '600'
@@ -675,6 +676,7 @@ class ComposerGeneratorTest extends PHPUnit_Framework_TestCase {
 				'phpunit/phpunit' => '^3 || ^4 || ^5'
 			),
 			'minimum-stability' => 'dev',
+			'prefer-stable' => true,
 			'config' => array(
 				'notify-on-install' => false,
 				'process-timeout' => 600
