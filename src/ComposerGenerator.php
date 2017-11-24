@@ -274,7 +274,6 @@ class ComposerGenerator {
 				'phpunit/phpunit' => '^3 || ^4 || ^5' // Default phpunit version if none specified
 			),
 			'minimum-stability' => 'dev',
-			'prefer-stable' => true,
 			'config' => array(
 				'notify-on-install' => false,
 				'process-timeout' => 600, // double default timeout, github archive downloads tend to be slow
